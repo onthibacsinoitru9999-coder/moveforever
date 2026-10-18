@@ -13,35 +13,83 @@
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
+  <!-- PWA Meta & Icons -->
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/png" sizes="64x64" href="./favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <meta name="theme-color" content="#0284c7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="MoveForever">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="clean-medical-theme">
 
-  <!-- Navigation Bar -->
+  <!-- PWA In-App Install Banner -->
+  <div class="pwa-install-banner" id="pwa-install-banner" style="display: none;">
+    <div class="pwa-banner-content">
+      <img src="./favicon.png" alt="App Icon" class="pwa-banner-icon">
+      <div class="pwa-banner-text">
+        <strong data-i18n="pwa_install_title">Cài Đặt Ứng Dụng Move Forever</strong>
+        <p data-i18n="pwa_install_desc">Thêm vào màn hình chính để mở nhanh, tiện dụng như ứng dụng di động!</p>
+      </div>
+    </div>
+    <div class="pwa-banner-actions">
+      <button type="button" class="btn-pwa-install" id="pwa-install-btn">
+        <i class="fa-solid fa-download"></i> <span data-i18n="pwa_btn_install">Cài Đặt App</span>
+      </button>
+      <button type="button" class="btn-pwa-dismiss" id="pwa-dismiss-btn" aria-label="Đóng banner">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Clean Top Navigation Bar -->
   <header class="site-header">
     <div class="nav-container">
-      <a href="#body-map" class="brand-logo">
-        <img src="https://assets.cdn.filesafe.space/7RV9Hg6yzbZa9Xa7wzoN/media/6a9eb0e8bcef8b5f2c245ad6.jpg" alt="Move Forever Logo">
+      <a href="#tab-body-map" class="brand-logo" onclick="switchMainTab('body-map'); return false;">
+        <img src="./favicon.png" alt="Move Forever Logo">
         <span class="brand-name">MOVE FOREVER</span>
       </a>
 
-      <nav class="nav-links">
-        <a href="#body-map" data-i18n="nav_map">Sơ đồ cơ thể</a>
-        <a href="#science" data-i18n="nav_science">Cơ chế khoa học</a>
-        <a href="#framework" data-i18n="nav_framework">Lộ trình 12 tuần</a>
-        <a href="#calculator" data-i18n="nav_calculator">Máy tính tải gân</a>
-        <a href="#video-library" data-i18n="nav_library">Thư viện video</a>
-        <a href="#testimonials" data-i18n="nav_reviews">Kết quả học viên</a>
-        <a href="#apply" data-i18n="nav_apply">Đăng ký tư vấn</a>
+      <!-- Desktop Tab Bar -->
+      <nav class="nav-links app-top-tabs">
+        <button type="button" class="nav-tab-btn active" data-tab-target="body-map" onclick="switchMainTab('body-map')">
+          <i class="fa-solid fa-person"></i> <span data-i18n="nav_map">Sơ đồ cơ thể</span>
+        </button>
+        <button type="button" class="nav-tab-btn" data-tab-target="calculator" onclick="switchMainTab('calculator')">
+          <i class="fa-solid fa-calculator"></i> <span data-i18n="nav_calculator">Máy tính tải gân</span>
+        </button>
+        <button type="button" class="nav-tab-btn" data-tab-target="framework" onclick="switchMainTab('framework')">
+          <i class="fa-solid fa-calendar-week"></i> <span data-i18n="nav_framework">Lộ trình 12 tuần</span>
+        </button>
+        <button type="button" class="nav-tab-btn" data-tab-target="video-library" onclick="switchMainTab('video-library')">
+          <i class="fa-solid fa-circle-play"></i> <span data-i18n="nav_library">Thư viện video</span>
+        </button>
+        <button type="button" class="nav-tab-btn" data-tab-target="science" onclick="switchMainTab('science')">
+          <i class="fa-solid fa-book-medical"></i> <span data-i18n="nav_science">Cơ chế khoa học</span>
+        </button>
+        <button type="button" class="nav-tab-btn" data-tab-target="testimonials" onclick="switchMainTab('testimonials')">
+          <i class="fa-solid fa-star"></i> <span data-i18n="nav_reviews">Kết quả học viên</span>
+        </button>
+        <button type="button" class="nav-tab-btn" data-tab-target="apply" onclick="switchMainTab('apply')">
+          <i class="fa-solid fa-clipboard-user"></i> <span data-i18n="nav_apply">Đăng ký tư vấn</span>
+        </button>
       </nav>
 
       <div class="nav-actions">
+        <!-- Install App Button (When Available) -->
+        <button id="header-install-btn" class="header-install-btn" title="Tải về làm ứng dụng" style="display: none;">
+          <i class="fa-solid fa-cloud-arrow-down"></i> <span data-i18n="btn_install_short">Cài App</span>
+        </button>
+
         <!-- Language Switcher -->
         <button id="lang-toggle-btn" class="lang-btn" title="Chuyển đổi ngôn ngữ / Switch language" data-i18n-title="lang_toggle_title">
           <i class="fa-solid fa-globe"></i> <span id="current-lang-text">EN</span>
         </button>
-        <a href="#apply" class="btn-primary nav-cta" data-i18n="btn_consult">Bắt Đầu Ngay</a>
+        <a href="#apply" class="btn-primary nav-cta" onclick="switchMainTab('apply'); return false;" data-i18n="btn_consult">Bắt Đầu Ngay</a>
         <!-- Mobile Hamburger Button -->
         <button id="nav-hamburger" class="nav-hamburger" aria-label="Mở menu điều hướng" data-i18n-aria="drawer_open_aria" title="Menu">
           <i class="fa-solid fa-bars"></i>
@@ -55,7 +103,7 @@
   <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="drawer-header">
       <div class="brand-logo">
-        <img src="https://assets.cdn.filesafe.space/7RV9Hg6yzbZa9Xa7wzoN/media/6a9eb0e8bcef8b5f2c245ad6.jpg" alt="Move Forever Logo">
+        <img src="./favicon.png" alt="Move Forever Logo">
         <span class="brand-name">MOVE FOREVER</span>
       </div>
       <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Đóng menu điều hướng" data-i18n-aria="drawer_close_aria">
@@ -64,24 +112,65 @@
     </div>
     <div class="drawer-menu-heading" data-i18n="drawer_menu_title">Danh Mục Điều Hướng</div>
     <nav class="drawer-nav">
-      <a href="#body-map" class="drawer-link" data-i18n="nav_map">Sơ đồ cơ thể</a>
-      <a href="#science" class="drawer-link" data-i18n="nav_science">Cơ chế khoa học</a>
-      <a href="#framework" class="drawer-link" data-i18n="nav_framework">Lộ trình 12 tuần</a>
-      <a href="#calculator" class="drawer-link" data-i18n="nav_calculator">Máy tính tải gân</a>
-      <a href="#video-library" class="drawer-link" data-i18n="nav_library">Thư viện video</a>
-      <a href="#testimonials" class="drawer-link" data-i18n="nav_reviews">Kết quả học viên</a>
-      <a href="#apply" class="drawer-link" data-i18n="nav_apply">Đăng ký tư vấn</a>
+      <a href="#tab-body-map" class="drawer-link active" onclick="switchMainTab('body-map'); closeDrawer(); return false;">
+        <i class="fa-solid fa-person"></i> <span data-i18n="nav_map">Sơ đồ cơ thể</span>
+      </a>
+      <a href="#tab-calculator" class="drawer-link" onclick="switchMainTab('calculator'); closeDrawer(); return false;">
+        <i class="fa-solid fa-calculator"></i> <span data-i18n="nav_calculator">Máy tính tải gân</span>
+      </a>
+      <a href="#tab-framework" class="drawer-link" onclick="switchMainTab('framework'); closeDrawer(); return false;">
+        <i class="fa-solid fa-calendar-week"></i> <span data-i18n="nav_framework">Lộ trình 12 tuần</span>
+      </a>
+      <a href="#tab-video-library" class="drawer-link" onclick="switchMainTab('video-library'); closeDrawer(); return false;">
+        <i class="fa-solid fa-circle-play"></i> <span data-i18n="nav_library">Thư viện video</span>
+      </a>
+      <a href="#tab-science" class="drawer-link" onclick="switchMainTab('science'); closeDrawer(); return false;">
+        <i class="fa-solid fa-book-medical"></i> <span data-i18n="nav_science">Cơ chế khoa học</span>
+      </a>
+      <a href="#tab-testimonials" class="drawer-link" onclick="switchMainTab('testimonials'); closeDrawer(); return false;">
+        <i class="fa-solid fa-star"></i> <span data-i18n="nav_reviews">Kết quả học viên</span>
+      </a>
+      <a href="#tab-apply" class="drawer-link" onclick="switchMainTab('apply'); closeDrawer(); return false;">
+        <i class="fa-solid fa-clipboard-user"></i> <span data-i18n="nav_apply">Đăng ký tư vấn</span>
+      </a>
     </nav>
     <div class="drawer-footer">
+      <button id="drawer-install-btn" class="btn-drawer-install" style="display: none;" onclick="triggerPWAInstall()">
+        <i class="fa-solid fa-download"></i> <span data-i18n="pwa_btn_install">Cài Đặt Web App</span>
+      </button>
       <button id="drawer-lang-btn" class="lang-btn" title="Chuyển đổi ngôn ngữ / Switch language" data-i18n-title="lang_toggle_title">
         <i class="fa-solid fa-globe"></i> <span id="drawer-lang-text">EN</span>
       </button>
-      <a href="#apply" class="btn-primary drawer-cta" data-i18n="btn_consult">Bắt Đầu Ngay</a>
+      <a href="#apply" class="btn-primary drawer-cta" onclick="switchMainTab('apply'); closeDrawer(); return false;" data-i18n="btn_consult">Bắt Đầu Ngay</a>
     </div>
   </aside>
 
+  <!-- Mobile Floating Segmented Pill Bar -->
+  <div class="mobile-segmented-bar" id="mobile-segmented-bar">
+    <button type="button" class="seg-btn active" data-tab="body-map" onclick="switchMainTab('body-map')">
+      <i class="fa-solid fa-person"></i>
+      <span data-i18n="nav_map_short">Sơ đồ</span>
+    </button>
+    <button type="button" class="seg-btn" data-tab="calculator" onclick="switchMainTab('calculator')">
+      <i class="fa-solid fa-calculator"></i>
+      <span data-i18n="nav_calc_short">Kê đơn</span>
+    </button>
+    <button type="button" class="seg-btn" data-tab="framework" onclick="switchMainTab('framework')">
+      <i class="fa-solid fa-calendar-check"></i>
+      <span data-i18n="nav_fw_short">12 Tuần</span>
+    </button>
+    <button type="button" class="seg-btn" data-tab="video-library" onclick="switchMainTab('video-library')">
+      <i class="fa-solid fa-play"></i>
+      <span data-i18n="nav_vid_short">Video</span>
+    </button>
+    <button type="button" class="seg-btn" data-tab="science" onclick="switchMainTab('science')">
+      <i class="fa-solid fa-dna"></i>
+      <span data-i18n="nav_sci_short">Cơ chế</span>
+    </button>
+  </div>
+
   <!-- Hero & Interactive Body Map Section -->
-  <section id="body-map" class="bm-section">
+  <section id="body-map" class="bm-section app-tab-pane active">
     <div class="bm-container">
       <div class="bm-header">
         <div class="badge-tag" data-i18n="hero_badge">BẢN ĐỒ VẬN ĐỘNG & CƠ HỌC TRỊ LIỆU TƯƠNG TÁC</div>
@@ -113,7 +202,7 @@
   </div>
 
   <!-- SCIENTIFIC MECHANOTHERAPY & TENDON CONTINUUM FRAMEWORK SECTION -->
-  <section id="science" class="science-section">
+  <section id="science" class="science-section app-tab-pane">
     <div class="section-container">
       <div class="section-heading text-center">
         <div class="badge-tag scientific-badge" data-i18n="sci_badge">KHOA HỌC ĐIỀU TRỊ BẢO TỒN KHÔNG MỔ</div>
@@ -226,7 +315,7 @@
   </section>
 
   <!-- 12-WEEK PERIODIZED PROGRESSION FRAMEWORK SECTION -->
-  <section id="framework" class="framework-section">
+  <section id="framework" class="framework-section app-tab-pane">
     <div class="section-container">
       <div class="section-heading text-center">
         <div class="badge-tag fw-badge" data-i18n="fw_badge">LỘ TRÌNH PHỤC HỒI 12 TUẦN CHUẨN Y HỌC THỂ THAO</div>
@@ -278,7 +367,7 @@
   </section>
 
   <!-- INTERACTIVE TENDON LOAD CALCULATOR SECTION -->
-  <section id="calculator" class="calculator-section">
+  <section id="calculator" class="calculator-section app-tab-pane">
     <div class="section-container">
       <div class="section-heading text-center">
         <div class="badge-tag calc-badge" data-i18n="calc_badge">CÔNG CỤ ĐÁNH GIÁ TẢI TRỌNG LÂM SÀNG</div>
@@ -485,7 +574,7 @@
   </section>
 
   <!-- EVIDENCE-BASED CLINICAL VIDEO LIBRARY SECTION -->
-  <section id="video-library" class="video-library-section">
+  <section id="video-library" class="video-library-section app-tab-pane">
     <div class="section-container">
       <div class="section-heading text-center">
         <div class="badge-tag vid-badge" data-i18n="vid_badge">THƯ VIỆN VIDEO PHỤC HỒI & PHẪU THUẬT NGOẠI KHOA</div>
@@ -541,7 +630,7 @@
   </section>
 
   <!-- Testimonials & Client Results Carousel Section -->
-  <section id="testimonials" class="testimonials-section">
+  <section id="testimonials" class="testimonials-section app-tab-pane">
     <div class="section-container">
       <div class="section-heading text-center">
         <h2 class="section-title" data-i18n="reviews_title">Bạn Đã Sẵn Sàng Khai Phá Tiềm Năng Cơ Thể?</h2>
@@ -569,7 +658,7 @@
   </section>
 
   <!-- Pre-qualification & Coaching Application Form -->
-  <section id="apply" class="apply-section">
+  <section id="apply" class="apply-section app-tab-pane">
     <div class="form-wrapper">
       <div class="form-header text-center">
         <h2 class="form-title" data-i18n="form_heading">Đăng Ký Huấn Luyện Cùng Huấn Luyện Viên</h2>
@@ -859,13 +948,13 @@
 
       <div class="footer-links">
         <h4 data-i18n="footer_quick_links">Liên Kết Nhanh</h4>
-        <a href="#body-map" data-i18n="nav_map">Sơ đồ cơ thể</a>
-        <a href="#science" data-i18n="nav_science">Cơ chế khoa học</a>
-        <a href="#framework" data-i18n="nav_framework">Lộ trình 12 tuần</a>
-        <a href="#calculator" data-i18n="nav_calculator">Máy tính tải gân</a>
-        <a href="#video-library" data-i18n="nav_library">Thư viện video</a>
-        <a href="#testimonials" data-i18n="nav_reviews">Kết quả học viên</a>
-        <a href="#apply" data-i18n="nav_apply">Đăng ký tư vấn</a>
+        <a href="#body-map" onclick="switchMainTab('body-map'); return false;" data-i18n="nav_map">Sơ đồ cơ thể</a>
+        <a href="#calculator" onclick="switchMainTab('calculator'); return false;" data-i18n="nav_calculator">Máy tính tải gân</a>
+        <a href="#framework" onclick="switchMainTab('framework'); return false;" data-i18n="nav_framework">Lộ trình 12 tuần</a>
+        <a href="#video-library" onclick="switchMainTab('video-library'); return false;" data-i18n="nav_library">Thư viện video</a>
+        <a href="#science" onclick="switchMainTab('science'); return false;" data-i18n="nav_science">Cơ chế khoa học</a>
+        <a href="#testimonials" onclick="switchMainTab('testimonials'); return false;" data-i18n="nav_reviews">Kết quả học viên</a>
+        <a href="#apply" onclick="switchMainTab('apply'); return false;" data-i18n="nav_apply">Đăng ký tư vấn</a>
       </div>
 
       <div class="footer-contact">

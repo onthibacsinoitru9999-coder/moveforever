@@ -19,6 +19,15 @@ const TRANSLATIONS = {
     "nav_reviews": "Kết quả học viên",
     "nav_apply": "Đăng ký tư vấn",
     "btn_consult": "Bắt Đầu Ngay",
+    "nav_map_short": "Sơ đồ",
+    "nav_calc_short": "Kê đơn",
+    "nav_fw_short": "12 Tuần",
+    "nav_vid_short": "Video",
+    "nav_sci_short": "Cơ chế",
+    "pwa_install_title": "Cài Đặt Ứng Dụng Move Forever",
+    "pwa_install_desc": "Thêm vào màn hình chính để mở nhanh, tiện dụng như ứng dụng di động!",
+    "pwa_btn_install": "Cài Đặt App",
+    "btn_install_short": "Cài App",
     "hero_badge": "BẢN ĐỒ VẬN ĐỘNG & CƠ HỌC TRỊ LIỆU TƯƠNG TÁC",
     "hero_title": "Nhấn Vào Vùng Bạn Đang Gặp Vấn Đề",
     "hero_sub": "Bạn muốn giải phóng tiềm năng tiềm ẩn của cơ thể? Chọn vùng tổn thương để khám phá phác đồ phục hồi 3 giai đoạn dựa trên khoa học cơ học trị liệu!",
@@ -349,6 +358,15 @@ const TRANSLATIONS = {
     "nav_reviews": "Client Results",
     "nav_apply": "Apply Now",
     "btn_consult": "Get Started",
+    "nav_map_short": "Body",
+    "nav_calc_short": "Rx Load",
+    "nav_fw_short": "12 Weeks",
+    "nav_vid_short": "Videos",
+    "nav_sci_short": "Science",
+    "pwa_install_title": "Install Move Forever App",
+    "pwa_install_desc": "Add to home screen for instant access like a native app!",
+    "pwa_btn_install": "Install App",
+    "btn_install_short": "Install",
     "hero_badge": "INTERACTIVE BODY MAP & MECHANOTHERAPY",
     "hero_title": "Click The Area That's Troubling You",
     "hero_sub": "Want to unlock your body's hidden potential? Select any body region to explore the 3-phase evidence-based mechanotherapy rehabilitation protocol!",
@@ -10913,6 +10931,175 @@ function applyLanguage(lang) {
   if (activeVideoModalId && typeof updateVideoModalContent === 'function') updateVideoModalContent();
 }
 
+// ==========================================
+// PWA SERVICE WORKER & APP INSTALL PROMOTION
+// ==========================================
+let deferredPrompt = null;
+
+function initPWA() {
+  if (!isBrowser) return;
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js').catch(err => {
+        console.warn('ServiceWorker registration error:', err);
+      });
+    });
+  }
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    const banner = document.getElementById('pwa-install-banner');
+    const headerBtn = document.getElementById('header-install-btn');
+    const drawerBtn = document.getElementById('drawer-install-btn');
+    if (banner) banner.style.display = 'flex';
+    if (headerBtn) headerBtn.style.display = 'inline-flex';
+    if (drawerBtn) drawerBtn.style.display = 'flex';
+  });
+
+  window.addEventListener('appinstalled', () => {
+    deferredPrompt = null;
+    const banner = document.getElementById('pwa-install-banner');
+    const headerBtn = document.getElementById('header-install-btn');
+    const drawerBtn = document.getElementById('drawer-install-btn');
+    if (banner) banner.style.display = 'none';
+    if (headerBtn) headerBtn.style.display = 'none';
+    if (drawerBtn) drawerBtn.style.display = 'none';
+  });
+
+  const pwaInstallBtn = document.getElementById('pwa-install-btn');
+  if (pwaInstallBtn) {
+    pwaInstallBtn.addEventListener('click', triggerPWAInstall);
+  }
+  const headerInstallBtn = document.getElementById('header-install-btn');
+  if (headerInstallBtn) {
+    headerInstallBtn.addEventListener('click', triggerPWAInstall);
+  }
+  const pwaDismissBtn = document.getElementById('pwa-dismiss-btn');
+  if (pwaDismissBtn) {
+    pwaDismissBtn.addEventListener('click', () => {
+      const banner = document.getElementById('pwa-install-banner');
+      if (banner) banner.style.display = 'none';
+    });
+  }
+}
+
+function triggerPWAInstall() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        const banner = document.getElementById('pwa-install-banner');
+        if (banner) banner.style.display = 'none';
+      }
+      deferredPrompt = null;
+    });
+  } else {
+    alert(currentLang === 'vi' 
+      ? 'Để cài đặt ứng dụng: Trên Chrome/Edge máy tính, bấm biểu tượng Cài đặt trên thanh địa chỉ hoặc Menu ⋮ -> "Cài đặt ứng dụng". Trên Safari iPhone/iPad, bấm nút Chia sẻ -> "Thêm vào Màn hình chính".' 
+      : 'To install the app: On Chrome/Edge desktop, click the Install icon in the address bar or Menu ⋮ -> "Install app". On iOS Safari, tap Share -> "Add to Home Screen".');
+  }
+}
+
+// ==========================================
+// TABBED SINGLE-PAGE ARCHITECTURE NAVIGATION
+// ==========================================
+function switchMainTab(tabId) {
+  if (!isBrowser) return;
+  const cleanId = String(tabId || '').replace(/^#/, '').replace(/^tab-/, '');
+  const targetId = cleanId || 'body-map';
+
+  // 1. Switch Active Section Pane
+  const panes = document.querySelectorAll('.app-tab-pane');
+  let matched = false;
+  panes.forEach(pane => {
+    if (pane.id === targetId) {
+      pane.classList.add('active');
+      matched = true;
+    } else {
+      pane.classList.remove('active');
+    }
+  });
+
+  if (!matched) {
+    const fallback = document.getElementById('body-map');
+    if (fallback) fallback.classList.add('active');
+  }
+
+  // 2. Synchronize Desktop Top Tab Buttons
+  document.querySelectorAll('.app-top-tabs .nav-tab-btn').forEach(btn => {
+    const target = btn.getAttribute('data-tab-target');
+    if (target === targetId) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  // 3. Synchronize Mobile Segmented Bar Buttons
+  document.querySelectorAll('.mobile-segmented-bar .seg-btn').forEach(btn => {
+    const target = btn.getAttribute('data-tab');
+    if (target === targetId) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  // 4. Synchronize Mobile Drawer Links
+  document.querySelectorAll('.drawer-nav .drawer-link').forEach(link => {
+    const href = link.getAttribute('href') || '';
+    if (href === `#tab-${targetId}` || href === `#${targetId}`) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  // 5. Smooth Scroll to Top
+  try {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } catch (e) {
+    window.scrollTo(0, 0);
+  }
+
+  // 6. Update URL Hash without Page Reload
+  if (window.history && window.history.replaceState) {
+    window.history.replaceState(null, null, '#' + targetId);
+  }
+}
+
+function initTabNavigation() {
+  if (!isBrowser) return;
+
+  // Handle URL Hash Deep Linking
+  const hash = window.location.hash;
+  if (hash) {
+    const tabFromHash = hash.replace(/^#/, '').replace(/^tab-/, '');
+    const validTabs = ['body-map', 'calculator', 'framework', 'video-library', 'science', 'testimonials', 'apply'];
+    if (validTabs.includes(tabFromHash)) {
+      switchMainTab(tabFromHash);
+    }
+  }
+
+  // Listen to popstate / hashchange for back/forward navigation
+  window.addEventListener('hashchange', () => {
+    const newHash = window.location.hash.replace(/^#/, '').replace(/^tab-/, '');
+    if (newHash) {
+      switchMainTab(newHash);
+    }
+  });
+}
+
+// Global browser window assignment
+if (typeof window !== 'undefined') {
+  window.switchMainTab = switchMainTab;
+  window.triggerPWAInstall = triggerPWAInstall;
+  window.initPWA = initPWA;
+  window.initTabNavigation = initTabNavigation;
+}
+
 // Initialize on Load in Browser
 if (isBrowser) {
   document.addEventListener('DOMContentLoaded', () => {
@@ -10921,6 +11108,8 @@ if (isBrowser) {
     initMobileDrawer();
     initCalculator();
     initVideoLibrary();
+    initTabNavigation();
+    initPWA();
   });
 }
 
@@ -10944,6 +11133,10 @@ if (typeof module !== 'undefined' && module.exports) {
     closeDrawer,
     applyLanguage,
     resolveVideoId,
-    EXERCISE_TO_CATALOG_ID_MAP
+    EXERCISE_TO_CATALOG_ID_MAP,
+    switchMainTab,
+    initTabNavigation,
+    initPWA,
+    triggerPWAInstall
   };
 }
