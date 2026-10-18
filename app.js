@@ -28,6 +28,57 @@ const TRANSLATIONS = {
     "pwa_install_desc": "Thêm vào màn hình chính để mở nhanh, tiện dụng như ứng dụng di động!",
     "pwa_btn_install": "Cài Đặt App",
     "btn_install_short": "Cài App",
+    "nav_postop": "Sau mổ & Kết xương",
+    "nav_postop_short": "Sau mổ",
+    "vid_cat_postop": "Sau Mổ & Kết Xương",
+    "postop_badge": "PHỤC HỒI SAU MỔ CHẤN THƯƠNG CHỈNH HÌNH & KẾT XƯƠNG",
+    "postop_title": "Hệ Thống Phục Hồi Chức Năng Sau Mổ Kết Hợp Xương & Tái Tạo Khớp",
+    "postop_sub": "Dựa trên chuẩn AO Foundation và Thuyết Biến Dạng Mô Perren — Lộ trình nạp tải tì đè an toàn, ngăn ngừa biến chứng gãy nẹp vít, cứng khớp và teo cơ sau phẫu thuật.",
+    "postop_ao_heading": "Hai Cơ Chế Liền Xương Theo Nguyên Lý Vững Chắc AO (AO Stability Principles)",
+    "postop_abs_title": "1. Vững Chắc Tuyệt Đối (Absolute Stability - Strain < 2%)",
+    "postop_abs_desc": "Áp dụng trong nẹp ép nén, vít xốp nén (Lag Screw), néo ép số 8 (Tension Band). Liền xương trực tiếp sơ cấp (Primary bone healing) bằng nón bào mòn (cutting cones), không tạo can xơ sụn. Tập vận động sớm biên độ khớp (Early ROM) từ tuần 1 để ngừa dính bao khớp; kiểm soát lực tì đè ép uốn tránh nhổ vít hoặc gãy nẹp.",
+    "postop_rel_title": "2. Vững Chắc Tương Đối (Relative Stability - Strain 2–10%)",
+    "postop_rel_desc": "Áp dụng trong đinh nội tủy có chốt (IM Nail), nẹp bắc cầu (Bridge Plating), nẹp khóa (LCP) gãy nhiều mảnh. Liền xương gián tiếp thứ cấp (Secondary bone healing) tạo can sụn và can xương cứng ngoài màng xương. Đòi hỏi vi chuyển động cơ học dọc trục (Micromotion 0.2–1.0mm). Nạp tải tì đè dọc trục sớm theo định luật Wolff kích hoạt can xương nhanh và dày chắc.",
+    "postop_timeline_heading": "Lộ Trình Tì Đè & Nạp Tải 4 Giai Đoạn Hậu Phẫu (Post-Op Weight-Bearing Timeline)",
+    "postop_p1_badge": "Tuần 0 – 2 | Giai Đoạn 1",
+    "postop_p1_title": "Bảo Vệ Vết Mổ & Phòng Ngừa Huyết Khối (DVT Prophylaxis)",
+    "postop_p1_weight": "Tải trọng: NWB (Không tì đè) hoặc TDWB (Chạm ngón chân < 10% trọng lượng).",
+    "postop_p1_rx": "Can thiệp: Bơm mắt cá chân (Ankle Pumps), gồng cơ tĩnh tứ đầu đùi (Quad setting) và mông, kê cao chi giảm phù nề, di động xương bánh chè chống dính.",
+    "postop_p2_badge": "Tuần 2 – 6 | Giai Đoạn 2",
+    "postop_p2_title": "Tạo Can Sụn Non & Tì Đè Một Phần (Partial Weight-Bearing)",
+    "postop_p2_weight": "Tải trọng: PWB 25% – 50% trọng lượng cơ thể với 2 nạng (đi dáng 3 điểm).",
+    "postop_p2_rx": "Can thiệp: Di động khớp chủ động có trợ giúp (AAROM), trượt gót (Heel slides), nâng chân thẳng (SLR không lag gối), tập các khớp lân cận không mổ.",
+    "postop_p3_badge": "Tuần 6 – 12 | Giai Đoạn 3",
+    "postop_p3_title": "Can Xương Cứng & Tì Đè Hoàn Toàn (Full Weight-Bearing)",
+    "postop_p3_weight": "Tải trọng: FWB (Bỏ nạng, tì hoàn toàn khi X-quang có cầu can xương bắc qua ổ gãy).",
+    "postop_p3_rx": "Can thiệp: Chuỗi động đóng (Mini squat, Leg press nhẹ, Step-ups), đạp xe kháng lực nhẹ, tập thăng bằng bản thể, chỉnh dáng đi đối xứng không tập tễnh.",
+    "postop_p4_badge": "Tuần 12 – 24+ | Giai Đoạn 4",
+    "postop_p4_title": "Tái Cấu Trúc Xương & Tái Hòa Nhập Vận Động (Wolff's Remodeling)",
+    "postop_p4_weight": "Tải trọng: Nạp tải toàn diện theo Định luật Wolff (tăng mật độ khoáng bè xương).",
+    "postop_p4_rx": "Can thiệp: Kháng lực nâng tạ tiến tiến, rèn sức mạnh góc tận, bài tập hấp thu xung lực giảm tốc (Deceleration), phục hồi sức mạnh chi mổ đạt LSI >= 90%.",
+    "postop_pathways_heading": "Phác Đồ Cho 6 Phẫu Thuật Chấn Thương Chỉnh Hình Kinh Điển",
+    "postop_surg1_title": "Mổ Đinh Nội Tủy (IM Nail) Gãy Xương Đùi & Cẳng Chân",
+    "postop_surg1_desc": "Ưu điểm chia sẻ tải trọng (Load-sharing). Cho phép tì đè sớm 25-50% từ tuần 2-3 với nạng để kích hoạt can màng xương. Tránh xoay vặn mạnh trước tuần 6.",
+    "postop_surg2_title": "Mổ Nẹp Khóa (LCP) Gãy Mâm Chày (Tibial Plateau)",
+    "postop_surg2_desc": "Tổn thương sụn khớp nghiêm ngặt. Bắt buộc KHÔNG TÌ ĐÈ (NWB) 6-8 tuần đầu để bảo vệ mặt sụn không bị lún thứ phát. Tập ROM sớm không tải để ngừa cứng khớp.",
+    "postop_surg3_title": "Mổ Nẹp Vít Gãy Mắt Cá Chân (Bimalleolar / Trimalleolar Ankle)",
+    "postop_surg3_desc": "Bất động nẹp bốt ngắn (CAM boot) 4-6 tuần. Tập sớm gập lưng - gập lòng cổ chân không tải để chống co rút gân gót Achilles. Tì đè tăng dần sau tuần 6 khi X-quang đạt chuẩn.",
+    "postop_surg4_title": "Mổ Néo Ép Số 8 Gãy Xương Bánh Chè (Patella Tension Band)",
+    "postop_surg4_desc": "Khoá nẹp gối thẳng 0° tuyệt đối khi đi lại để bảo vệ hệ thống duỗi gối. Tập gập gối thụ động có trợ giúp tăng dần: Tuần 0-2 (0-30°), Tuần 2-4 (0-60°), Tuần 4-6 (0-90°).",
+    "postop_surg5_title": "Mổ Tái Tạo Dây Chằng Chéo Trước (ACL) & Khâu Sụn Chêm",
+    "postop_surg5_desc": "Lấy lại duỗi thẳng 0° ngay ngày 1 sau mổ (chống sẹo Cyclops). Nếu có khâu sụn chêm sừng sau: giới hạn gập gối <= 90° trong 4-6 tuần đầu để bảo vệ mối chỉ khâu.",
+    "postop_surg6_title": "Mổ Khâu Chóp Xoay Khớp Vai (Rotator Cuff Repair)",
+    "postop_surg6_desc": "Đeo đai túi có gối dạng vai 4-6 tuần. Chỉ tập bài tập con lắc Codman và vận động thụ động (PROM). Nghiêm cấm nâng tay chủ động sớm làm tuột đứt chỉ neo gân.",
+    "postop_redflags_heading": "Dấu Hiệu Đèn Đỏ Cảnh Báo Nguy Hiểm Cần Tái Khám Khẩn Cấp",
+    "postop_rf1_title": "Dấu Hiệu Nhiễm Trùng Vết Mổ & Viêm Xương (Surgical Site Infection / Osteomyelitis)",
+    "postop_rf1_desc": "Sốt cao trên 38°C, vết mổ sưng nóng, tấy đỏ lan rộng, rỉ dịch mủ vàng hoặc bung toác mép chỉ khâu.",
+    "postop_rf2_title": "Huyết Khối Tĩnh Mạch Sâu (Deep Vein Thrombosis - DVT)",
+    "postop_rf2_desc": "Bắp chân căng tức dữ dội, đau tăng vọt khi bẻ gập mu chân (Homans sign), phù nề to lệch 1 bên chân, tĩnh mạch nông nổi rõ.",
+    "postop_rf3_title": "Thất Bại Kết Hợp Xương & Gãy Nẹp Vít (Hardware Failure / Non-Union)",
+    "postop_rf3_desc": "Đau chói đột ngột khi tì đè, nghe tiếng 'cục' hoặc lạo xạo ổ gãy, chi bị cong vẹo hoặc ngắn chi bất thường.",
+    "postop_rf4_title": "Hội Chứng Đau Cục Bộ Phức Hợp (Complex Regional Pain Syndrome - CRPS / Sudeck)",
+    "postop_rf4_desc": "Đau rát bỏng dữ dội vượt xa mức độ tổn thương, da bóng đỏ hoặc tím tái, rối loạn tiết mồ hôi và cứng khớp nhanh.",
+    "postop_cta_btn": "Xem Video Hướng Dẫn Bài Tập Sau Mổ & Kết Xương",
     "hero_badge": "BẢN ĐỒ VẬN ĐỘNG & CƠ HỌC TRỊ LIỆU TƯƠNG TÁC",
     "hero_title": "Nhấn Vào Vùng Bạn Đang Gặp Vấn Đề",
     "hero_sub": "Bạn muốn giải phóng tiềm năng tiềm ẩn của cơ thể? Chọn vùng tổn thương để khám phá phác đồ phục hồi 3 giai đoạn dựa trên khoa học cơ học trị liệu!",
@@ -367,6 +418,57 @@ const TRANSLATIONS = {
     "pwa_install_desc": "Add to home screen for instant access like a native app!",
     "pwa_btn_install": "Install App",
     "btn_install_short": "Install",
+    "nav_postop": "Post-Op & Fixation",
+    "nav_postop_short": "Post-Op",
+    "vid_cat_postop": "Post-Op & Fixation",
+    "postop_badge": "POST-OP ORTHOPEDIC TRAUMA & OSTEOSYNTHESIS REHAB",
+    "postop_title": "Clinical Post-Surgical Rehabilitation & Bone Healing Continuum",
+    "postop_sub": "Based on AO Foundation Principles and Perren's Tissue Strain Theory — Safe progressive weight-bearing timeline preventing implant failure, arthrofibrosis, and disuse atrophy.",
+    "postop_ao_heading": "Two Bone Healing Mechanisms Under AO Stability Principles",
+    "postop_abs_title": "1. Absolute Stability (Interfragmentary Strain < 2%)",
+    "postop_abs_desc": "Applied in compression plates, lag screws, and tension band wiring. Heals via primary direct contact healing with cutting cones without periosteal callus. Early active-assisted ROM begins in Week 1 to prevent arthrofibrosis; bending/shear forces must be guarded to avoid hardware pull-out.",
+    "postop_rel_title": "2. Relative Stability (Interfragmentary Strain 2–10%)",
+    "postop_rel_desc": "Applied in interlocking intramedullary nails, bridge plates, and locking plates (LCP). Heals via secondary indirect bone healing forming periosteal bridging callus. Requires axial micromotion (0.2–1.0mm). Controlled early axial weight-bearing stimulates robust callus mineralization per Wolff's Law.",
+    "postop_timeline_heading": "4-Phase Post-Op Weight-Bearing & Loading Timeline",
+    "postop_p1_badge": "Weeks 0 – 2 | Phase 1",
+    "postop_p1_title": "Wound Protection & Thromboembolism Prophylaxis",
+    "postop_p1_weight": "Weight: NWB (Non-Weight Bearing) or TDWB (Touch-Down < 10% bodyweight).",
+    "postop_p1_rx": "Intervention: Active ankle pumps, quadriceps setting isometrics, glute sets, limb elevation, gentle patellar mobilizations.",
+    "postop_p2_badge": "Weeks 2 – 6 | Phase 2",
+    "postop_p2_title": "Soft Callus Formation & Partial Weight-Bearing (PWB)",
+    "postop_p2_weight": "Weight: PWB 25% – 50% bodyweight with bilateral crutches (3-point gait).",
+    "postop_p2_rx": "Intervention: Active-assisted ROM, heel slides, Straight Leg Raise (SLR without extensor lag), adjacent joint conditioning.",
+    "postop_p3_badge": "Weeks 6 – 12 | Phase 3",
+    "postop_p3_title": "Hard Callus Consolidation & Full Weight-Bearing (FWB)",
+    "postop_p3_weight": "Weight: FWB (Wean crutches, full weight-bearing upon radiographic bridging callus).",
+    "postop_p3_rx": "Intervention: Closed kinetic chain (Mini squats, low-load leg press, step-ups), stationary cycling, proprioception, symmetrical gait re-education.",
+    "postop_p4_badge": "Weeks 12 – 24+ | Phase 4",
+    "postop_p4_title": "Cortical Remodeling & Functional Return to Activity",
+    "postop_p4_weight": "Weight: Full multidirectional loading stimulating trabecular realignment per Wolff's Law.",
+    "postop_p4_rx": "Intervention: Progressive resistance training, end-range loaded mobility, eccentric deceleration drills, limb symmetry index (LSI) >= 90%.",
+    "postop_pathways_heading": "Evidence-Based Protocols for 6 Landmark Orthopedic Surgeries",
+    "postop_surg1_title": "Intramedullary Nail (IMN) Femur & Tibia Shaft Fractures",
+    "postop_surg1_desc": "Load-sharing implant mechanics. Permits early 25-50% PWB by weeks 2-3 to stimulate periosteal callus. Avoid excessive rotational torque prior to week 6.",
+    "postop_surg2_title": "Tibial Plateau Fracture Locking Compression Plate (LCP)",
+    "postop_surg2_desc": "Articular surface reconstruction. Strict Non-Weight Bearing (NWB) for 6-8 weeks to prevent joint depression. Early unloaded AAROM prevents knee arthrofibrosis.",
+    "postop_surg3_title": "Bimalleolar / Trimalleolar Ankle Fracture ORIF",
+    "postop_surg3_desc": "Immobilized in CAM boot 4-6 weeks. Early unloaded dorsiflexion/plantarflexion prevents Achilles contracture. Progressive PWB begins after week 6 verification.",
+    "postop_surg4_title": "Patellar Fracture Tension Band Wiring (TBW)",
+    "postop_surg4_desc": "Brace strictly locked at 0° extension during ambulation to shield extensor mechanism. Gradual assisted flexion: W0-2 (0-30°), W2-4 (0-60°), W4-6 (0-90°).",
+    "postop_surg5_title": "ACL Reconstruction with Meniscal Repair",
+    "postop_surg5_desc": "Achieve 0° extension on Day 1 (preventing Cyclops lesions). With posterior horn meniscal repair: cap flexion at <= 90° for 4-6 weeks to safeguard sutures.",
+    "postop_surg6_title": "Arthroscopic Rotator Cuff Repair & Clavicle Plating",
+    "postop_surg6_desc": "Abduction pillow sling worn 4-6 weeks. Only passive Codman pendulums and PROM allowed. Active arm elevation strictly forbidden to avoid suture pullout.",
+    "postop_redflags_heading": "Red Flag Clinical Warnings Requiring Immediate Surgical Review",
+    "postop_rf1_title": "Surgical Site Infection & Osteomyelitis Signs",
+    "postop_rf1_desc": "Fever >38°C, progressive erythema spreading beyond wound borders, purulent exudate, or wound dehiscence.",
+    "postop_rf2_title": "Deep Vein Thrombosis (DVT) Warning",
+    "postop_rf2_desc": "Severe calf tightness, acute pain on passive ankle dorsiflexion (positive Homans sign), unilateral pitting edema.",
+    "postop_rf3_title": "Hardware Failure, Implant Loosening or Fracture",
+    "postop_rf3_desc": "Sudden sharp crack or click on weight-bearing, audible crepitus, sudden angular limb deformity or limb shortening.",
+    "postop_rf4_title": "Complex Regional Pain Syndrome (CRPS / Sudeck Atrophy)",
+    "postop_rf4_desc": "Disproportionate burning pain, hypersensitivity (allodynia), shiny erythematous/cyanotic skin, severe stiffness.",
+    "postop_cta_btn": "Explore Post-Op & Fixation Rehabilitation Videos",
     "hero_badge": "INTERACTIVE BODY MAP & MECHANOTHERAPY",
     "hero_title": "Click The Area That's Troubling You",
     "hero_sub": "Want to unlock your body's hidden potential? Select any body region to explore the 3-phase evidence-based mechanotherapy rehabilitation protocol!",
@@ -9286,6 +9388,382 @@ const VIDEO_LIBRARY_CATALOG = [
     "regression_en": "Regression: Protected splinting with non-displaceable isometric contractions.",
     "progression_vi": "Nâng cấp: Từng bước nạp tải Heavy Slow Resistance (Phase 2 HSR) và rèn luyện sức mạnh góc tận FRC CARs.",
     "progression_en": "Progression: Transition to progressive HSR tempo loading and FRC end-range articular conditioning."
+  },
+{
+    "id": "postop_ankle_pumps_quad_setting",
+    "category": "post_op",
+    "phase": "post_op",
+    "zone": "knee",
+    "title_vi": "Bơm Mắt Cá Chân & Gồng Cơ Tĩnh Tứ Đầu Đùi (Phòng Huyết Khối DVT & Chống Ức Chế Thần Kinh Cơ)",
+    "title_en": "Ankle Pumps & Quad Setting Isometrics (DVT Prophylaxis & Arthrogenic Muscle Inhibition Relief)",
+    "videoUrl": "https://www.youtube.com/watch?v=y3YF4a8vTjA",
+    "duration": "03:45",
+    "duration_sec": 225,
+    "intensity": "Submaximal Isometric (40-60% MVC)",
+    "dosage_vi": "Bơm cổ chân: 20-30 lần/giờ khi thức. Gồng tứ đầu: 3 hiệp x 15 lần (giữ 5-10s mỗi lần)",
+    "dosage_en": "Ankle pumps: 20-30 reps/hour awake. Quad sets: 3 sets x 15 reps (5-10s hold each)",
+    "tempo": "5s hold - 3s relax",
+    "timestamps": [
+      {
+        "time": "00:15",
+        "timeSec": 15,
+        "label_vi": "Tư thế kê cao chân & Kỹ thuật bơm mắt cá",
+        "label_en": "Leg Elevation Setup & Ankle Pump Technique"
+      },
+      {
+        "time": "01:20",
+        "timeSec": 80,
+        "label_vi": "Gồng ép khoeo chân xuống đệm kích hoạt VMO",
+        "label_en": "Knee Extension Press Down for VMO Activation"
+      }
+    ],
+    "rationale_vi": "Tuần 0-2 sau mổ gãy xương chi dưới hoặc dây chằng, tràn dịch khớp kích hoạt phản xạ ức chế thần kinh cơ (AMI). Gồng tĩnh cơ tứ đầu đùi ép gối xuống giường giúp phục hồi khả năng phát xung thần kinh và ngăn teo cơ không sử dụng. Bơm mắt cá chân co bóp cơ bắp chân, kích hoạt bơm cơ tĩnh mạch (Venous Muscle Pump) chống ứ trệ tuần hoàn và dự phòng huyết khối tĩnh mạch sâu (DVT).",
+    "rationale_en": "During weeks 0-2 post-fracture fixation or ligament surgery, joint effusion triggers arthrogenic muscle inhibition (AMI). Submaximal quad sets restore motor cortex efferent drive without shear stress on implants. Active ankle pumps engage the soleus venous pump, drastically reducing venous stasis and preventing deep vein thrombosis (DVT).",
+    "common_errors_vi": [
+      "Nín thở khi gồng cơ gây tăng áp lực nội lồng ngực (Valsalva)",
+      "Dùng cơ mông hoặc cơ gập háng thay thế cơ tứ đầu đùi",
+      "Bỏ qua động tác bơm mắt cá trong ngày"
+    ],
+    "common_errors_en": [
+      "Holding breath during isometric contraction (Valsalva phenomenon)",
+      "Compensating with hip flexors or glutes instead of vastus medialis",
+      "Failing to perform hourly ankle pumps during immobilization"
+    ],
+    "regression_vi": "Đặt khăn cuộn mỏng dưới khoeo để dễ cảm nhận động tác ấn đè",
+    "regression_en": "Place a rolled towel under the popliteal fossa to cue downward pressing",
+    "progression_vi": "Thêm động tác gồng cơ tĩnh kết hợp nâng thẳng chân (Straight Leg Raise - SLR)",
+    "progression_en": "Progress to active Straight Leg Raise (SLR) with locked knee extension",
+    "surgical_correlation_vi": "Áp dụng ngay ngày 1 sau mổ kết hợp xương đùi, cẳng chân, mâm chày, mắt cá, thay khớp gối và tái tạo ACL.",
+    "surgical_correlation_en": "Indicated on Post-Op Day 1 for femur/tibia IM nails, tibial plateau plates, ankle ORIF, and ACL reconstruction."
+  },
+  {
+    "id": "postop_pwb_two_crutches_gait",
+    "category": "post_op",
+    "phase": "post_op",
+    "zone": "knee",
+    "title_vi": "Tập Tì Đè Tăng Dần Có Kiểm Soát Bằng 2 Nạng (PWB 25% – 50% & Kỹ Thuật Dáng Đi 3 Điểm)",
+    "title_en": "Controlled Partial Weight-Bearing (PWB 25-50% & 3-Point Crutch Gait Training)",
+    "videoUrl": "https://www.youtube.com/watch?v=J_u_xP7k8W8",
+    "duration": "05:10",
+    "duration_sec": 310,
+    "intensity": "25% - 50% Bodyweight Load Cell",
+    "dosage_vi": "Tập đi 10-15 phút/buổi, 3-4 buổi/ngày; kiểm soát cân trọng tải trên cân sức khỏe trước khi đi",
+    "dosage_en": "10-15 min sessions, 3-4x daily; calibrate load using a bathroom scale before walking",
+    "tempo": "Slow rhythmic gait cycle (Heel-to-toe)",
+    "timestamps": [
+      {
+        "time": "00:20",
+        "timeSec": 20,
+        "label_vi": "Đo chiều cao nạng chuẩn (cách nách 2-3 ngón tay)",
+        "label_en": "Crutch Height Adjustment (2-3 fingerbreadths below axilla)"
+      },
+      {
+        "time": "01:45",
+        "timeSec": 105,
+        "label_vi": "Kỹ thuật tì đè chạm ngón (TDWB) vs Tì một phần (PWB)",
+        "label_en": "Touch-Down Weight-Bearing vs Partial Weight-Bearing"
+      }
+    ],
+    "rationale_vi": "Theo Thuyết Biến Dạng Mô Perren và Định luật Wolff, các ổ gãy kết xương vững chắc tương đối (như đinh nội tủy hoặc nẹp bắc cầu) cần vi chuyển động cơ học (micromotion) dọc trục để kích hoạt nguyên bào xương tạo can xương. Đi 2 nạng tì đè tăng dần (PWB) cung cấp áp lực nén sinh lý có kiểm soát mà không gây cong gãy nẹp vít.",
+    "rationale_en": "Under Perren's strain theory and Wolff's law, secondary bone healing requires controlled axial micromotion (0.2-1mm). Progressive partial weight-bearing with bilateral axillary or elbow crutches introduces physiological compressive strain stimulating robust bridging callus without exceeding implant yield strength.",
+    "common_errors_vi": [
+      "Tì toàn bộ trọng lượng cơ thể lên hõm nách gây chèn ép đám rối thần kinh cánh tay",
+      "Nhảy lò cò 1 chân khiến khung chậu bị lệch và teo cơ bên mổ",
+      "Bỏ nạng quá sớm khi X-quang chưa có cầu can xương vững"
+    ],
+    "common_errors_en": [
+      "Bearing weight directly on axillary pads risking brachial plexus compression palsy",
+      "Hopping unilaterally creating pelvic asymmetry and disuse atrophy",
+      "Premature crutch weaning before radiographic bridging callus verification"
+    ],
+    "regression_vi": "Tì chạm ngón thăng bằng (Touch-down weight bearing, < 10% trọng lượng)",
+    "regression_en": "Regress to Touch-Down Weight-Bearing (TDWB, < 10% bodyweight)",
+    "progression_vi": "Chuyển sang đi 1 nạng bên đối diện khi bác sĩ cho phép tì đè 75%",
+    "progression_en": "Advance to single contralateral crutch when cleared for 75% PWB",
+    "surgical_correlation_vi": "Đặc biệt quan trọng trong gãy liên mấu chuyển xương đùi mổ DHS/PFNA, gãy thân xương đùi/cẳng chân mổ đinh nội tủy.",
+    "surgical_correlation_en": "Critical for intertrochanteric fractures treated with DHS/PFNA, and shaft fractures with intramedullary nails."
+  },
+  {
+    "id": "postop_heel_slides_aarom",
+    "category": "post_op",
+    "phase": "post_op",
+    "zone": "knee",
+    "title_vi": "Trượt Gót Chân & Vận Động Khớp Gối Chủ Động Có Trợ Giúp (AAROM Knee Mobilization)",
+    "title_en": "Heel Slides & Active-Assisted Knee Range of Motion (AAROM Arthrofibrosis Prevention)",
+    "videoUrl": "https://www.youtube.com/watch?v=FjC3_B8H1Y8",
+    "duration": "04:00",
+    "duration_sec": 240,
+    "intensity": "Gentle Stretch (VAS <= 3/10)",
+    "dosage_vi": "3 hiệp x 10-15 lần trượt, 2-3 lần/ngày, giữ 5 giây ở góc gập tối đa trong ngưỡng cho phép",
+    "dosage_en": "3 sets x 10-15 slides, 2-3x daily, 5-second end-range hold within cleared ROM limit",
+    "tempo": "3s slide in - 5s hold - 3s return",
+    "timestamps": [
+      {
+        "time": "00:15",
+        "timeSec": 15,
+        "label_vi": "Dùng khăn hoặc dây đai trợ lực kéo trượt gót",
+        "label_en": "Using a Towel or Strap to Assist Heel Slide"
+      },
+      {
+        "time": "01:30",
+        "timeSec": 90,
+        "label_vi": "Duy trì duỗi thẳng 0° tuyệt đối giữa các lần trượt",
+        "label_en": "Ensuring Full Terminal Extension (0°) Between Reps"
+      }
+    ],
+    "rationale_vi": "Bất động khớp gối sau mổ chấn thương nhanh chóng gây kết dính bao hoạt dịch, rút ngắn dây chằng và tăng sinh bao xơ (Arthrofibrosis). Trượt gót chân chủ động có trợ giúp kích thích dịch khớp bôi trơn bề mặt sụn, duy trì chuyển động trượt xoay sinh lý của lồi cầu đùi trên mâm chày mà không gây lực xé (shear force) lên các cấu trúc tái tạo.",
+    "rationale_en": "Prolonged postoperative knee immobilization accelerates capsular adhesions and arthrofibrosis. Active-assisted heel slides promote synovial fluid distribution, nourish hyaline cartilage, and restore physiologic roll-and-glide mechanics without harmful shear strain on surgical repairs.",
+    "common_errors_vi": [
+      "Gập gối thô bạo vượt quá góc bác sĩ mổ cho phép trong 4 tuần đầu",
+      "Nhấc đùi lên cao thay vì giữ gót chân trượt sát mặt giường",
+      "Quên phục hồi duỗi thẳng hoàn toàn 0°"
+    ],
+    "common_errors_en": [
+      "Aggressively forcing flexion past prescribed ROM constraints during early graft maturation",
+      "Lifting thigh off table instead of keeping heel gliding smoothly",
+      "Neglecting full terminal knee extension (0°)"
+    ],
+    "regression_vi": "Tập trượt gót tựa chân lên tường (Wall slides) có trọng lực hỗ trợ gập gối",
+    "regression_en": "Regress to gravity-assisted wall heel slides",
+    "progression_vi": "Tập ngồi thả chân bờ giường (Seated edge-of-bed knee flexion/extension)",
+    "progression_en": "Progress to active seated edge-of-table pendulum swings and eccentric control",
+    "surgical_correlation_vi": "Phác đồ chuẩn sau mổ kết hợp xương bánh chè, mâm chày, nẹp đầu dưới xương đùi, và tái tạo dây chằng chéo.",
+    "surgical_correlation_en": "Standard protocol following patellar ORIF, tibial plateau plating, distal femur plates, and ligament repairs."
+  },
+  {
+    "id": "postop_tibial_plateau_plate_lcp",
+    "category": "post_op",
+    "phase": "post_op",
+    "zone": "knee",
+    "title_vi": "Phục Hồi Sau Mổ Nẹp Khóa Gãy Mâm Chày (Bảo Vệ Mặt Sụn Khớp & Vận Động Không Tì Đè 6 Tuần)",
+    "title_en": "Post-Op Tibial Plateau Locking Plate Rehabilitation (Articular Protection & 6-Week NWB Protocol)",
+    "videoUrl": "https://www.youtube.com/watch?v=0w_3m6rT5zA",
+    "duration": "06:20",
+    "duration_sec": 380,
+    "intensity": "Non-Weight Bearing (NWB)",
+    "dosage_vi": "Tuần 0-6: NWB nghiêm ngặt khi đứng đi lại. Tập ROM gối trên máy CPM hoặc chủ động có trợ giúp 0-90°",
+    "dosage_en": "Weeks 0-6: Strict NWB during ambulation. Active-assisted knee ROM 0-90° or CPM machine",
+    "tempo": "Controlled smooth cadence",
+    "timestamps": [
+      {
+        "time": "00:25",
+        "timeSec": 25,
+        "label_vi": "Giải thích cơ chế bảo vệ mặt khớp mâm chày không bị lún",
+        "label_en": "Mechanism of Articular Surface Protection Against Subsidence"
+      },
+      {
+        "time": "02:10",
+        "timeSec": 130,
+        "label_vi": "Bài tập co cơ cẳng chân & di động xương bánh chè",
+        "label_en": "Open Chain Ankle & Patellar Mobilization Exercises"
+      }
+    ],
+    "rationale_vi": "Gãy mâm chày là gãy nội khớp (Schatzker I-VI). Mặc dù nẹp vít khóa cung cấp độ vững cấu trúc tốt, xương xốp dưới sụn cần tối thiểu 6-8 tuần để tích hợp và can hóa. Tì đè sớm trước thời gian này sẽ gây lún mặt khớp thứ phát, lệch trục chi và dẫn tới thoái hóa khớp sớm nghiêm trọng. Do đó cần tuân thủ nghiêm ngặt NWB kèm tập ROM sớm không tải.",
+    "rationale_en": "Tibial plateau fractures involve articular surface reconstruction (Schatzker classification). While locking plates provide angular stability, cancellous subchondral bone consolidation requires 6-8 weeks. Early premature axial loading causes subchondral collapse, step-off deformity, and secondary osteoarthritis. Strict NWB coupled with early unloaded AAROM is paramount.",
+    "common_errors_vi": [
+      "Tì chân xuống đất sớm do cảm thấy ít đau sau mổ",
+      "Bất động cứng gối trong nẹp suốt 6 tuần làm cứng khớp vĩnh viễn",
+      "Không chụp kiểm tra X-quang đối soát ở tuần thứ 6"
+    ],
+    "common_errors_en": [
+      "Premature weight-bearing due to post-surgical analgesia",
+      "Immobilizing the knee rigidly for 6 weeks inducing irreversible arthrofibrosis",
+      "Skipping the Week 6 radiographic verification X-ray before starting PWB"
+    ],
+    "regression_vi": "Dùng máy thụ động CPM (Continuous Passive Motion) nếu đau nhiều",
+    "regression_en": "Utilize CPM device under physical therapist supervision if pain inhibits active movement",
+    "progression_vi": "Tuần 6-8: Khởi đầu tì chạm chân (TDWB) sau khi X-quang xác nhận mặt khớp phẳng vững",
+    "progression_en": "Weeks 6-8: Transition to PWB (25%) once radiographic evaluation confirms stable joint line",
+    "surgical_correlation_vi": "Gãy mâm chày trong, mâm chày ngoài và gãy hai mâm chày (Schatzker type II, IV, V, VI) kết hợp nẹp khóa và ghép xương xốp.",
+    "surgical_correlation_en": "Indicated for Schatzker Type II-VI fractures reconstructed with LCP plates and subchondral bone grafting."
+  },
+  {
+    "id": "postop_im_nail_femur_tibia_rehab",
+    "category": "post_op",
+    "phase": "post_op",
+    "zone": "knee",
+    "title_vi": "Phục Hồi Sau Mổ Đinh Nội Tủy Có Chốt Xương Đùi & Cẳng Chân (Tì Đè Dọc Trục Kích Hoạt Can Xương)",
+    "title_en": "Intramedullary Nail (IMN) Femur & Tibia Rehabilitation (Axial Loading for Callus Stimulation)",
+    "videoUrl": "https://www.youtube.com/watch?v=3b9Kx9oP7rU",
+    "duration": "05:40",
+    "duration_sec": 340,
+    "intensity": "Progressive Axial Loading (PWB to FWB)",
+    "dosage_vi": "Tuần 2-4: Tì 25-50% PWB. Tuần 6-8: Tiến tới FWB khi có cầu can xương X-quang",
+    "dosage_en": "Weeks 2-4: 25-50% PWB. Weeks 6-8: Progress to FWB as bridging callus appears on AP/lateral X-rays",
+    "tempo": "Controlled gait cadence",
+    "timestamps": [
+      {
+        "time": "00:20",
+        "timeSec": 20,
+        "label_vi": "Đặc tính chia sẻ tải trọng (Load-sharing) của đinh nội tủy",
+        "label_en": "Load-Sharing Biomechanics of Intramedullary Nails"
+      },
+      {
+        "time": "02:00",
+        "timeSec": 120,
+        "label_vi": "Bài tập đứng dồn trọng lượng qua lại giữa 2 chân",
+        "label_en": "Weight-Shifting Balance Exercises in Parallel Bars"
+      }
+    ],
+    "rationale_vi": "Đinh nội tủy có chốt là thiết bị chia sẻ tải trọng (Load-sharing device) đặt ngay trong trục cơ học của xương dài. Khác với nẹp vít (Load-bearing), đinh nội tủy chuyển trực tiếp lực ép dọc trục qua ổ gãy, kích thích sự hình thành can xương thứ cấp ngoài màng xương nhanh chóng và giảm nguy cơ gãy dụng cụ.",
+    "rationale_en": "Interlocking intramedullary nails act as load-sharing implants positioned along the anatomical axis. Unlike load-bearing plates, IM nails permit controlled axial compression across the fracture site, accelerating secondary periosteal bridging callus according to Wolff's law while minimizing fatigue failure.",
+    "common_errors_vi": [
+      "Xoay vặn chi quá mức khi xương chưa có can liên kết",
+      "Sợ hãi không dám tì đè khiến xương bị chậm liền (Delayed union)",
+      "Tập nâng chân nghiêng (Abduction) quá mạnh khi gãy cổ/thân xương đùi"
+    ],
+    "common_errors_en": [
+      "Excessive rotational/torsional torque prior to cortical bridging",
+      "Kinesiophobia and prolonged zero-loading leading to delayed union",
+      "Vigorous open-chain hip abduction against gravity with proximal femoral implants"
+    ],
+    "regression_vi": "Đứng tập dồn trọng lực trong thanh song song hoặc bám mép bàn vững",
+    "regression_en": "Perform weight-shifting drills inside parallel bars or holding sturdy countertop",
+    "progression_vi": "Bài tập đạp xe tại chỗ (Stationary cycling) và bước lên bục thấp (Step-ups)",
+    "progression_en": "Advance to stationary cycling and low step-up eccentric descent drills",
+    "surgical_correlation_vi": "Gãy thân xương đùi, gãy dưới mấu chuyển, gãy thân xương chày kết hợp đinh nội tủy chốt ngang có doa hoặc không doa ống tủy.",
+    "surgical_correlation_en": "Indicated for femoral shaft, subtrochanteric, and tibial diaphyseal fractures treated with reamed/unreamed IM nails."
+  },
+  {
+    "id": "postop_patella_tension_band_wiring",
+    "category": "post_op",
+    "phase": "post_op",
+    "zone": "knee",
+    "title_vi": "Phục Hồi Sau Mổ Néo Ép Số 8 Gãy Xương Bánh Chè (Bảo Vệ Cơ Chế Duỗi Gối & Phục Hồi ROM)",
+    "title_en": "Patellar Fracture Tension Band Wiring Rehabilitation (Extensor Mechanism Protection & ROM Progression)",
+    "videoUrl": "https://www.youtube.com/watch?v=7h_Kq_9V2a8",
+    "duration": "04:50",
+    "duration_sec": 290,
+    "intensity": "Locked Extension in Ambulation / Passive Flexion",
+    "dosage_vi": "Khoá nẹp 0° khi đi lại. Tuần 0-2: ROM 0-30°. Tuần 2-4: 0-60°. Tuần 4-6: 0-90°. Tuần 6+: Vượt 90°",
+    "dosage_en": "Brace locked at 0° for ambulation. Weeks 0-2: ROM 0-30°. Weeks 2-4: 0-60°. Weeks 4-6: 0-90°. Week 6+: >90°",
+    "tempo": "Slow controlled flexion",
+    "timestamps": [
+      {
+        "time": "00:15",
+        "timeSec": 15,
+        "label_vi": "Nguyên lý biến lực căng bề mặt thành lực nén ổ gãy của néo ép",
+        "label_en": "Tension Band Principle: Converting Tensile Strain into Interfragmentary Compression"
+      },
+      {
+        "time": "01:40",
+        "timeSec": 100,
+        "label_vi": "Kỹ thuật di động xương bánh chè 4 hướng chống dính",
+        "label_en": "Superior/Inferior/Medial/Lateral Patellar Glides"
+      }
+    ],
+    "rationale_vi": "Nguyên lý néo ép số 8 (Tension Band Wiring) chuyển đổi lực kéo căng cực đại của cơ tứ đầu đùi khi gập gối thành lực nén ép động ép chặt các diện gãy bánh chè. Tuy nhiên, gập gối quá 90° trong 4 tuần đầu có thể làm căng đứt chỉ thép hoặc bật đinh Kirschner. Bắt buộc phải khóa nẹp thẳng gối 0° khi tì đè đi lại để bảo vệ tuyệt đối hệ thống duỗi gối.",
+    "rationale_en": "Tension band wiring converts anterior distraction forces from the quadriceps into dynamic compressive forces across the articular surface during flexion. However, flexion beyond 90° in the first 4 weeks risks Kirschner wire migration or wire breakage. Walking requires a hinged brace locked at 0° extension to shield the extensor mechanism.",
+    "common_errors_vi": [
+      "Đi lại không khóa nẹp gối thẳng làm co kéo bật đinh Kirschner",
+      "Không tập di động xương bánh chè dẫn tới xơ dính bánh chè - lồi cầu đùi",
+      "Tập đá tạ tạ tự do chuỗi động mở quá sớm"
+    ],
+    "common_errors_en": [
+      "Ambulating with an unlocked knee brace triggering K-wire displacement",
+      "Neglecting patellofemoral joint mobilizations causing patellar baja or stiffness",
+      "Initiating heavy open-chain leg extensions prematurely"
+    ],
+    "regression_vi": "Di động thụ động xương bánh chè trong tư thế gối duỗi thẳng hoàn toàn",
+    "regression_en": "Perform superior-inferior patellar mobilizations with relaxed quadriceps in full extension",
+    "progression_vi": "Từ tuần 6: Bắt đầu bài tập co cơ chuỗi động đóng (Leg press góc hẹp 0-45°)",
+    "progression_en": "From Week 6: Begin closed kinetic chain leg press in 0-45° range",
+    "surgical_correlation_vi": "Gãy ngang xương bánh chè, gãy cực dưới bánh chè kết hợp 2 đinh Kirschner và chỉ thép néo ép số 8.",
+    "surgical_correlation_en": "Transverse patellar fractures and inferior pole avulsions repaired via AO tension band technique."
+  },
+  {
+    "id": "postop_acl_meniscus_repair_protocol",
+    "category": "post_op",
+    "phase": "post_op",
+    "zone": "knee",
+    "title_vi": "Phục Hồi Sau Mổ Tái Tạo Dây Chằng Chéo Trước (ACL) & Khâu Bảo Tồn Sụn Chêm",
+    "title_en": "ACL Reconstruction with Meniscal Repair Rehabilitation (Graft Ligamentization & Suture Protection)",
+    "videoUrl": "https://www.youtube.com/watch?v=5z_Nq9_9Q1s",
+    "duration": "07:15",
+    "duration_sec": 435,
+    "intensity": "Graft-Safe Biomechanics",
+    "dosage_vi": "Duỗi thẳng 0° ngay ngày 1. Giới hạn gập gối <= 90° trong 4-6 tuần đầu để bảo vệ đường khâu sụn chêm",
+    "dosage_en": "Full extension (0°) Day 1. Restrict flexion to <= 90° for first 4-6 weeks to safeguard meniscal sutures",
+    "tempo": "Strict isometric to controlled concentric",
+    "timestamps": [
+      {
+        "time": "00:30",
+        "timeSec": 30,
+        "label_vi": "Tầm quan trọng của lấy lại duỗi gối 0° tuyệt đối ngay tuần 1",
+        "label_en": "Importance of Achieving Immediate Full Extension (0°) in Week 1"
+      },
+      {
+        "time": "02:15",
+        "timeSec": 135,
+        "label_vi": "Tư thế cấm gập sâu quá 90° khi có khâu sụn chêm sừng sau",
+        "label_en": "Biomechanics of Posterior Horn Meniscal Suture Protection (<90° Flexion)"
+      }
+    ],
+    "rationale_vi": "Mảnh ghép ACL trải qua giai đoạn chuyển hóa dây chằng (Ligamentization) yếu nhất vào tuần 6-12 sau mổ. Nếu kèm khâu sụn chêm (đặc biệt sừng sau), gập gối sâu >90° tạo áp lực nén và trượt cực lớn làm rách bục đường chỉ khâu sụn chêm. Phục hồi cần cân bằng: lấy lại duỗi thẳng 0° tức thì chống dính khớp, nhưng giới hạn gập sâu <90° và hoãn tì đè sâu trong 4-6 tuần đầu.",
+    "rationale_en": "The ACL graft undergoes a vulnerable ligamentization and revascularization phase between Weeks 6-12. Concurrent meniscal repair (especially posterior horn) is subject to high hoop stresses and compressive shear beyond 90° of flexion. Rehab must secure full 0° terminal extension while strictly capping flexion at 90° during early meniscal fibrocartilage healing.",
+    "common_errors_vi": [
+      "Kê gối dưới khoeo chân khi nằm ngủ làm mất duỗi thẳng 0° vĩnh viễn (Cyclops lesion)",
+      "Tập đá chân chuỗi mở (Open chain leg extension) 45-0° làm căng đứt mảnh ghép",
+      "Ngồi xổm hoặc nhảy tiếp đất quá sớm trước 6 tháng"
+    ],
+    "common_errors_en": [
+      "Placing pillows beneath the knee in bed creating irreversible flexion contracture",
+      "Aggressive open kinetic chain terminal extensions (45-0°) placing peak anterior shear on graft",
+      "Deep squatting or jumping prior to 6-month biological graft maturity"
+    ],
+    "regression_vi": "Nằm sấp thõng gối cuối giường (Prone knee hang) để trọng lực kéo duỗi thẳng 0°",
+    "regression_en": "Perform prone knee hangs off bed edge to achieve passive terminal extension",
+    "progression_vi": "Tháng thứ 3-4: Bắt đầu chạy thẳng trục trên máy chạy, tập thăng bằng Y-Balance",
+    "progression_en": "Months 3-4: Progress to straight-line treadmill jogging and Y-Balance dynamic stability drills",
+    "surgical_correlation_vi": "Nội soi tái tạo ACL bằng gân hamstring hoặc gân bánh chè BTB, kèm khâu sụn chêm kỹ thuật All-Inside / Inside-Out.",
+    "surgical_correlation_en": "Arthroscopic ACL reconstruction (Hamstring/BTB autograft) combined with All-Inside/Inside-Out meniscal repairs."
+  },
+  {
+    "id": "postop_rotator_cuff_codman_pendulum",
+    "category": "post_op",
+    "phase": "post_op",
+    "zone": "shoulder",
+    "title_vi": "Bài Tập Con Lắc Codman & Vận Động Thụ Động Sau Mổ Khâu Chóp Xoay Khớp Vai (Bảo Vệ Chỉ Neo Gân)",
+    "title_en": "Codman Pendulum & Passive Range of Motion (PROM) Post Rotator Cuff Repair (Suture Anchor Protection)",
+    "videoUrl": "https://www.youtube.com/watch?v=0hFpTq1D7_g",
+    "duration": "04:30",
+    "duration_sec": 270,
+    "intensity": "100% Passive (Không dùng cơ vai chủ động)",
+    "dosage_vi": "Tuần 0-6: Đeo đai túi có gối dạng vai 24/24. Con lắc Codman: 3 hiệp x 20 vòng nhẹ nhàng, 3 lần/ngày",
+    "dosage_en": "Weeks 0-6: Abduction sling worn 24/7. Codman pendulums: 3 sets x 20 gentle circles, 3x daily",
+    "tempo": "Passive momentum driven by trunk sway",
+    "timestamps": [
+      {
+        "time": "00:20",
+        "timeSec": 20,
+        "label_vi": "Đung đưa thân mình để tạo chuyển động con lắc vai (không co cơ vai)",
+        "label_en": "Using Torso Sway to Drive Passive Arm Oscillation (Zero Deltoid/Cuff Fire)"
+      },
+      {
+        "time": "01:50",
+        "timeSec": 110,
+        "label_vi": "Vận động chủ động bàn tay, cổ tay và cẳng tay chống phù nề",
+        "label_en": "Active Distal Hand, Wrist, and Forearm Pumping"
+      }
+    ],
+    "rationale_vi": "Gân trên gai (Supraspinatus) được khâu đính lại vào mấu động lớn xương cánh tay bằng các vít neo sinh học. Trong 6 tuần đầu, điểm bám chỉ được giữ bằng lực cơ học của sợi chỉ (chưa có tích hợp mô sợi - xương). Nghiêm cấm tự nâng tay chủ động vì lực co cơ deltoid và chóp xoay sẽ làm tuột chỉ neo ngay lập tức. Bài tập con lắc Codman lợi dụng quán tính chuyển động thân mình giúp bôi trơn ổ chảo - cánh tay hoàn toàn thụ động.",
+    "rationale_en": "The repaired rotator cuff tendon (supraspinatus) relies strictly on suture anchor purchase for the first 6 weeks prior to enthesis fibrocartilage integration. Active arm elevation produces destructive contractile tension pulling anchors out of the greater tuberosity. Codman pendulums utilize trunk momentum to passively oscillate the humerus, maintaining capsular compliance without activating the rotator cuff.",
+    "common_errors_vi": [
+      "Tự gồng cơ vai để quay cánh tay thay vì đung đưa toàn thân",
+      "Tháo đai treo dạng vai nằm ngủ làm gân bị ép thiếu máu cục bộ",
+      "Nâng vật nặng hoặc chống tay xuống giường quá sớm"
+    ],
+    "common_errors_en": [
+      "Actively firing shoulder muscles to move arm instead of relying on torso sway",
+      "Removing abduction pillow sling during sleep creating hypoperfusion and tension",
+      "Weight-bearing through arm or pushing up from chair prematurely"
+    ],
+    "regression_vi": "Tựa trán và tay lành lên bàn, thả lỏng hoàn toàn cánh tay bên mổ như con lắc đồng hồ",
+    "regression_en": "Support torso on sturdy table with good arm, letting operative arm hang dead weight",
+    "progression_vi": "Tuần 6+: Bắt đầu vận động chủ động có trợ giúp (AAROM bằng gậy hoặc dây ròng rọc)",
+    "progression_en": "Week 6+: Initiate Active-Assisted ROM with pulley or wand under clinical supervision",
+    "surgical_correlation_vi": "Nội soi khâu rách chóp xoay vai (Rotator Cuff Repair - Single/Double Row Suture Bridge) và nẹp xương đòn.",
+    "surgical_correlation_en": "Indicated for arthroscopic rotator cuff repairs (Single/Double Row Suture Bridge) and clavicle plating."
   }
 ];
 
@@ -10594,6 +11072,7 @@ function filterVideos() {
     if (category === 'p2' && v.phase !== 'p2') return false;
     if (category === 'p3' && v.phase !== 'p3') return false;
     if (category === 'surgical' && v.category !== 'surgical_masterclass' && v.phase !== 'anatomy') return false;
+    if (category === 'post_op' && v.category !== 'post_op' && v.phase !== 'post_op') return false;
 
     // 2. Zone filter
     if (zone !== 'all') {
@@ -10662,6 +11141,9 @@ function renderVideoGrid() {
     if (v.category === 'surgical_masterclass' || v.phase === 'anatomy') {
       phaseBadgeText = lang === 'en' ? 'Surgical Anatomy' : 'Giải Phẫu Ngoại Khoa';
       phaseClass = 'surgical';
+    } else if (v.category === 'post_op' || v.phase === 'post_op') {
+      phaseBadgeText = lang === 'en' ? 'Post-Op Osteosynthesis' : 'Sau Mổ & Kết Xương';
+      phaseClass = 'postop';
     } else if (v.phase === 'p1') {
       phaseBadgeText = lang === 'en' ? 'P1 Isometric' : 'GĐ 1: Gồng Tĩnh';
     } else if (v.phase === 'p2') {
@@ -10724,6 +11206,8 @@ function openVideoModal(videoId) {
   if (badgeEl) {
     if (video.category === 'surgical_masterclass') {
       badgeEl.textContent = lang === 'en' ? 'Surgical Anatomy Masterclass' : 'Giải Phẫu Ngoại Khoa Chuyên Sâu';
+    } else if (video.category === 'post_op' || video.phase === 'post_op') {
+      badgeEl.textContent = lang === 'en' ? 'Post-Op Osteosynthesis Rehab' : 'Phục Hồi Sau Mổ & Kết Xương';
     } else {
       badgeEl.textContent = (video.phase || 'p1').toUpperCase() + ' • ' + (video.zone || '').toUpperCase();
     }
@@ -11077,7 +11561,7 @@ function initTabNavigation() {
   const hash = window.location.hash;
   if (hash) {
     const tabFromHash = hash.replace(/^#/, '').replace(/^tab-/, '');
-    const validTabs = ['body-map', 'calculator', 'framework', 'video-library', 'science', 'testimonials', 'apply'];
+    const validTabs = ['body-map', 'calculator', 'framework', 'post-op', 'video-library', 'science', 'testimonials', 'apply'];
     if (validTabs.includes(tabFromHash)) {
       switchMainTab(tabFromHash);
     }
@@ -11092,8 +11576,24 @@ function initTabNavigation() {
   });
 }
 
+// Helper to navigate to Video Library filtered by Post-Op
+function viewPostOpVideos() {
+  if (typeof switchMainTab === 'function') {
+    switchMainTab('video-library');
+  }
+  if (!isBrowser) return;
+  setTimeout(() => {
+    const catPills = document.getElementById('video-cat-pills');
+    if (catPills) {
+      const btn = catPills.querySelector('[data-cat="post_op"]');
+      if (btn) btn.click();
+    }
+  }, 100);
+}
+
 // Global browser window assignment
 if (typeof window !== 'undefined') {
+  window.viewPostOpVideos = viewPostOpVideos;
   window.switchMainTab = switchMainTab;
   window.triggerPWAInstall = triggerPWAInstall;
   window.initPWA = initPWA;
@@ -11116,6 +11616,7 @@ if (isBrowser) {
 // Node.js Module Export for Tests and Downstream Runners
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
+    viewPostOpVideos,
     TRANSLATIONS,
     DOTS,
     EXERCISE_DATA,

@@ -68,6 +68,9 @@
         <button type="button" class="nav-tab-btn" data-tab-target="video-library" onclick="switchMainTab('video-library')">
           <i class="fa-solid fa-circle-play"></i> <span data-i18n="nav_library">Thư viện video</span>
         </button>
+        <button type="button" class="nav-tab-btn" data-tab-target="post-op" onclick="switchMainTab('post-op')">
+          <i class="fa-solid fa-bone"></i> <span data-i18n="nav_postop">Sau mổ & Kết xương</span>
+        </button>
         <button type="button" class="nav-tab-btn" data-tab-target="science" onclick="switchMainTab('science')">
           <i class="fa-solid fa-book-medical"></i> <span data-i18n="nav_science">Cơ chế khoa học</span>
         </button>
@@ -121,6 +124,9 @@
       <a href="#tab-framework" class="drawer-link" onclick="switchMainTab('framework'); closeDrawer(); return false;">
         <i class="fa-solid fa-calendar-week"></i> <span data-i18n="nav_framework">Lộ trình 12 tuần</span>
       </a>
+      <a href="#tab-post-op" class="drawer-link" onclick="switchMainTab('post-op'); closeDrawer(); return false;">
+        <i class="fa-solid fa-bone"></i> <span data-i18n="nav_postop">Sau mổ & Kết xương</span>
+      </a>
       <a href="#tab-video-library" class="drawer-link" onclick="switchMainTab('video-library'); closeDrawer(); return false;">
         <i class="fa-solid fa-circle-play"></i> <span data-i18n="nav_library">Thư viện video</span>
       </a>
@@ -155,17 +161,17 @@
       <i class="fa-solid fa-calculator"></i>
       <span data-i18n="nav_calc_short">Kê đơn</span>
     </button>
-    <button type="button" class="seg-btn" data-tab="framework" onclick="switchMainTab('framework')">
-      <i class="fa-solid fa-calendar-check"></i>
-      <span data-i18n="nav_fw_short">12 Tuần</span>
+    <button type="button" class="seg-btn" data-tab="post-op" onclick="switchMainTab('post-op')">
+      <i class="fa-solid fa-bone"></i>
+      <span data-i18n="nav_postop_short">Sau mổ</span>
     </button>
     <button type="button" class="seg-btn" data-tab="video-library" onclick="switchMainTab('video-library')">
       <i class="fa-solid fa-play"></i>
       <span data-i18n="nav_vid_short">Video</span>
     </button>
-    <button type="button" class="seg-btn" data-tab="science" onclick="switchMainTab('science')">
-      <i class="fa-solid fa-dna"></i>
-      <span data-i18n="nav_sci_short">Cơ chế</span>
+    <button type="button" class="seg-btn" data-tab="framework" onclick="switchMainTab('framework')">
+      <i class="fa-solid fa-calendar-check"></i>
+      <span data-i18n="nav_fw_short">12 Tuần</span>
     </button>
   </div>
 
@@ -596,6 +602,7 @@
             <button type="button" class="video-cat-btn" data-cat="p1" data-i18n="vid_cat_p1">GĐ 1: Gồng Tĩnh (Isometric)</button>
             <button type="button" class="video-cat-btn" data-cat="p2" data-i18n="vid_cat_p2">GĐ 2: Kháng Lực Chậm (HSR)</button>
             <button type="button" class="video-cat-btn" data-cat="p3" data-i18n="vid_cat_p3">GĐ 3: Đàn Hồi & Góc Tận</button>
+            <button type="button" class="video-cat-btn" data-cat="post_op" data-i18n="vid_cat_postop">Sau Mổ & Kết Xương</button>
             <button type="button" class="video-cat-btn" data-cat="surgical" data-i18n="vid_cat_surgical">Giải Phẫu Ngoại Khoa</button>
           </div>
 
@@ -625,6 +632,214 @@
         <i class="fa-solid fa-film"></i>
         <p data-i18n="vid_empty_results">Không tìm thấy bài tập phù hợp với bộ lọc đã chọn.</p>
         <button type="button" class="btn-secondary" id="video-reset-filters-btn">Đặt lại bộ lọc</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- POST-OPERATIVE ORTHOPEDIC TRAUMA & OSTEOSYNTHESIS SECTION -->
+  <section id="post-op" class="postop-section app-tab-pane">
+    <div class="section-container">
+      <div class="section-heading text-center">
+        <div class="badge-tag postop-badge" data-i18n="postop_badge">Y HỌC PHỤC HỒI CHẤN THƯƠNG CHỈNH HÌNH & KẾT XƯƠNG</div>
+        <h2 class="section-title" data-i18n="postop_title">Phục Hồi Chức Năng Sau Mổ Kết Xương & Phẫu Thuật Tái Tạo</h2>
+        <p class="section-subtitle" data-i18n="postop_sub">Dựa trên nguyên lý vững chắc sinh học của Hiệp Hội Kết Xương Thế Giới (AO Foundation) và Thuyết biến dạng mô (Tissue Strain Theory - S.M. Perren) — Tái tạo xương vững bền, ngăn ngừa tiêu xương và biến chứng gãy nẹp vít.</p>
+      </div>
+
+      <!-- AO Stability Principles: Absolute vs Relative Stability -->
+      <div class="postop-block">
+        <h3 class="postop-block-title"><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="postop_ao_heading">1. Hai Trụ Cột Vững Chắc Của AO Foundation & Cơ Chế Liền Xương</span></h3>
+        <div class="postop-ao-grid">
+          <div class="postop-ao-card absolute-card">
+            <div class="ao-badge"><i class="fa-solid fa-compress"></i> Vững Chắc Tuyệt Đối (Strain &lt; 2%)</div>
+            <h4 data-i18n="postop_abs_title">Vững Chắc Tuyệt Đối (Absolute Stability) & Liền Xương Trực Tiếp</h4>
+            <p data-i18n="postop_abs_desc">Áp dụng cho nẹp nén ép (DCP), vít ép xốp rách mâm chày, mắt cá chân và néo ép số 8 bánh chè. Không có cử động vi thể giữa các diện gãy (Strain &lt; 2%). Xương liền trực tiếp qua các ống Harvers xuyên qua khe gãy mà KHÔNG tạo can xương sụn bên ngoài. Tập biên độ khớp sớm nhưng tăng tải trọng trục phải kiểm soát chặt chẽ.</p>
+          </div>
+          <div class="postop-ao-card relative-card">
+            <div class="ao-badge"><i class="fa-solid fa-arrows-split-up-and-left"></i> Vững Chắc Tương Đối (Strain 2-10%)</div>
+            <h4 data-i18n="postop_rel_title">Vững Chắc Tương Đối (Relative Stability) & Liền Xương Gián Tiếp</h4>
+            <p data-i18n="postop_rel_desc">Áp dụng cho Đinh nội tủy có chốt (Interlocking Nail) xương đùi/cẳng chân, nẹp bắc cầu (Bridging LCP) và khung cố định ngoài. Cho phép cử động vi thể đàn hồi (Micro-motion, Strain 2-10%), kích hoạt tạo khối can xương sụn (Callus formation) khổng lồ. Tải trọng dọc trục sớm có kiểm soát (Axial micromotion) giúp kích thích liền xương nhanh hơn.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4-Phase Weight-Bearing Progression Timeline -->
+      <div class="postop-block">
+        <h3 class="postop-block-title"><i class="fa-solid fa-timeline"></i> <span data-i18n="postop_timeline_heading">2. Lộ Trình 4 Giai Đoạn Chịu Tải & Phục Hồi Sinh Học</span></h3>
+        <div class="postop-timeline-grid">
+          <!-- Phase 1 -->
+          <div class="postop-phase-card">
+            <div class="phase-header phase-p1">
+              <span class="phase-badge" data-i18n="postop_p1_badge">Giai Đoạn 1: Tuần 0 – 2</span>
+              <h4 data-i18n="postop_p1_title">GĐ 1 (Tuần 0–2): Bảo Vệ Vết Mổ, Giảm Phù Nề & Phòng Ngừa Huyết Khối (DVT)</h4>
+            </div>
+            <div class="phase-body">
+              <div class="phase-meta">
+                <span class="meta-item"><i class="fa-solid fa-person-walking"></i> <strong data-i18n="postop_p1_weight">Chịu tải: Không chịu tải (NWB) hoặc Chạm ngón chân giữ thăng bằng (TDWB 10-15kg)</strong></span>
+              </div>
+              <p class="phase-bio" data-i18n="postop_p1_bio">Giai đoạn viêm cấp tính và bọc máu tụ quanh ổ gãy. Vết thương mổ cần bảo đảm tưới máu tốt, tránh căng phù nề mô mềm.</p>
+              <div class="phase-rx">
+                <strong data-i18n="postop_p1_rx">Y lệnh lâm sàng: Bơm cổ chân (Ankle pumps) 30 lần mỗi giờ; gồng tĩnh cơ tứ đầu đùi (Quad sets) và nâng thẳng chân (SLR có nẹp khóa gối); kê cao chi hơn tim 20cm; mang vớ áp lực y khoa phòng DVT.</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="postop-phase-card">
+            <div class="phase-header phase-p2">
+              <span class="phase-badge" data-i18n="postop_p2_badge">Giai Đoạn 2: Tuần 2 – 6</span>
+              <h4 data-i18n="postop_p2_title">GĐ 2 (Tuần 2–6): Can Xương Mềm, Kích Hoạt Tải Trọng Từng Phần (PWB) & Tầm Vận Động</h4>
+            </div>
+            <div class="phase-body">
+              <div class="phase-meta">
+                <span class="meta-item"><i class="fa-solid fa-person-walking"></i> <strong data-i18n="postop_p2_weight">Chịu tải: Tải trọng từng phần (PWB 25% -> 50% trọng lượng cơ thể với 2 nạng nách)</strong></span>
+              </div>
+              <p class="phase-bio" data-i18n="postop_p2_bio">Tế bào sụn và nguyên bào sợi tạo can sụn mềm (Soft callus). Đòi hỏi lực nén vi thể kích thích nhưng cấm lực vặn xoắn (torsional stress).</p>
+              <div class="phase-rx">
+                <strong data-i18n="postop_p2_rx">Y lệnh lâm sàng: Vận động khớp chủ động có trợ giúp (AAROM) đạt 0-90° gối/khuỷu; đạp xe tĩnh không kháng lực (đạt vòng quay tròn); tập đứng trụ 2 nạng trên cân đo tải trọng chính xác.</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="phase-header-wrap postop-phase-card">
+            <div class="phase-header phase-p3">
+              <span class="phase-badge" data-i18n="postop_p3_badge">Giai Đoạn 3: Tuần 6 – 12</span>
+              <h4 data-i18n="postop_p3_title">GĐ 3 (Tuần 6–12): Can Xương Cứng, Chịu Tải Toàn Bộ (FWB) & Tái Cấu Trúc Bè Xương</h4>
+            </div>
+            <div class="phase-body">
+              <div class="phase-meta">
+                <span class="meta-item"><i class="fa-solid fa-person-walking"></i> <strong data-i18n="postop_p3_weight">Chịu tải: Tải toàn bộ (FWB) - Cai dần 2 nạng sang 1 nạng rồi bỏ nạng hoàn toàn</strong></span>
+              </div>
+              <p class="phase-bio" data-i18n="postop_p3_bio">Khoáng hóa can xương mềm thành can xương cứng (Hard callus) thấy rõ cầu xương trên X-quang. Cấu trúc xương đủ vững để chịu lực cơ học toàn thân.</p>
+              <div class="phase-rx">
+                <strong data-i18n="postop_p3_rx">Y lệnh lâm sàng: Squat hai chân có hỗ trợ, step-up bậc thang thấp (10cm), tập bước đi chuẩn không nghiêng háng (chống dáng đi Trendelenburg do yếu cơ mông nhỡ); tập thăng bằng trên thảm bọt.</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="phase-header-wrap postop-phase-card">
+            <div class="phase-header phase-p4">
+              <span class="phase-badge" data-i18n="postop_p4_badge">Giai Đoạn 4: Tuần 12 – 24+</span>
+              <h4 data-i18n="postop_p4_title">GĐ 4 (Tuần 12–24+): Định Luật Wolff, Sức Mạnh Chức Năng & Tái Hòa Nhập Thể Thao</h4>
+            </div>
+            <div class="phase-body">
+              <div class="phase-meta">
+                <span class="meta-item"><i class="fa-solid fa-person-walking"></i> <strong data-i18n="postop_p4_weight">Chịu tải: Hoàn toàn bình thường + Tải trọng thể thao động & Đổi hướng</strong></span>
+              </div>
+              <p class="phase-bio" data-i18n="postop_p4_bio">Định luật Wolff: Xương tái cấu trúc bè xương dọc theo đúng hướng của đường truyền lực cơ học. Lực uốn và lực cắt được hấp thụ hoàn toàn.</p>
+              <div class="phase-rx">
+                <strong data-i18n="postop_p4_rx">Y lệnh lâm sàng: Rèn luyện sức mạnh chuỗi động đóng (Leg press, Deadlift, Romanian Deadlift); bài tập nhảy tiếp đất nhẹ (Low impact pogo hops); kiểm tra chỉ số phục hồi chi đối bên LSI &gt; 90% trước khi chơi thể thao.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Common Orthopedic Trauma Surgical Pathways -->
+      <div class="postop-block">
+        <h3 class="postop-block-title"><i class="fa-solid fa-procedures"></i> <span data-i18n="postop_pathways_heading">3. Phác Đồ Chi Tiết Cho 6 Phẫu Thuật Kết Xương Thường Gặp</span></h3>
+        <div class="postop-surg-grid">
+          <!-- Surgery 1 -->
+          <div class="surg-pathway-card">
+            <div class="surg-card-icon"><i class="fa-solid fa-ruler-vertical"></i></div>
+            <div class="surg-card-content">
+              <h4 data-i18n="postop_surg1_title">1. Đinh Nội Tủy Có Chốt Xương Đùi & Cẳng Chân (IM Nail)</h4>
+              <p data-i18n="postop_surg1_desc">Nguyên lý vững chắc tương đối chia sẻ tải trọng (Load-sharing). Bệnh nhân có thể bắt đầu chịu tải sớm (TDWB sang PWB) ngay từ tuần thứ 2 nếu chốt định vị vững. Ưu tiên tập gấp duỗi gối sớm để tránh dính bao khớp bánh chè do đường rạch qua gân bánh chè.</p>
+            </div>
+          </div>
+
+          <!-- Surgery 2 -->
+          <div class="surg-pathway-card">
+            <div class="surg-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="surg-card-content">
+              <h4 data-i18n="postop_surg2_title">2. Nẹp Vít Khóa (LCP) Gãy Mâm Chày (Tibial Plateau Plating)</h4>
+              <p data-i18n="postop_surg2_desc">Vùng gãy nội khớp chịu lực nâng đỡ lồi cầu đùi. BẮT BUỘC không chịu tải (NWB) hoàn toàn trong 6-8 tuần đầu để bảo vệ mặt sụn khớp đã nâng không bị sụp lún thứ phát. Tuy nhiên, PHẢI tập máy gấp duỗi thụ động liên tục (CPM) từ ngày thứ 2 để chống xơ cứng khớp.</p>
+            </div>
+          </div>
+
+          <!-- Surgery 3 -->
+          <div class="surg-pathway-card">
+            <div class="surg-card-icon"><i class="fa-solid fa-shoe-prints"></i></div>
+            <div class="surg-card-content">
+              <h4 data-i18n="postop_surg3_title">3. Kết Xương Nẹp Vít Mắt Cá Chân (Bimalleolar / Trimalleolar Fracture)</h4>
+              <p data-i18n="postop_surg3_desc">Đòi hỏi nắn chỉnh giải phẫu tuyệt đối ngàm chày mác. Nẹp bất động bằng bốt CAM boot hoặc nẹp cẳng bàn chân trong 6 tuần (NWB). Tuần 2 bắt đầu tháo bốt tập gập mu - gập lòng chủ động không tải. Sau 6 tuần kiểm tra X-quang lành xương mới chuyển sang PWB.</p>
+            </div>
+          </div>
+
+          <!-- Surgery 4 -->
+          <div class="surg-pathway-card">
+            <div class="surg-card-icon"><i class="fa-solid fa-infinity"></i></div>
+            <div class="surg-card-content">
+              <h4 data-i18n="postop_surg4_title">4. Buộc Chỉ Thép Néo Ép Số 8 Gãy Xương Bánh Chè (Tension Band Wiring)</h4>
+              <p data-i18n="postop_surg4_desc">Nguyên lý néo ép chuyển lực căng kéo của gân tứ đầu đùi thành lực nén ép tại diện gãy khi gập gối. Nẹp khóa duỗi 0° khi đi lại. Ngay tuần đầu tiên cho tập gập gối thụ động 0-30°, tuần 2-4 tăng dần đến 90°. Cấm đá tạ tạ duỗi gối chuỗi động mở trong 8 tuần đầu.</p>
+            </div>
+          </div>
+
+          <!-- Surgery 5 -->
+          <div class="surg-pathway-card">
+            <div class="surg-card-icon"><i class="fa-solid fa-link"></i></div>
+            <div class="surg-card-content">
+              <h4 data-i18n="postop_surg5_title">5. Tái Tạo Dây Chằng Chéo Trước (ACL) Kèm Khâu Sụn Chêm</h4>
+              <p data-i18n="postop_surg5_desc">Khi có khâu sụn chêm phối hợp, phải hạn chế gấp gối quá 90° trong 4-6 tuần đầu và NWB/TDWB để bảo vệ đường khâu sụn chêm không bị xé rách bởi lồi cầu đùi lướt qua. Trọng tâm cốt lõi tuần 1-2 là PHẢI lấy lại duỗi thẳng 0° hoàn toàn.</p>
+            </div>
+          </div>
+
+          <!-- Surgery 6 -->
+          <div class="surg-pathway-card">
+            <div class="surg-card-icon"><i class="fa-solid fa-user-injured"></i></div>
+            <div class="surg-card-content">
+              <h4 data-i18n="postop_surg6_title">6. Khâu Phục Hồi Chóp Xoay Khớp Vai (Rotator Cuff Repair)</h4>
+              <p data-i18n="postop_surg6_desc">Gân được đính lại bằng các vít neo (suture anchors). Bắt buộc mang đai treo tay có gối dạng vai 24/7 trong 6 tuần. Nghiêm cấm nâng tay chủ động (Active Elevation). Chỉ tập đung đưa con lắc Codman và gập duỗi thụ động nhẹ nhàng để bảo vệ điểm bám.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clinical Red Flags & Hardware Failure Warning -->
+      <div class="postop-redflags-box">
+        <div class="redflags-header">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <h3 data-i18n="postop_redflags_heading">Cảnh Báo Cấp Cứu Y Khoa & Dấu Hiệu Thất Bại Dụng Cụ Kết Xương (Red Flags)</h3>
+        </div>
+        <p class="redflags-intro">Nếu bạn hoặc bệnh nhân xuất hiện bất kỳ dấu hiệu nào dưới đây, CẦN LIÊN HỆ BÁC SĨ PHẪU THUẬT HOẶC ĐẾN BỆNH VIỆN NGAY LẬP TỨC:</p>
+        <div class="redflags-grid">
+          <div class="redflag-item">
+            <div class="rf-icon"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+            <div class="rf-content">
+              <strong data-i18n="postop_rf1_title">1. Nhiễm trùng vết mổ & Viêm xương tủy</strong>
+              <p data-i18n="postop_rf1_desc">Sốt &gt; 38°C, vết mổ sưng nóng đỏ tăng dần, chảy dịch mủ hoặc dịch đục có mùi hôi, mép vết mổ toác.</p>
+            </div>
+          </div>
+          <div class="redflag-item">
+            <div class="rf-icon"><i class="fa-solid fa-heart-crack"></i></div>
+            <div class="rf-content">
+              <strong data-i18n="postop_rf2_title">2. Huyết khối tĩnh mạch sâu (DVT / PE)</strong>
+              <p data-i18n="postop_rf2_desc">Bắp chân sưng to không đối xứng (&gt;3cm so với bên lành), đau tức dữ dội khi gập mu bàn chân (Homans sign (+)), khó thở hoặc đau ngực đột ngột.</p>
+            </div>
+          </div>
+          <div class="redflag-item">
+            <div class="rf-icon"><i class="fa-solid fa-burst"></i></div>
+            <div class="rf-content">
+              <strong data-i18n="postop_rf3_title">3. Gãy hỏng nẹp vít, bung dụng cụ kết xương</strong>
+              <p data-i18n="postop_rf3_desc">Nghe tiếng "rắc" hoặc cảm giác xụt xịt tại ổ gãy kèm biến dạng góc lệch trục đột ngột sau khi lỡ dồn tải hoặc bước hụt.</p>
+            </div>
+          </div>
+          <div class="redflag-item">
+            <div class="rf-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <div class="rf-content">
+              <strong data-i18n="postop_rf4_title">4. Hội chứng đau loạn dưỡng vùng phức hợp (CRPS)</strong>
+              <p data-i18n="postop_rf4_desc">Đau rát bỏng dữ dội vượt quá mức chấn thương thông thường, rối loạn vận mạch làm da đổi màu tím tái hoặc bóng đỏ, phù nề cứng ngón tay chân.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action CTA to Post-Op Video Library -->
+      <div class="postop-cta-wrap text-center">
+        <button type="button" class="btn-primary postop-cta-btn" onclick="viewPostOpVideos()">
+          <i class="fa-solid fa-circle-play"></i> <span data-i18n="postop_cta_btn">Xem 8 Video Bài Tập Sau Mổ &amp; Kết Xương Trong Thư Viện</span>
+        </button>
       </div>
     </div>
   </section>
@@ -951,6 +1166,7 @@
         <a href="#body-map" onclick="switchMainTab('body-map'); return false;" data-i18n="nav_map">Sơ đồ cơ thể</a>
         <a href="#calculator" onclick="switchMainTab('calculator'); return false;" data-i18n="nav_calculator">Máy tính tải gân</a>
         <a href="#framework" onclick="switchMainTab('framework'); return false;" data-i18n="nav_framework">Lộ trình 12 tuần</a>
+        <a href="#post-op" onclick="switchMainTab('post-op'); return false;" data-i18n="nav_postop">Sau mổ & Kết xương</a>
         <a href="#video-library" onclick="switchMainTab('video-library'); return false;" data-i18n="nav_library">Thư viện video</a>
         <a href="#science" onclick="switchMainTab('science'); return false;" data-i18n="nav_science">Cơ chế khoa học</a>
         <a href="#testimonials" onclick="switchMainTab('testimonials'); return false;" data-i18n="nav_reviews">Kết quả học viên</a>

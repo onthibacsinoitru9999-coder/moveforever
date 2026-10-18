@@ -2959,3 +2959,357 @@ body.clean-medical-theme {
     display: none !important;
   }
 }
+
+/* ==========================================================================
+   POST-OPERATIVE ORTHOPEDIC TRAUMA & OSTEOSYNTHESIS SECTION
+   ========================================================================== */
+.postop-section {
+  padding: 60px 0 80px;
+}
+
+.postop-badge {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.postop-block {
+  margin-top: 48px;
+}
+
+.postop-block-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 12px;
+}
+
+.postop-block-title i {
+  color: #0284c7;
+}
+
+/* AO Stability Grid */
+.postop-ao-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.postop-ao-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.postop-ao-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1);
+}
+
+.postop-ao-card.absolute-card {
+  border-top: 4px solid #0284c7;
+}
+
+.postop-ao-card.relative-card {
+  border-top: 4px solid #10b981;
+}
+
+.ao-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.absolute-card .ao-badge {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.relative-card .ao-badge {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.postop-ao-card h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.postop-ao-card p {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.65;
+}
+
+/* 4-Phase Weight-Bearing Progression Timeline */
+.postop-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.postop-phase-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.phase-header {
+  padding: 18px 20px;
+  color: #ffffff;
+}
+
+.phase-header.phase-p1 {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.phase-header.phase-p2 {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.phase-header.phase-p3 {
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+}
+
+.phase-header.phase-p4 {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.phase-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 3px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.phase-header h4 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.phase-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.phase-meta {
+  background: #f8fafc;
+  border-left: 3px solid #0284c7;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #1e293b;
+}
+
+.phase-meta strong {
+  color: #0f172a;
+}
+
+.phase-bio {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.phase-rx {
+  background: #f0fdf4;
+  border: 1px dashed #86efac;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.84rem;
+  color: #166534;
+  line-height: 1.5;
+  margin-top: auto;
+}
+
+/* 6 Surgical Pathways */
+.postop-surg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.surg-pathway-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: all 0.2s ease;
+}
+
+.surg-pathway-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+.surg-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #e0f2fe;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.surg-card-content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.surg-card-content p {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Red Flags Warning Box */
+.postop-redflags-box {
+  margin-top: 48px;
+  background: #fff1f2;
+  border: 2px solid #fecdd3;
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.redflags-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e11d48;
+  margin-bottom: 12px;
+}
+
+.redflags-header i {
+  font-size: 1.5rem;
+}
+
+.redflags-header h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #9f1239;
+  margin: 0;
+}
+
+.redflags-intro {
+  font-size: 0.92rem;
+  color: #881337;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.redflags-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.redflag-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #ffe4e6;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.rf-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.rf-content strong {
+  display: block;
+  font-size: 0.88rem;
+  color: #9f1239;
+  margin-bottom: 4px;
+}
+
+.rf-content p {
+  font-size: 0.82rem;
+  color: #4c0519;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Post-op CTA & Video Badge */
+.postop-cta-wrap {
+  margin-top: 44px;
+}
+
+.postop-cta-btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.video-badge.postop {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
