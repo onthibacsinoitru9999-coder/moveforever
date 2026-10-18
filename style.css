@@ -919,7 +919,350 @@ input[type="range"] {
   text-align: center;
 }
 
+
+/* ================= SCIENCE & MECHANOTHERAPY SECTION ================= */
+.science-section {
+  padding: 90px 20px 100px;
+  background: radial-gradient(circle at 50% 10%, rgba(59, 130, 246, 0.08) 0%, #0a0c12 80%);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.scientific-badge {
+  background: rgba(139, 92, 246, 0.15);
+  color: #a78bfa;
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+/* 3-Stage Continuum Grid */
+.continuum-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.continuum-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 28px 22px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.continuum-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7);
+}
+
+.continuum-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.continuum-card.reactive::before {
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+}
+
+.continuum-card.dysrepair::before {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+
+.continuum-card.degenerative::before {
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+}
+
+.stage-num {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-cyan);
+  margin-bottom: 8px;
+}
+
+.continuum-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+  color: #fff;
+  line-height: 1.35;
+}
+
+.stage-trigger {
+  font-size: 0.88rem;
+  color: #fbbf24;
+  margin-bottom: 12px;
+  background: rgba(245, 158, 11, 0.1);
+  padding: 8px 12px;
+  border-radius: 6px;
+  line-height: 1.45;
+}
+
+.stage-mechanism {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.stage-rx {
+  background: #090c12;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.rx-tag {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  margin-bottom: 4px;
+}
+
+.stage-rx small {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+  display: block;
+}
+
+/* 4-Stage Protocol Box */
+.protocol-box {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  margin-bottom: 50px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.protocol-title {
+  font-family: 'Ultra', serif;
+  font-size: clamp(20px, 3vw, 28px);
+  margin-bottom: 36px;
+  color: var(--text-main);
+}
+
+.protocol-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.proto-step {
+  display: flex;
+  gap: 18px;
+  background: var(--panel-2);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  transition: var(--transition);
+}
+
+.proto-step:hover {
+  border-color: rgba(79, 209, 217, 0.5);
+  background: #222733;
+}
+
+.proto-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(79, 209, 217, 0.12);
+  border: 1px solid rgba(79, 209, 217, 0.3);
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.proto-content {
+  flex: 1;
+}
+
+.proto-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.proto-step h4 {
+  font-size: 1.05rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.proto-step p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* Comparison Cards */
+.comparison-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.comparison-card {
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  border: 1px solid var(--border-color);
+}
+
+.comparison-card.bad {
+  background: rgba(239, 68, 68, 0.05);
+  border-color: rgba(239, 68, 68, 0.25);
+}
+
+.comparison-card.bad h4 {
+  color: #f87171;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comparison-card.good {
+  background: rgba(16, 185, 129, 0.06);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.comparison-card.good h4 {
+  color: #34d399;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comparison-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comparison-card li {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  position: relative;
+  padding-left: 20px;
+}
+
+.comparison-card.bad li::before {
+  content: '✕';
+  position: absolute;
+  left: 0;
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.comparison-card.good li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: 700;
+}
+
+/* ================= MODAL PHASE TABS ================= */
+.bm-panel {
+  max-width: 540px !important;
+}
+
+.bm-phase-tabs {
+  display: flex;
+  gap: 6px;
+  background: #0c0f16;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 18px;
+  overflow-x: auto;
+}
+
+.bm-phase-tab {
+  flex: 1;
+  min-width: 130px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.bm-phase-tab:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.bm-phase-tab.active {
+  background: var(--accent-cyan);
+  color: #06282a;
+  box-shadow: 0 2px 10px var(--accent-cyan-glow);
+}
+
+.bm-clinical-tip {
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 3px solid #3b82f6;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.83rem;
+  color: #93c5fd;
+  margin-bottom: 16px;
+  line-height: 1.45;
+}
+
+.bm-clinical-tip strong {
+  color: #fff;
+}
+
 /* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .continuum-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .protocol-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -933,6 +1276,10 @@ input[type="range"] {
     padding: 24px 18px;
   }
 
+  .protocol-box {
+    padding: 24px 18px;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -943,3 +1290,4 @@ input[type="range"] {
     height: 36px;
   }
 }
+

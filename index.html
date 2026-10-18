@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Move Forever | Phục Hồi Chấn Thương & Huấn Luyện Vận Động</title>
+  <title>Move Forever | Cơ Học Trị Liệu & Phục Hồi Chấn Thương Không Mổ</title>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +28,7 @@
 
       <nav class="nav-links">
         <a href="#body-map" data-i18n="nav_map">Sơ đồ cơ thể</a>
+        <a href="#science" data-i18n="nav_science">Cơ chế khoa học</a>
         <a href="#testimonials" data-i18n="nav_reviews">Kết quả học viên</a>
         <a href="#apply" data-i18n="nav_apply">Đăng ký tư vấn</a>
       </nav>
@@ -46,9 +47,9 @@
   <section id="body-map" class="bm-section">
     <div class="bm-container">
       <div class="bm-header">
-        <div class="badge-tag" data-i18n="hero_badge">BẢN ĐỒ VẬN ĐỘNG TƯƠNG TÁC</div>
+        <div class="badge-tag" data-i18n="hero_badge">BẢN ĐỒ VẬN ĐỘNG & CƠ HỌC TRỊ LIỆU TƯƠNG TÁC</div>
         <h1 class="hero-title" data-i18n="hero_title">Nhấn Vào Vùng Bạn Đang Gặp Vấn Đề</h1>
-        <p class="hero-subtitle" data-i18n="hero_sub">Bạn muốn giải phóng tiềm năng tiềm ẩn của cơ thể? Hãy bắt đầu với các bài tập phục hồi chuyên biệt dưới đây!</p>
+        <p class="hero-subtitle" data-i18n="hero_sub">Bạn muốn giải phóng tiềm năng tiềm ẩn của cơ thể? Chọn vùng tổn thương để khám phá phác đồ phục hồi 3 giai đoạn dựa trên khoa học cơ học trị liệu!</p>
       </div>
 
       <!-- Stage with Anatomy graphic & hotspots -->
@@ -61,18 +62,131 @@
         </div>
 
         <div class="bm-hint">
-          <i class="fa-solid fa-hand-pointer"></i> <span data-i18n="hero_hint">Chạm vào điểm phát sáng trên cơ thể để xem bài tập và video hướng dẫn</span>
+          <i class="fa-solid fa-hand-pointer"></i> <span data-i18n="hero_hint">Chạm vào điểm phát sáng trên cơ thể để xem phác đồ Isometric, HSR & Vận động góc tận</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Modal Popup for Exercises -->
+  <!-- Modal Popup for Exercises (Upgraded with 3-Phase Biological Tabs) -->
   <div class="bm-overlay" id="bm-overlay">
     <div class="bm-panel" id="bm-panel">
-      <!-- Injected by JavaScript -->
+      <!-- Injected dynamically by JavaScript with phase tabs -->
     </div>
   </div>
+
+  <!-- SCIENTIFIC MECHANOTHERAPY & TENDON CONTINUUM FRAMEWORK SECTION -->
+  <section id="science" class="science-section">
+    <div class="section-container">
+      <div class="section-heading text-center">
+        <div class="badge-tag scientific-badge" data-i18n="sci_badge">KHOA HỌC ĐIỀU TRỊ BẢO TỒN KHÔNG MỔ</div>
+        <h2 class="section-title" data-i18n="sci_title">Cơ Học Trị Liệu (Mechanotherapy) & Mô Hình Tendon Continuum</h2>
+        <p class="section-subtitle" data-i18n="sci_sub">Dựa trên công trình nền tảng của <strong>GS. Jill Cook & TS. Ebonie Rio</strong> kết hợp với nguyên lý sức mạnh góc tận <strong>ATG & FRC</strong> — Cơ chế tái tạo gân khớp bằng tải trọng cơ học chính xác thay vì phẫu thuật hay nghỉ ngơi thụ động.</p>
+      </div>
+
+      <!-- The 3 Stages of Tendon Pathology (Tendon Continuum Model) -->
+      <div class="continuum-grid">
+        <div class="continuum-card reactive">
+          <div class="stage-num">Giai Đoạn I</div>
+          <h3 data-i18n="cont_stage1_title">Tendon Reactive (Viêm Phản Ứng Cấp)</h3>
+          <p class="stage-trigger" data-i18n="cont_stage1_trigger"><i class="fa-solid fa-bolt"></i> <strong>Nguyên nhân:</strong> Tăng khối lượng hoặc cường độ tải trọng quá đột ngột.</p>
+          <p class="stage-mechanism" data-i18n="cont_stage1_desc">Tế bào gân phản ứng bảo vệ bằng cách tăng sinh proteoglycan ngậm nước, làm gân dày lên cục bộ và sưng đau, nhưng chưa có đứt gãy cấu trúc collagen.</p>
+          <div class="stage-rx">
+            <span class="rx-tag" data-i18n="cont_stage1_rx">Chiến lược: Isometric Loading (Gồng Tĩnh)</span>
+            <small data-i18n="cont_stage1_note">Tuyệt đối tránh kéo giãn ma sát; gồng tĩnh 45s giúp giảm đau tức thì qua cơ chế ức chế vỏ não.</small>
+          </div>
+        </div>
+
+        <div class="continuum-card dysrepair">
+          <div class="stage-num">Giai Đoạn II</div>
+          <h3 data-i18n="cont_stage1_title_d">Tendon Dysrepair (Suy Thoái Cấu Trúc)</h3>
+          <p class="stage-trigger" data-i18n="cont_stage2_trigger"><i class="fa-solid fa-triangle-exclamation"></i> <strong>Nguyên nhân:</strong> Tiếp tục nạp tải quá mức khi gân chưa kịp hồi phục.</p>
+          <p class="stage-mechanism" data-i18n="cont_stage2_desc">Các tế bào gân bị biến đổi hình thái, chất nền ngoại bào phân tách các bó sợi collagen, bắt đầu xuất hiện tân mạch bệnh lý và thoái hóa nhẹ.</p>
+          <div class="stage-rx">
+            <span class="rx-tag" data-i18n="cont_stage2_rx">Chiến lược: Heavy Slow Resistance (HSR)</span>
+            <small data-i18n="cont_stage2_note">Kháng lực nặng nhịp chậm (3s-1s-3s) kích hoạt mechanotransduction tổng hợp Collagen Type I.</small>
+          </div>
+        </div>
+
+        <div class="continuum-card degenerative">
+          <div class="stage-num">Giai Đoạn III</div>
+          <h3 data-i18n="cont_stage3_title">Degenerative Tendon (Thoái Hóa Mãn Tính)</h3>
+          <p class="stage-trigger" data-i18n="cont_stage3_trigger"><i class="fa-solid fa-clock-rotate-left"></i> <strong>Nguyên nhân:</strong> Quá trình viêm và quá tải vi thể kéo dài nhiều tháng đến nhiều năm.</p>
+          <p class="stage-mechanism" data-i18n="cont_stage3_desc">Xuất hiện các vùng tế bào chết vô mạch xen lẫn mô xơ. Triệu chứng kinh điển là cứng khớp buổi sáng và đau dai dẳng sau vận động.</p>
+          <div class="stage-rx">
+            <span class="rx-tag" data-i18n="cont_stage3_rx">Chiến lược: "Treat the Donut, Not the Hole"</span>
+            <small data-i18n="cont_stage3_note">GS. Jill Cook: Tập trung làm khỏe vùng gân lành xung quanh để bù đắp hoàn toàn cho vùng tổn thương.</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4-Stage Protocol Deep Dive -->
+      <div class="protocol-box">
+        <h3 class="protocol-title text-center" data-i18n="proto_main_title">Lộ Trình Tải Trọng 4 Giai Đoạn Tái Sinh Gân Khớp</h3>
+        <div class="protocol-steps">
+          
+          <div class="proto-step">
+            <div class="proto-icon"><i class="fa-solid fa-shield-heart"></i></div>
+            <div class="proto-content">
+              <span class="proto-badge" data-i18n="proto_p1_badge">Cấp Độ 1: Giai Đoạn Cấp</span>
+              <h4 data-i18n="proto_p1_title">1. Isometric Loading (Gồng Tĩnh Giảm Đau)</h4>
+              <p data-i18n="proto_p1_desc">Thực hiện gồng cơ giữ nguyên góc khớp (45-60 giây x 4-5 hiệp, tải 70% MVC). Kích hoạt cơ chế <strong>Cortical Inhibition Relief</strong> giúp ức chế tín hiệu đau lên não bộ trong 45-60 phút mà không gây kích ứng ma sát lên gân hay sụn.</p>
+            </div>
+          </div>
+
+          <div class="proto-step">
+            <div class="proto-icon"><i class="fa-solid fa-dumbbell"></i></div>
+            <div class="proto-content">
+              <span class="proto-badge" data-i18n="proto_p2_badge">Cấp Độ 2: Tái Tạo Cấu Trúc</span>
+              <h4 data-i18n="proto_p2_title">2. Isotonic Heavy Slow Resistance (Kháng Lực Nặng, Chậm)</h4>
+              <p data-i18n="proto_p2_desc">Tập kháng lực với nhịp điệu (Tempo) nghiêm ngặt: <strong>3 giây co - 1 giây dừng - 3 giây duỗi</strong>. Chuyển hóa lực cơ học (Mechanotransduction) gửi tín hiệu kích thích nguyên bào gân xếp lại sợi Collagen Type I song song và bền chắc.</p>
+            </div>
+          </div>
+
+          <div class="proto-step">
+            <div class="proto-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <div class="proto-content">
+              <span class="proto-badge" data-i18n="proto_p3_badge">Cấp Độ 3: Tích Trữ Đàn Hồi</span>
+              <h4 data-i18n="proto_p3_title">3. Energy Storage & Plyometrics (Tích Trữ & Giải Phóng Năng Lượng)</h4>
+              <p data-i18n="proto_p3_desc">Huấn luyện gân hoạt động như một chiếc <strong>lò xo sinh học (biological spring)</strong>. Tái tạo khả năng hấp thu xung lực khi chạy, nhảy, đổi hướng mà không làm bùng phát cơn đau tái phát.</p>
+            </div>
+          </div>
+
+          <div class="proto-step">
+            <div class="proto-icon"><i class="fa-solid fa-person-running"></i></div>
+            <div class="proto-content">
+              <span class="proto-badge" data-i18n="proto_p4_badge">Cấp Độ 4: Sức Mạnh Góc Tận</span>
+              <h4 data-i18n="proto_p4_title">4. End-Range Capacity & Re-Integration (ATG & FRC Mobility)</h4>
+              <p data-i18n="proto_p4_desc">Kéo giãn có tải ở biên độ cực hạn (*Loaded Stretching*) theo trường phái ATG (Ben Patrick) và kiểm soát thần kinh cơ FRC (Dr. Andreo Spina). Khớp chịu lực vững chắc ở mọi góc độ, loại bỏ nỗi sợ chấn thương suốt đời.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Clinical Comparison: Rest vs Optimal Loading -->
+      <div class="comparison-container">
+        <div class="comparison-card bad">
+          <h4><i class="fa-solid fa-circle-xmark"></i> <span data-i18n="comp_rest_title">Sai Lầm: Nghỉ Ngơi Tuyệt Đối & Tiêm Corticoid</span></h4>
+          <ul>
+            <li data-i18n="comp_r1">Nghỉ hoàn toàn khiến gân bị teo cơ học (Tendon Stress Deprivation), giảm mật độ mao mạch và thoái hóa nhanh hơn.</li>
+            <li data-i18n="comp_r2">Tiêm Corticoid chỉ cắt đứt tín hiệu đau tạm thời nhưng làm ức chế tổng hợp collagen, tăng nguy cơ đứt gân tự phát gấp 4-6 lần.</li>
+            <li data-i18n="comp_r3">Cơ bắp suy giảm sức chịu tải khiến cơn đau tái phát nặng hơn ngay khi người bệnh hoạt động trở lại.</li>
+          </ul>
+        </div>
+
+        <div class="comparison-card good">
+          <h4><i class="fa-solid fa-circle-check"></i> <span data-i18n="comp_load_title">Giải Pháp Chuẩn Y Khoa: Tải Trọng Tối Ưu (Optimal Loading)</span></h4>
+          <ul>
+            <li data-i18n="comp_l1">Tải trọng cơ học có kiểm soát là kích thích DUY NHẤT giúp tế bào gân (Tenocytes) tái tạo Collagen Type I.</li>
+            <li data-i18n="comp_l2">Bài tập gồng tĩnh (Isometric) giúp giảm đau tức thì bằng ức chế thần kinh trung ương, an toàn tuyệt đối.</li>
+            <li data-i18n="comp_l3">Xây dựng "áo giáp cơ bắp" bảo vệ sụn khớp dài hạn, giúp người bệnh hồi phục hoàn toàn không cần phẫu thuật.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- Testimonials & Client Results Carousel Section -->
   <section id="testimonials" class="testimonials-section">
@@ -176,6 +290,18 @@
               <option value="Other" data-i18n="opt_other">Khác</option>
             </select>
           </div>
+        </div>
+
+        <!-- Clinical Tendon Continuum Stage Selector -->
+        <div class="form-group">
+          <label for="tendonStage"><span data-i18n="lbl_tendon_phase">Tính chất cơn đau của bạn phản ánh giai đoạn nào dưới đây?</span> <span class="req">*</span></label>
+          <select id="tendonStage" name="tendonStage" required>
+            <option value="" disabled selected data-i18n="opt_select_stage">Chọn tính chất cơn đau của bạn...</option>
+            <option value="Reactive" data-i18n="opt_stage_reactive">1. Đau nhói, buốt cấp sau khi tăng tải đột ngột (Giai đoạn Phản ứng - Reactive)</option>
+            <option value="Dysrepair" data-i18n="opt_stage_dysrepair">2. Đau âm ỉ nhiều tuần, cứng gân/khớp vào buổi sáng khi ngủ dậy (Giai đoạn Suy thoái cấu trúc)</option>
+            <option value="Degenerative" data-i18n="opt_stage_degenerative">3. Đau dai dẳng nhiều năm, chụp MRI có hình ảnh thoái hóa/rách bán phần (Thoái hóa mãn tính)</option>
+            <option value="Spine" data-i18n="opt_stage_spine">4. Đau mỏi thắt lưng/cột sống, tê lan chân hoặc tay khi ngồi lâu/cúi người</option>
+          </select>
         </div>
 
         <!-- Goals -->
@@ -313,6 +439,7 @@
       <div class="footer-links">
         <h4 data-i18n="footer_quick_links">Liên Kết Nhanh</h4>
         <a href="#body-map" data-i18n="nav_map">Sơ đồ cơ thể</a>
+        <a href="#science" data-i18n="nav_science">Cơ chế khoa học</a>
         <a href="#testimonials" data-i18n="nav_reviews">Kết quả học viên</a>
         <a href="#apply" data-i18n="nav_apply">Đăng ký tư vấn</a>
       </div>
