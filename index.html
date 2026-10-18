@@ -29,19 +29,56 @@
       <nav class="nav-links">
         <a href="#body-map" data-i18n="nav_map">Sơ đồ cơ thể</a>
         <a href="#science" data-i18n="nav_science">Cơ chế khoa học</a>
+        <a href="#framework" data-i18n="nav_framework">Lộ trình 12 tuần</a>
+        <a href="#calculator" data-i18n="nav_calculator">Máy tính tải gân</a>
+        <a href="#video-library" data-i18n="nav_library">Thư viện video</a>
         <a href="#testimonials" data-i18n="nav_reviews">Kết quả học viên</a>
         <a href="#apply" data-i18n="nav_apply">Đăng ký tư vấn</a>
       </nav>
 
       <div class="nav-actions">
         <!-- Language Switcher -->
-        <button id="lang-toggle-btn" class="lang-btn" title="Chuyển đổi ngôn ngữ / Switch language">
+        <button id="lang-toggle-btn" class="lang-btn" title="Chuyển đổi ngôn ngữ / Switch language" data-i18n-title="lang_toggle_title">
           <i class="fa-solid fa-globe"></i> <span id="current-lang-text">EN</span>
         </button>
         <a href="#apply" class="btn-primary nav-cta" data-i18n="btn_consult">Bắt Đầu Ngay</a>
+        <!-- Mobile Hamburger Button -->
+        <button id="nav-hamburger" class="nav-hamburger" aria-label="Mở menu điều hướng" data-i18n-aria="drawer_open_aria" title="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Slide-Out Drawer & Backdrop Overlay -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="https://assets.cdn.filesafe.space/7RV9Hg6yzbZa9Xa7wzoN/media/6a9eb0e8bcef8b5f2c245ad6.jpg" alt="Move Forever Logo">
+        <span class="brand-name">MOVE FOREVER</span>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Đóng menu điều hướng" data-i18n-aria="drawer_close_aria">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="drawer-menu-heading" data-i18n="drawer_menu_title">Danh Mục Điều Hướng</div>
+    <nav class="drawer-nav">
+      <a href="#body-map" class="drawer-link" data-i18n="nav_map">Sơ đồ cơ thể</a>
+      <a href="#science" class="drawer-link" data-i18n="nav_science">Cơ chế khoa học</a>
+      <a href="#framework" class="drawer-link" data-i18n="nav_framework">Lộ trình 12 tuần</a>
+      <a href="#calculator" class="drawer-link" data-i18n="nav_calculator">Máy tính tải gân</a>
+      <a href="#video-library" class="drawer-link" data-i18n="nav_library">Thư viện video</a>
+      <a href="#testimonials" class="drawer-link" data-i18n="nav_reviews">Kết quả học viên</a>
+      <a href="#apply" class="drawer-link" data-i18n="nav_apply">Đăng ký tư vấn</a>
+    </nav>
+    <div class="drawer-footer">
+      <button id="drawer-lang-btn" class="lang-btn" title="Chuyển đổi ngôn ngữ / Switch language" data-i18n-title="lang_toggle_title">
+        <i class="fa-solid fa-globe"></i> <span id="drawer-lang-text">EN</span>
+      </button>
+      <a href="#apply" class="btn-primary drawer-cta" data-i18n="btn_consult">Bắt Đầu Ngay</a>
+    </div>
+  </aside>
 
   <!-- Hero & Interactive Body Map Section -->
   <section id="body-map" class="bm-section">
@@ -185,6 +222,321 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- 12-WEEK PERIODIZED PROGRESSION FRAMEWORK SECTION -->
+  <section id="framework" class="framework-section">
+    <div class="section-container">
+      <div class="section-heading text-center">
+        <div class="badge-tag fw-badge" data-i18n="fw_badge">LỘ TRÌNH PHỤC HỒI 12 TUẦN CHUẨN Y HỌC THỂ THAO</div>
+        <h2 class="section-title" data-i18n="fw_title">Hệ Thống Nạp Tải Chu Kỳ Hóa 12 Tuần Tái Tạo Gân Khớp</h2>
+        <p class="section-subtitle" data-i18n="fw_sub">Phân chia 3 giai đoạn sinh học chặt chẽ: Tuần 1-4 (Gồng tĩnh giảm đau), Tuần 5-8 (Tái tạo collagen HSR), Tuần 9-12 (Năng lượng đàn hồi & Biên độ cực hạn).</p>
+      </div>
+
+      <div class="framework-grid">
+        <!-- Phase 1 Card -->
+        <div class="framework-card phase-1">
+          <div class="fw-badge-pill" data-i18n="fw_card_p1_badge">Tuần 1 – 4 | Giai Đoạn 1</div>
+          <h3 class="fw-card-title" data-i18n="fw_card_p1_title">Gồng Tĩnh Giảm Đau Cấp & Ức Chế Vỏ Não (Isometric Analgesia)</h3>
+          <p class="fw-card-desc" data-i18n="fw_card_p1_desc">Mục tiêu: Cắt đứt vòng xoắn ức chế vận động vỏ não, tái phân bố dịch phù nề trong bao gân, triệt tiêu đau nhói mà không gây kích ứng ma sát hay tải nén góc tận.</p>
+          <ul class="fw-meta-list">
+            <li><i class="fa-solid fa-dumbbell"></i> <span data-i18n="fw_card_p1_dosage">Liều lượng: 5 hiệp x 45 giây gồng tĩnh đẳng cự (Cường độ ~70% MVC).</span></li>
+            <li><i class="fa-solid fa-calendar-check"></i> <span data-i18n="fw_card_p1_freq">Tần suất: Hằng ngày (1–2 lần/ngày, cách nhau tối thiểu 6 giờ).</span></li>
+            <li><i class="fa-solid fa-stopwatch"></i> <span data-i18n="fw_card_p1_rest">Nghỉ giữa hiệp: 2 phút nghỉ thụ động (phục hồi phosphocreatine và thần kinh).</span></li>
+            <li class="fw-gate"><i class="fa-solid fa-key"></i> <span data-i18n="fw_card_p1_gate">Tiêu chí vượt cấp: Đau khi sinh hoạt thường ngày VAS ≤ 2/10 trong 5 ngày liên tục.</span></li>
+          </ul>
+        </div>
+
+        <!-- Phase 2 Card -->
+        <div class="framework-card phase-2">
+          <div class="fw-badge-pill" data-i18n="fw_card_p2_badge">Tuần 5 – 8 | Giai Đoạn 2</div>
+          <h3 class="fw-card-title" data-i18n="fw_card_p2_title">Kháng Lực Nặng Nhịp Chậm (HSR) & Tái Cấu Trúc Collagen Type I</h3>
+          <p class="fw-card-desc" data-i18n="fw_card_p2_desc">Mục tiêu: Đặt lực căng biến dạng 4-8% lên các bó sợi lành lặn, kích hoạt tế bào tenocyte tổng hợp collagen loại I song song và gia tăng độ dày tiết diện gân.</p>
+          <ul class="fw-meta-list">
+            <li><i class="fa-solid fa-dumbbell"></i> <span data-i18n="fw_card_p2_dosage">Liều lượng: 3–4 hiệp với nhịp 3-1-3 (3s hạ - 1s giữ - 3s nâng). Tuần 5 (15RM) -> Tuần 6 (12RM) -> Tuần 7 (10RM) -> Tuần 8 (8RM).</span></li>
+            <li><i class="fa-solid fa-calendar-check"></i> <span data-i18n="fw_card_p2_freq">Tần suất: 3 buổi/tuần cách ngày (Thứ 2 - 4 - 6 hoặc Thứ 3 - 5 - 7; nghỉ 48h giữa các buổi).</span></li>
+            <li><i class="fa-solid fa-stopwatch"></i> <span data-i18n="fw_card_p2_rest">Nghỉ giữa hiệp: 2 đến 3 phút giữa các hiệp nặng.</span></li>
+            <li class="fw-gate"><i class="fa-solid fa-key"></i> <span data-i18n="fw_card_p2_gate">Tiêu chí vượt cấp: Hoàn thành 4 hiệp x 8RM với nhịp chuẩn, kiểm tra tải sáng hôm sau VAS ≤ 3/10.</span></li>
+          </ul>
+        </div>
+
+        <!-- Phase 3 Card -->
+        <div class="framework-card phase-3">
+          <div class="fw-badge-pill" data-i18n="fw_card_p3_badge">Tuần 9 – 12 | Giai Đoạn 3</div>
+          <h3 class="fw-card-title" data-i18n="fw_card_p3_title">Năng Lượng Đàn Hồi (SSC) & Sức Mạnh Góc Tận (ATG/FRC)</h3>
+          <p class="fw-card-desc" data-i18n="fw_card_p3_desc">Mục tiêu: Huấn luyện gân hấp thu và giải phóng xung lực nhanh (SSC Plyometrics), đồng thời củng cố độ vững ở biên độ cực hạn theo trường phái ATG & FRC.</p>
+          <ul class="fw-meta-list">
+            <li><i class="fa-solid fa-dumbbell"></i> <span data-i18n="fw_card_p3_dosage">Liều lượng: 3–4 hiệp bài tập tăng lượng (Pogo hops, Drop landings) kết hợp Split Squat góc sâu và PAILs/RAILs.</span></li>
+            <li><i class="fa-solid fa-calendar-check"></i> <span data-i18n="fw_card_p3_freq">Tần suất: 2–3 buổi/tuần (nghỉ 48–72h giữa các buổi tập bật nhảy va đập cao).</span></li>
+            <li><i class="fa-solid fa-stopwatch"></i> <span data-i18n="fw_card_p3_rest">Nghỉ giữa hiệp: 2–3 phút giữa các chuỗi plyometric và bài nạp tải góc tận.</span></li>
+            <li class="fw-gate"><i class="fa-solid fa-key"></i> <span data-i18n="fw_card_p3_gate">Tiêu chuẩn tốt nghiệp: Trở lại thi đấu thể thao hoặc vận động cường độ cao hoàn toàn không đau.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TENDON LOAD CALCULATOR SECTION -->
+  <section id="calculator" class="calculator-section">
+    <div class="section-container">
+      <div class="section-heading text-center">
+        <div class="badge-tag calc-badge" data-i18n="calc_badge">CÔNG CỤ ĐÁNH GIÁ TẢI TRỌNG LÂM SÀNG</div>
+        <h2 class="section-title" data-i18n="calc_title">Máy Tính Tải Trọng Gân & Kê Đơn Phục Hồi Cá Nhân Hóa</h2>
+        <p class="section-subtitle" data-i18n="calc_sub">Dựa trên thuật toán phân loại mô hình Tendon Continuum của GS. Jill Cook & TS. Ebonie Rio. Nhập các thông số lâm sàng để xác định chính xác giai đoạn tổn thương gân và nhận phác đồ nạp tải khởi đầu an toàn.</p>
+      </div>
+
+      <div class="calc-grid">
+        <!-- Input Form Card -->
+        <div class="calc-card calc-form-card">
+          <form id="tendon-calculator-form" onsubmit="event.preventDefault();">
+            <!-- 1. Anatomical Zone -->
+            <div class="calc-field">
+              <label for="calc-zone" class="calc-label">
+                <i class="fa-solid fa-bone"></i> <span data-i18n="calc_lbl_zone">1. Vị trí khớp / gân đang gặp vấn đề:</span>
+              </label>
+              <select id="calc-zone" name="zone" class="calc-select" required>
+                <option value="knee" data-i18n="calc_opt_knee" selected>Khớp gối & Gân bánh chè (Patellar / Jumper's Knee)</option>
+                <option value="shoulder" data-i18n="calc_opt_shoulder">Khớp vai & Chóp xoay (Rotator Cuff)</option>
+                <option value="core" data-i18n="calc_opt_core">Cột sống & Sức mạnh thân mình (Core & Spine)</option>
+                <option value="elbow" data-i18n="calc_opt_elbow">Khuỷu tay (Tennis / Golfer's Elbow)</option>
+                <option value="lower_back" data-i18n="calc_opt_lower_back">Cột sống thắt lưng & Đĩa đệm (Lower Back)</option>
+                <option value="wrist" data-i18n="calc_opt_wrist">Cổ tay & Ngón tay (de Quervain / Carpal)</option>
+                <option value="hip" data-i18n="calc_opt_hip">Khớp háng, Gân cơ mông & Gân kheo (Hip & Gluteal)</option>
+                <option value="foot" data-i18n="calc_opt_foot">Cổ chân, Gân gót Achilles & Gan bàn chân</option>
+              </select>
+            </div>
+
+            <!-- 2. Chronicity / Duration -->
+            <div class="calc-field">
+              <label for="calc-chronicity" class="calc-label">
+                <i class="fa-solid fa-calendar-days"></i> <span data-i18n="calc_lbl_chronicity">2. Thời gian khởi phát triệu chứng (Độ kéo dài):</span>
+              </label>
+              <select id="calc-chronicity" name="chronicity" class="calc-select" required>
+                <option value="acute" data-i18n="calc_opt_acute">Cấp tính (< 2-6 tuần): Bùng phát đột ngột sau tăng tải</option>
+                <option value="subacute" data-i18n="calc_opt_subacute">Bán cấp (6-12 tuần): Đau âm ỉ tích tụ, chưa lành hẳn</option>
+                <option value="chronic" data-i18n="calc_opt_chronic" selected>Mạn tính (> 12 tuần / nhiều tháng): Tái phát dai dẳng</option>
+              </select>
+            </div>
+
+            <!-- 3. Morning Stiffness -->
+            <div class="calc-field">
+              <label for="calc-stiffness" class="calc-label">
+                <i class="fa-solid fa-bed"></i> <span data-i18n="calc_lbl_stiffness">3. Mức độ cứng gân / khớp vào buổi sáng khi ngủ dậy:</span>
+              </label>
+              <select id="calc-stiffness" name="stiffness" class="calc-select" required>
+                <option value="none" data-i18n="calc_opt_stiff_none">Không có hoặc thoáng qua (< 10-15 phút)</option>
+                <option value="moderate" data-i18n="calc_opt_stiff_mod" selected>Vừa phải (15-30 phút): Cần vận động nhẹ mới bớt đơ</option>
+                <option value="severe" data-i18n="calc_opt_stiff_sev">Nghiêm trọng (> 30-60 phút): Cứng đơ kéo dài, khó chịu sâu</option>
+              </select>
+            </div>
+
+            <!-- 4. Aggravating Activity -->
+            <div class="calc-field">
+              <label for="calc-activity" class="calc-label">
+                <i class="fa-solid fa-person-running"></i> <span data-i18n="calc_lbl_activity">4. Mức độ hoạt động / Tải trọng gây đau nhiều nhất:</span>
+              </label>
+              <select id="calc-activity" name="activity" class="calc-select" required>
+                <option value="sedentary" data-i18n="calc_opt_act_sedentary">Sinh hoạt thường ngày (Đi bộ, đứng lâu, lên xuống bậc thang)</option>
+                <option value="moderate" data-i18n="calc_opt_act_mod" selected>Thể thao phong trào (Chạy bộ nhẹ, thể dục nhịp điệu, yoga)</option>
+                <option value="high_jumping" data-i18n="calc_opt_act_jump">Tải đàn hồi cao (Bật nhảy, tiếp đất, chạy tốc độ cao, đá bóng)</option>
+                <option value="heavy_lifting" data-i18n="calc_opt_act_lift">Tải kháng lực nặng (Nâng tạ nặng, squat sâu, khiêng vác)</option>
+              </select>
+            </div>
+
+            <!-- 5. VAS Pain Slider -->
+            <div class="calc-field">
+              <div class="calc-slider-header">
+                <label for="calc-vas" class="calc-label">
+                  <i class="fa-solid fa-gauge-high"></i> <span data-i18n="calc_lbl_vas">5. Điểm đau khi thực hiện động tác kích phát (Thang VAS 0 - 10):</span>
+                </label>
+                <span class="vas-badge" id="calc-vas-val">5 / 10</span>
+              </div>
+              <input type="range" id="calc-vas" name="vas" min="0" max="10" value="5" class="calc-slider">
+              <div class="vas-legend">
+                <span data-i18n="calc_vas_mild">VAS 1-3: Trong ngưỡng dung nạp an toàn</span>
+                <span data-i18n="calc_vas_mod">VAS 4-6: Cảnh báo</span>
+                <span data-i18n="calc_vas_sev">VAS 7-10: Quá tải cấp</span>
+              </div>
+            </div>
+
+            <!-- 6. Pain Latency Pattern -->
+            <div class="calc-field">
+              <label for="calc-latency" class="calc-label">
+                <i class="fa-solid fa-hourglass-half"></i> <span data-i18n="calc_lbl_latency">6. Đặc điểm phản ứng đau và hiện tượng làm nóng (Warm-Up):</span>
+              </label>
+              <select id="calc-latency" name="latency" class="calc-select" required>
+                <option value="warmup_delayed" data-i18n="calc_opt_lat_warmup" selected>Có hiện tượng làm nóng: Đau dịu khi tập nhẹ, nhưng bùng phát sau 24h</option>
+                <option value="during" data-i18n="calc_opt_lat_immediate">Đau tăng dồn dập ngay trong buổi tập khi gắng sức</option>
+                <option value="constant" data-i18n="calc_opt_lat_constant">Đau nhức liên tục cả ngày lẫn đêm, không thay đổi theo vận động</option>
+              </select>
+            </div>
+
+            <!-- Buttons -->
+            <div class="calc-actions">
+              <button type="button" id="calc-submit-btn" class="btn-primary calc-run-btn">
+                <i class="fa-solid fa-calculator"></i> <span data-i18n="calc_btn_run">Phân Tích & Kê Đơn Tải Trọng Y Khoa</span>
+              </button>
+              <button type="button" id="calc-reset-btn" class="btn-secondary calc-reset-btn">
+                <i class="fa-solid fa-arrow-rotate-left"></i> <span data-i18n="calc_btn_reset">Đánh Giá Lại Từ Đầu</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Output Result Card -->
+        <div class="calc-card calc-result-card" id="calc-result-box">
+          <div class="calc-res-header">
+            <span class="badge-tag calc-res-pill" data-i18n="calc_res_badge">KẾT QUẢ KÊ ĐƠN TẢI TRỌNG CƠ HỌC</span>
+            <h3 class="calc-res-title" data-i18n="calc_res_title">Phác Đồ Phục Hồi Lâm Sàng Được Cá Nhân Hóa</h3>
+          </div>
+
+          <!-- Stage and Phase Badges -->
+          <div class="calc-res-diagnosis">
+            <div class="diag-block">
+              <span class="diag-lbl" data-i18n="calc_res_stage_lbl">Giai Đoạn Bệnh Lý Gân:</span>
+              <div class="diag-val-badge stage-badge" id="calc-out-stage-title">Thoái Hóa Gân Mạn Tính Ổn Định (Degenerative Tendinopathy)</div>
+              <p class="diag-desc" id="calc-out-stage-desc"></p>
+            </div>
+            <div class="diag-block">
+              <span class="diag-lbl" data-i18n="calc_res_phase_lbl">Giai Đoạn Khởi Đầu Khuyến Nghị:</span>
+              <div class="diag-val-badge phase-badge" id="calc-out-phase-title">Giai Đoạn 2: Kháng Lực Nặng Nhịp Chậm (HSR)</div>
+            </div>
+          </div>
+
+          <!-- Prescription Matrix Table -->
+          <div class="calc-table-wrap">
+            <table class="calc-table">
+              <tbody>
+                <tr>
+                  <th data-i18n="calc_res_primary_ex_lbl"><i class="fa-solid fa-play"></i> Bài Tập Khởi Đầu Trọng Tâm:</th>
+                  <td id="calc-out-exercise">
+                    <strong id="calc-out-exercise-name">ATG Split Squat HSR</strong>
+                    <button type="button" class="btn-table-jump" id="calc-jump-video-btn">
+                      <i class="fa-solid fa-circle-play"></i> <span data-i18n="vid_btn_watch">Xem Video Hướng Dẫn</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th data-i18n="calc_res_intensity_lbl"><i class="fa-solid fa-bolt"></i> Cường Độ Tải Khởi Đầu:</th>
+                  <td id="calc-out-intensity">70-80% 1RM (8-12 RM)</td>
+                </tr>
+                <tr>
+                  <th data-i18n="calc_res_dosage_lbl"><i class="fa-solid fa-layer-group"></i> Liều Lượng & Số Hiệp (Volume):</th>
+                  <td id="calc-out-dosage">3-4 hiệp x 8-12 lần</td>
+                </tr>
+                <tr>
+                  <th data-i18n="calc_res_tempo_lbl"><i class="fa-solid fa-stopwatch-20"></i> Nhịp Co Cơ (Tempo):</th>
+                  <td id="calc-out-tempo">3-1-3 Heavy Slow Resistance</td>
+                </tr>
+                <tr>
+                  <th data-i18n="calc_res_freq_lbl"><i class="fa-solid fa-calendar"></i> Tần Suất Tập Luyện:</th>
+                  <td id="calc-out-frequency">3 buổi/tuần cách ngày (nghỉ 48h giữa các buổi)</td>
+                </tr>
+                <tr>
+                  <th data-i18n="calc_res_rest_lbl"><i class="fa-solid fa-clock"></i> Khoảng Nghỉ Giữa Hiệp:</th>
+                  <td id="calc-out-rest">120-180 giây (2-3 phút)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Monitoring & Gatekeeper Callouts -->
+          <div class="calc-alerts">
+            <div class="calc-alert pain-alert">
+              <div class="alert-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+              <div class="alert-content">
+                <strong data-i18n="calc_res_pain_rule_lbl">Quy Tắc Theo Dõi Đau 24 Giờ:</strong>
+                <p id="calc-out-pain-rule" data-i18n="calc_res_pain_rule_detail">Đau trong lúc tập ≤ 3/10 được chấp nhận; triệu chứng BẮT BUỘC phải trở về mức nền sau 24 giờ. Nếu sáng hôm sau đau tăng vọt, lập tức hạ tải 30–50% và gồng tĩnh 48 giờ.</p>
+              </div>
+            </div>
+
+            <div class="calc-alert test-alert">
+              <div class="alert-icon"><i class="fa-solid fa-stethoscope"></i></div>
+              <div class="alert-content">
+                <strong data-i18n="calc_res_morning_test_lbl">Nghiệm Pháp Nạp Tải Buổi Sáng (Gatekeeper Test):</strong>
+                <p id="calc-out-morning-test">Squat một chân trên dốc 60° (Single-Leg Decline Squat)</p>
+              </div>
+            </div>
+
+            <div class="calc-alert gate-alert">
+              <div class="alert-icon"><i class="fa-solid fa-door-open"></i></div>
+              <div class="alert-content">
+                <strong data-i18n="calc_res_progression_lbl">Tiêu Chuẩn Chuyển Giai Đoạn:</strong>
+                <p id="calc-out-progression">4 tuần liên tiếp hoàn thành HSR nhịp 3-1-3 với tải 8RM mà điểm đau sáng hôm sau VAS ≤ 3/10</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Regressions & Progressions Preview -->
+          <div class="calc-mods-grid">
+            <div class="mod-box reg-box">
+              <span class="mod-lbl" data-i18n="calc_res_regression_lbl">Bài Tập Hạ Tải (Khi Đau Tăng):</span>
+              <p id="calc-out-regression">Spanish Squat Isometric Hold</p>
+            </div>
+            <div class="mod-box prog-box">
+              <span class="mod-lbl" data-i18n="calc_res_progression_step_lbl">Bài Tập Nâng Tải (Khi Dung Nạp Tốt):</span>
+              <p id="calc-out-progression-step">Low-Amplitude Pogo Hops & ATG Poliquin Step-Up</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE-BASED CLINICAL VIDEO LIBRARY SECTION -->
+  <section id="video-library" class="video-library-section">
+    <div class="section-container">
+      <div class="section-heading text-center">
+        <div class="badge-tag vid-badge" data-i18n="vid_badge">THƯ VIỆN VIDEO PHỤC HỒI & PHẪU THUẬT NGOẠI KHOA</div>
+        <h2 class="section-title" data-i18n="vid_title">Thư Viện Bài Tập Chuẩn Hóa & Giải Phẫu Ngoại Khoa</h2>
+        <p class="section-subtitle" data-i18n="vid_sub">Mỗi chuyển động đều có phân tích cơ sở sinh học, khẩu lệnh chuyển động chuẩn, cảnh báo lỗi thường gặp và liên hệ giải phẫu bệnh học ngoại khoa.</p>
+      </div>
+
+      <!-- Toolbar: Search and Filter Pills -->
+      <div class="video-toolbar">
+        <div class="video-search-wrap">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="video-search-input" class="video-search-input" placeholder="Tìm bài tập (ví dụ: Spanish squat, calf raise, McGill, split squat)..." data-i18n-placeholder="vid_search_ph" autocomplete="off">
+          <button type="button" id="video-search-clear" class="search-clear-btn" aria-label="Xóa tìm kiếm"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="video-filters-row">
+          <div class="video-cat-pills" id="video-cat-pills">
+            <button type="button" class="video-cat-btn active" data-cat="all" data-i18n="vid_cat_all">Tất Cả Video</button>
+            <button type="button" class="video-cat-btn" data-cat="p1" data-i18n="vid_cat_p1">GĐ 1: Gồng Tĩnh (Isometric)</button>
+            <button type="button" class="video-cat-btn" data-cat="p2" data-i18n="vid_cat_p2">GĐ 2: Kháng Lực Chậm (HSR)</button>
+            <button type="button" class="video-cat-btn" data-cat="p3" data-i18n="vid_cat_p3">GĐ 3: Đàn Hồi & Góc Tận</button>
+            <button type="button" class="video-cat-btn" data-cat="surgical" data-i18n="vid_cat_surgical">Giải Phẫu Ngoại Khoa</button>
+          </div>
+
+          <div class="video-zone-select-wrap">
+            <select id="video-zone-filter" class="video-zone-select">
+              <option value="all" data-i18n="vid_filter_zone_all">Tất cả vùng cơ thể</option>
+              <option value="shoulder" data-i18n="calc_opt_shoulder">Khớp vai & Chóp xoay</option>
+              <option value="core" data-i18n="calc_opt_core">Cột sống & Sức mạnh thân mình</option>
+              <option value="elbow" data-i18n="calc_opt_elbow">Khuỷu tay (Tennis / Golfer)</option>
+              <option value="lower_back" data-i18n="calc_opt_lower_back">Cột sống thắt lưng</option>
+              <option value="wrist" data-i18n="calc_opt_wrist">Cổ tay & Bàn tay</option>
+              <option value="hip" data-i18n="calc_opt_hip">Khớp háng & Khung chậu</option>
+              <option value="knee" data-i18n="calc_opt_knee">Khớp gối & Bánh chè</option>
+              <option value="achilles" data-i18n="calc_opt_foot">Cổ chân & Gân Achilles</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Grid Container -->
+      <div class="video-grid" id="video-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Empty State -->
+      <div class="video-empty-state" id="video-empty-state" style="display: none;">
+        <i class="fa-solid fa-film"></i>
+        <p data-i18n="vid_empty_results">Không tìm thấy bài tập phù hợp với bộ lọc đã chọn.</p>
+        <button type="button" class="btn-secondary" id="video-reset-filters-btn">Đặt lại bộ lọc</button>
+      </div>
     </div>
   </section>
 
@@ -428,6 +780,75 @@
     </div>
   </div>
 
+  <!-- ENHANCED VIDEO MODAL PLAYER -->
+  <div class="video-modal-overlay" id="video-modal" aria-hidden="true">
+    <div class="video-modal-container" role="dialog" aria-modal="true">
+      <div class="video-modal-header">
+        <div class="video-modal-titles">
+          <span class="video-modal-badge" id="vmodal-badge">Phase 1 Isometric</span>
+          <h3 class="video-modal-title" id="vmodal-title">Tên Bài Tập</h3>
+        </div>
+        <button type="button" class="video-modal-close" id="video-modal-close-btn" aria-label="Đóng cửa sổ" data-i18n-aria="btn_close_modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Responsive Player -->
+      <div class="video-modal-player-wrap">
+        <div class="video-modal-player" id="vmodal-player-container">
+          <!-- Injected dynamically: iframe or video -->
+        </div>
+      </div>
+
+      <!-- Interactive Timestamps Cue Bar -->
+      <div class="vmodal-timestamps-wrap" id="vmodal-timestamps-wrap">
+        <span class="vmodal-ts-label"><i class="fa-solid fa-bookmark"></i> Điểm mốc kỹ thuật:</span>
+        <div class="vmodal-ts-chips" id="vmodal-timestamps">
+          <!-- Chips injected dynamically -->
+        </div>
+      </div>
+
+      <!-- Clinical Information Body -->
+      <div class="vmodal-body">
+        <!-- Biological Rationale -->
+        <div class="vmodal-section rationale-section">
+          <h4 class="vmodal-sec-title"><i class="fa-solid fa-dna"></i> <span data-i18n="vid_lbl_rationale">Cơ Chế Y Khoa & Sinh Học Mô:</span></h4>
+          <p class="vmodal-sec-text" id="vmodal-rationale"></p>
+        </div>
+
+        <!-- Common Errors with Warning Styling -->
+        <div class="vmodal-section errors-section">
+          <h4 class="vmodal-sec-title warning-title"><i class="fa-solid fa-triangle-exclamation"></i> <span data-i18n="vid_lbl_errors">Lỗi Thường Gặp & Cách Sửa:</span></h4>
+          <ul class="vmodal-error-list" id="vmodal-errors"></ul>
+        </div>
+
+        <!-- Regressions and Progressions -->
+        <div class="vmodal-mod-grid">
+          <div class="vmodal-mod-card reg-card">
+            <h5 data-i18n="vid_lbl_regression"><i class="fa-solid fa-arrow-down-long"></i> Bài Tập Hạ Tải (Thoái lui):</h5>
+            <p id="vmodal-regression"></p>
+          </div>
+          <div class="vmodal-mod-card prog-card">
+            <h5 data-i18n="vid_lbl_progression"><i class="fa-solid fa-arrow-up-long"></i> Bài Tập Nâng Tải (Tiến tiến):</h5>
+            <p id="vmodal-progression"></p>
+          </div>
+        </div>
+
+        <!-- Surgical Correlate Banner -->
+        <div class="vmodal-surgical-banner" id="vmodal-surgical-wrap">
+          <div class="surg-icon"><i class="fa-solid fa-user-doctor"></i></div>
+          <div class="surg-content">
+            <h5 data-i18n="vid_lbl_surgical">Đối Chiếu Ngoại Khoa & Giải Phẫu Bệnh:</h5>
+            <p id="vmodal-surgical-text"></p>
+          </div>
+          <button type="button" class="btn-surg-link" id="vmodal-surgical-btn">
+            <i class="fa-solid fa-circle-play"></i> Xem Giải Phẫu
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-container">
@@ -440,6 +861,9 @@
         <h4 data-i18n="footer_quick_links">Liên Kết Nhanh</h4>
         <a href="#body-map" data-i18n="nav_map">Sơ đồ cơ thể</a>
         <a href="#science" data-i18n="nav_science">Cơ chế khoa học</a>
+        <a href="#framework" data-i18n="nav_framework">Lộ trình 12 tuần</a>
+        <a href="#calculator" data-i18n="nav_calculator">Máy tính tải gân</a>
+        <a href="#video-library" data-i18n="nav_library">Thư viện video</a>
         <a href="#testimonials" data-i18n="nav_reviews">Kết quả học viên</a>
         <a href="#apply" data-i18n="nav_apply">Đăng ký tư vấn</a>
       </div>
