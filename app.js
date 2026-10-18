@@ -401,7 +401,28 @@ const TRANSLATIONS = {
     "cue_pogo": "Khóa cổ chân như lò xo thép, chỉ nhún nảy từ khớp bàn chân trước, thời gian chạm đất nhanh nhất có thể, gối giữ thẳng gần như hoàn toàn.",
     "err_jefferson_title": "Lỗi Thường Gặp Khi Tập Jefferson Curl",
     "err_jefferson_desc": "1. Dùng mức tạ quá nặng ngay từ đầu khi dây chằng sau chưa thích nghi.\n2. Di chuyển nhanh, giật cục thay vì cuộn từng đốt sống.\n3. Không kiểm soát được góc gập háng.",
-    "cue_jefferson": "Đứng trên bục cao, bắt đầu cuộn từ cằm vào ngực, cuộn từng đốt sống ngực rồi đến thắt lưng, hạ tạ chậm rãi trong 4 giây, chạm biên độ tối đa rồi cuộn ngược lại từng đốt."
+    "cue_jefferson": "Đứng trên bục cao, bắt đầu cuộn từ cằm vào ngực, cuộn từng đốt sống ngực rồi đến thắt lưng, hạ tạ chậm rãi trong 4 giây, chạm biên độ tối đa rồi cuộn ngược lại từng đốt.",
+    "postop_eval_heading": "Bộ Đánh Giá Lâm Sàng & Phân Loại Phục Hồi Hậu Phẫu Theo Chuẩn AO",
+    "postop_eval_sub": "Đánh giá mức độ vững chắc kết hợp xương, phân loại liền xương trực tiếp hay gián tiếp, và kê đơn tải trọng tì đè cá nhân hóa theo từng mốc thời gian hậu phẫu.",
+    "postop_lbl_surgery": "1. Loại Phẫu Thuật Kết Xương Hoặc Tái Tạo Khớp:",
+    "postop_opt_im_nail": "Đinh nội tủy có chốt (IM Nail) xương đùi / cẳng chân",
+    "postop_opt_lcp_plate": "Nẹp khóa (LCP) / Nẹp nén (DCP) mâm chày, mắt cá, xương cẳng tay",
+    "postop_opt_tension_band": "Néo ép số 8 chỉ thép (Tension Band) gãy xương bánh chè / mỏm khuỷu",
+    "postop_opt_acl_meniscus": "Nội soi tái tạo ACL kèm khâu phục hồi sụn chêm",
+    "postop_opt_rotator_cuff": "Nội soi khâu rách chóp xoay vai (Rotator Cuff Anchor)",
+    "postop_lbl_postop_time": "2. Thời Gian Tính Từ Ngày Phẫu Thuật:",
+    "postop_opt_time_p1": "Giai đoạn sớm (Tuần 0 - 2): Vết mổ đang lành, bọc máu tụ quanh ổ gãy",
+    "postop_opt_time_p2": "Giai đoạn bán cấp (Tuần 2 - 6): Hình thành can sụn mềm, bắt đầu tập ROM",
+    "postop_opt_time_p3": "Giai đoạn can xương cứng (Tuần 6 - 12): Cầu can xương bắc qua diện gãy trên X-quang",
+    "postop_opt_time_p4": "Giai đoạn tái cấu trúc (Tuần 12 - 24+): Tái tạo cấu trúc bè xương theo định luật Wolff",
+    "postop_lbl_pain_swelling": "3. Mức Độ Đau Nhức & Sưng Phù Vết Mổ (Thang Điểm VAS 0 - 10):",
+    "postop_btn_evaluate": "Phân Tích & Kê Đơn Tải Trọng Hậu Phẫu Chuẩn AO",
+    "postop_res_stability_lbl": "Nguyên Lý Vững Chắc Sinh Học AO:",
+    "postop_res_healing_mode_lbl": "Cơ Chế Liền Xương Mục Tiêu:",
+    "postop_res_target_load_lbl": "Chỉ Định Tải Trọng Tì Đè (Weight-Bearing Rx):",
+    "postop_res_rom_target_lbl": "Mục Tiêu Tầm Vận Động (Target ROM):",
+    "postop_res_clinical_actions_lbl": "Y Lệnh Lâm Sàng & Bài Tập Trọng Tâm:",
+    "postop_res_contra_lbl": "Cấm Chỉ Định Nghiêm Ngặt Tránh Hỏng Nẹp Vít:"
   },
   "en": {
     "nav_map": "Body Map",
@@ -791,7 +812,28 @@ const TRANSLATIONS = {
     "cue_pogo": "Lock ankles into rigid springs, bounce exclusively off forefeet, minimize ground contact time, maintain near-straight knees.",
     "err_jefferson_title": "Common Execution Errors in Jefferson Curl",
     "err_jefferson_desc": "1. Using excessive load prematurely before posterior myofascial ligaments have adapted.\n2. Rushing or jerking instead of articulating vertebra by vertebra.\n3. Lack of pelvic rotation control.",
-    "cue_jefferson": "Standing on box, tuck chin to chest first, roll down vertebra by vertebra through thoracic and lumbar spine, 4 seconds down, hold 1s, roll up slowly."
+    "cue_jefferson": "Standing on box, tuck chin to chest first, roll down vertebra by vertebra through thoracic and lumbar spine, 4 seconds down, hold 1s, roll up slowly.",
+    "postop_eval_heading": "AO Foundation Post-Surgical Clinical Evaluation & Prescription Engine",
+    "postop_eval_sub": "Evaluate osteosynthesis stability, direct vs indirect healing mode, and generate an individualized progressive weight-bearing prescription tailored to post-op recovery milestones.",
+    "postop_lbl_surgery": "1. Surgical Fixation or Joint Reconstruction Procedure:",
+    "postop_opt_im_nail": "Interlocking Intramedullary Nail (IM Nail) - Femur / Tibia",
+    "postop_opt_lcp_plate": "Locking Compression Plate (LCP / DCP) - Tibial Plateau, Ankle, Forearm",
+    "postop_opt_tension_band": "Tension Band Wiring (TBW) - Patella / Olecranon",
+    "postop_opt_acl_meniscus": "Arthroscopic ACL Reconstruction with Meniscal Repair",
+    "postop_opt_rotator_cuff": "Arthroscopic Rotator Cuff Repair (Suture Bridge Anchors)",
+    "postop_lbl_postop_time": "2. Time Elapsed Since Surgical Procedure:",
+    "postop_opt_time_p1": "Early Stage (Weeks 0 - 2): Wound healing, hematoma envelope",
+    "postop_opt_time_p2": "Subacute Stage (Weeks 2 - 6): Soft cartilaginous callus, early AAROM",
+    "postop_opt_time_p3": "Hard Callus Stage (Weeks 6 - 12): Radiographic bony bridging, progressive FWB",
+    "postop_opt_time_p4": "Remodeling Stage (Weeks 12 - 24+): Wolff's law trabecular reorientation",
+    "postop_lbl_pain_swelling": "3. Incision Pain & Effusion Level (VAS Scale 0 - 10):",
+    "postop_btn_evaluate": "Analyze & Generate AO Post-Op Loading Prescription",
+    "postop_res_stability_lbl": "AO Biomechanical Stability Principle:",
+    "postop_res_healing_mode_lbl": "Target Bone Healing Mode:",
+    "postop_res_target_load_lbl": "Weight-Bearing Prescription (WB Rx):",
+    "postop_res_rom_target_lbl": "Target Range of Motion (Target ROM):",
+    "postop_res_clinical_actions_lbl": "Clinical Orders & Primary Exercises:",
+    "postop_res_contra_lbl": "Strict Contraindications (Prevent Hardware Failure):"
   }
 };
 
@@ -10400,6 +10442,327 @@ function calculateTendonLoad(rawInputs) {
   return CALCULATOR_ENGINE.evaluate(rawInputs);
 }
 
+/**
+ * AO POST-OPERATIVE CLINICAL REHABILITATION ENGINE
+ * Evaluates surgical procedure, post-op timeframe, and pain/swelling level
+ * to produce precise weight-bearing prescriptions, target ROM, exercises, and contraindications.
+ */
+const AO_POSTOP_ENGINE = {
+  SURGERY_DATABASE: {
+    im_nail: {
+      id: "im_nail",
+      nameVi: "Đinh nội tủy có chốt (IM Nail) - Xương đùi & Cẳng chân",
+      nameEn: "Interlocking Intramedullary Nail (IM Nail) - Femur & Tibia",
+      stabilityPrincipleVi: "Vững chắc tương đối (Relative Stability - Strain 2–10%)",
+      stabilityPrincipleEn: "Relative Stability (Interfragmentary Strain 2–10%)",
+      healingModeVi: "Liền xương gián tiếp thứ cấp qua tạo can sụn và can xương cứng (Secondary Callus Healing)",
+      healingModeEn: "Secondary indirect bone healing via periosteal and endosteal callus formation",
+      videoTargetId: "postop_im_nail_femur_tibia_rehab",
+      phases: {
+        p1: {
+          wbVi: "TDWB (Chạm ngón giữ thăng bằng 10-15kg) với 2 nạng nách",
+          wbEn: "TDWB (Touch-Down Weight-Bearing 10-15kg) with bilateral axillary crutches",
+          romVi: "Gấp gối chủ động có trợ giúp 0-60°, duỗi thẳng gối 0° hoàn toàn",
+          romEn: "Active-assisted knee flexion 0-60°, full passive extension 0°",
+          rxVi: "Bơm cổ chân 30 lần/giờ; gồng tĩnh cơ tứ đầu (Quad sets); trượt gót chân trên giường; kê cao chân 20cm chống phù nề.",
+          rxEn: "Ankle pumps 30 reps/hour; quad sets; supine heel slides; limb elevation 20cm above heart for edema.",
+          contraVi: "CẤM xoay vặn thân mình khi bàn chân cố định; cấm tì đè quá 15kg khi chưa rút chỉ.",
+          contraEn: "NO pivoting or torsional stress on planted foot; strictly avoid loading > 15kg."
+        },
+        p2: {
+          wbVi: "PWB (Tì đè từng phần 25% -> 50% trọng lượng cơ thể) với 2 nạng",
+          wbEn: "PWB (Partial Weight-Bearing 25% -> 50% bodyweight) with bilateral crutches",
+          romVi: "Gấp gối 0-90°, tập đạp xe tĩnh không kháng lực (vòng đạp tròn trơn tru)",
+          romEn: "Knee flexion 0-90°, stationary cycling zero resistance for smooth rotations",
+          rxVi: "Đứng trụ trên cân kiểm soát lực tì 30-50%; nâng chân thẳng (SLR); trượt gối có bóng tì tường; di động bánh chè.",
+          rxEn: "Scale-monitored weight bearing 30-50%; Straight Leg Raises; wall ball slides; patellar mobilization.",
+          contraVi: "CẤM bỏ nạng đi khập khiễng; cấm nhảy hoặc tiếp đất giật cục.",
+          contraEn: "NO single crutch or unassisted walking with limp; avoid abrupt impact landings."
+        },
+        p3: {
+          wbVi: "FWB (Tì đè toàn bộ) - Cai từ 2 nạng sang 1 nạng rồi bỏ nạng hoàn toàn",
+          wbEn: "FWB (Full Weight-Bearing) - Wean from 2 crutches to 1 cane to unassisted gait",
+          romVi: "Gấp gối > 120° đến hết biên độ đối bên",
+          romEn: "Knee flexion > 120° progressing to symmetrical full ROM",
+          rxVi: "Mini Squat hai chân tựa tường; Step-ups bục 10cm; rèn luyện dáng đi chuẩn không nghiêng háng Trendelenburg; tập thăng bằng thảm bọt.",
+          rxEn: "Bilateral wall mini squats; 10cm step-ups; symmetrical gait re-education without Trendelenburg lurch; balance pad training.",
+          contraVi: "CẤM chạy nhảy hoặc xoay người đổi hướng thể thao đột ngột.",
+          contraEn: "NO running, cutting, pivoting, or high-impact athletic participation."
+        },
+        p4: {
+          wbVi: "Tì đè bình thường + Tải trọng thể thao tăng dần theo định luật Wolff",
+          wbEn: "Full normal loading + progressive athletic loading according to Wolff's Law",
+          romVi: "Toàn bộ biên độ khớp bình thường không hạn chế",
+          romEn: "Full anatomical range of motion without restrictions",
+          rxVi: "Leg Press chuỗi động đóng tải 70-80% 1RM; Deadlift và Squat có kiểm soát; chạy bộ thẳng trục trên máy; kiểm tra LSI >= 90%.",
+          rxEn: "Closed kinetic chain Leg Press 70-80% 1RM; controlled Squats/Deadlifts; straight-line jogging; Limb Symmetry Index >= 90%.",
+          contraVi: "CẤM thi đấu thể thao đối kháng khi cơ tứ đầu chưa đạt LSI >= 90% so với chân lành.",
+          contraEn: "NO collision/contact sports until quadriceps/hamstrings LSI >= 90%."
+        }
+      }
+    },
+
+    lcp_plate: {
+      id: "lcp_plate",
+      nameVi: "Nẹp khóa (LCP) / Nẹp nén (DCP) - Mâm chày, Mắt cá & Cẳng tay",
+      nameEn: "Locking Compression Plate (LCP / DCP) - Tibial Plateau, Ankle & Forearm",
+      stabilityPrincipleVi: "Vững chắc tuyệt đối (Absolute Stability - Strain < 2%) với nẹp nén hoặc bắc cầu khóa",
+      stabilityPrincipleEn: "Absolute Stability (Strain < 2%) with lag screw compression or rigid bridging",
+      healingModeVi: "Liền xương trực tiếp nguyên phát qua nón bào mòn Harvers (Primary Direct Contact Bone Healing)",
+      healingModeEn: "Primary direct contact bone healing via Haversian cutting cones without periosteal callus",
+      videoTargetId: "postop_tibial_plateau_plate_lcp",
+      phases: {
+        p1: {
+          wbVi: "NWB (Tuyệt đối KHÔNG tì đè) 0kg lên chi phẫu thuật",
+          wbEn: "Strict NWB (Non-Weight-Bearing 0kg) on operative limb",
+          romVi: "Tập máy CPM hoặc thụ động nhẹ nhàng 0-45° để bôi trơn mặt sụn khớp",
+          romEn: "Continuous Passive Motion (CPM) or gentle PROM 0-45° to nourish articular cartilage",
+          rxVi: "Kê cao chi hơn ngực; bơm cổ chân và gồng cơ tĩnh bàn ngón chân; tập nâng tay/thân trên không dồn lực lên nẹp mâm chày/mắt cá.",
+          rxEn: "Elevate limb above chest; distal pump exercises; isometric ankle/toe work; maintain upper extremity conditioning.",
+          contraVi: "NGHIÊM CẤM đặt bàn chân chạm đất tì tải (nguy cơ sụp lún mặt sụn mâm chày hoặc bung nẹp nén).",
+          contraEn: "STRICTLY FORBIDDEN to bear weight on foot (prevents articular surface collapse or plate displacement)."
+        },
+        p2: {
+          wbVi: "Vẫn duy trì NWB hoặc chỉ TDWB chạm ngón < 10kg khi đứng chuyển tư thế",
+          wbEn: "Maintain NWB or strictly TDWB touch-down < 10kg only during transfers",
+          romVi: "Gấp gối/cổ chân đạt 0-90° chủ động có trợ giúp (AAROM)",
+          romEn: "AAROM progression achieving 0-90° knee/ankle flexion",
+          rxVi: "Tập trượt gót có khăn kéo; gập mu cổ chân chủ động không tải (tháo nẹp bốt tạm thời khi tập); xoa bóp sẹo mổ.",
+          rxEn: "Heel slides with strap; non-weight bearing active ankle dorsiflexion out of boot; surgical scar desensitization.",
+          contraVi: "CẤM tì đè thân mình; cấm đá tạ tạ chuỗi động mở kháng lực nặng.",
+          contraEn: "NO axial loading through foot; avoid heavy open-chain knee extensions."
+        },
+        p3: {
+          wbVi: "Bắt đầu PWB (25% -> 50% trọng lượng) sau khi chụp X-quang kiểm tra mặt sụn vững",
+          wbEn: "Initiate PWB (25% -> 50% bodyweight) once follow-up X-ray confirms articular integrity",
+          romVi: "Tầm vận động 0-110° gối / Đạt gập mu cổ chân > 10°",
+          romEn: "Active ROM 0-110° knee / Dorsiflexion > 10° ankle",
+          rxVi: "Tập đứng trụ có kiểm soát tải trên cân đo; đạp xe tĩnh không kháng lực; squat nông tựa tường với bóng.",
+          rxEn: "Scale-monitored weight bearing; stationary cycling; shallow wall squats with exercise ball.",
+          contraVi: "CẤM tăng tải tì đè đột ngột khi chưa có phim X-quang xác nhận lành mặt sụn.",
+          contraEn: "NO premature advancement to full weight-bearing without radiographic bone bridging."
+        },
+        p4: {
+          wbVi: "FWB (Tì đè hoàn toàn, cai nạng hoàn toàn) khi có can xương cứng liên tục",
+          wbEn: "FWB (Full Weight-Bearing, crutches discontinued) upon solid radiographic union",
+          romVi: "Đạt biên độ khớp tương đương bên lành",
+          romEn: "Symmetrical anatomical range of motion",
+          rxVi: "Rèn luyện sức mạnh chuỗi động đóng; step-up bậc thang; rèn thăng bằng một chân; tái cấu trúc bè xương.",
+          rxEn: "Closed-chain progressive resistance training; step-ups; single-leg balance and proprioception drills.",
+          contraVi: "CẤM nhảy tiếp đất độ cao lớn hoặc chơi bóng đá đối kháng trước tháng thứ 6-9.",
+          contraEn: "NO high-impact jumping or contact sports prior to months 6-9."
+        }
+      }
+    },
+
+    tension_band: {
+      id: "tension_band",
+      nameVi: "Néo ép số 8 chỉ thép (Tension Band Wiring) - Xương bánh chè / Mỏm khuỷu",
+      nameEn: "Tension Band Wiring (TBW) - Patella & Olecranon",
+      stabilityPrincipleVi: "Vững chắc tuyệt đối bằng cơ chế chuyển lực kéo thành lực nén (Conversion of Tensile to Compressive Strain)",
+      stabilityPrincipleEn: "Absolute Stability converting dynamic tensile distracting forces into interfragmentary compression",
+      healingModeVi: "Liền xương trực tiếp diện tiếp xúc không qua can xương phồng (Direct Contact Healing)",
+      healingModeEn: "Direct primary bone healing with minimal external callus",
+      videoTargetId: "postop_patella_tension_band_wiring",
+      phases: {
+        p1: {
+          wbVi: "Khóa nẹp gối thẳng 0° khi đi lại - Cho phép tì đè chịu tải chân có nẹp khóa",
+          wbEn: "Locked knee brace at 0° extension for ambulation - Full extension weight-bearing permitted",
+          romVi: "Tháo nẹp tập gập thụ động có trợ giúp nhẹ nhàng 0-30° (Tuần 1-2)",
+          romEn: "Unlock brace for gentle passive-assisted flexion 0-30° (Weeks 1-2)",
+          rxVi: "Gồng tĩnh cơ tứ đầu (Quad sets khóa gối); nâng chân thẳng có nẹp thẳng; di động xương bánh chè sang 2 bên.",
+          rxEn: "Isometric quad sets at 0°; Straight Leg Raise in locked brace; gentle mediolateral patellar glides.",
+          contraVi: "TUYỆT ĐỐI CẤM gập gối khi đang tì chân xuống đất; cấm đá tạ mở gối chủ động.",
+          contraEn: "STRICTLY FORBIDDEN to bear weight on a flexed knee; no active open-chain leg extensions."
+        },
+        p2: {
+          wbVi: "Vẫn khóa nẹp thẳng 0° khi đi lại; tì đè FWB chân thẳng",
+          wbEn: "Maintain 0° locked brace for walking; FWB in full extension allowed",
+          romVi: "Tăng dần góc gập gối khi nằm/ngồi: Tuần 3-4 (0-60°), Tuần 5-6 (0-90°)",
+          romEn: "Progress seated/supine flexion: Weeks 3-4 (0-60°), Weeks 5-6 (0-90°)",
+          rxVi: "Trượt gót chân có dây kéo trợ giúp; ngồi buông thõng chân mép giường; đạp xe bán phần (nửa vòng quay trước-sau).",
+          rxEn: "Strap-assisted heel slides; gentle edge-of-bed pendulum hangs; partial rocking rotations on stationary bike.",
+          contraVi: "CẤM cố ép gập gối vượt quá 90° trước tuần thứ 6 (nguy cơ kéo đứt chỉ thép néo ép).",
+          contraEn: "DO NOT force flexion beyond 90° before week 6 to prevent cerclage wire failure."
+        },
+        p3: {
+          wbVi: "Mở khóa nẹp gối khi đi lại hoặc bỏ nẹp chuyển sang bó gối mềm (Tuần 6-8)",
+          wbEn: "Unlock brace for walking or transition to soft supportive sleeve (Weeks 6-8)",
+          romVi: "Gấp gối chủ động 0-120°",
+          romEn: "Active knee flexion 0-120°",
+          rxVi: "Đạp xe tĩnh trọn vòng; squat nông 0-45° có hỗ trợ; bài tập bước bục thấp; tăng cường sức mạnh cơ tứ đầu.",
+          rxEn: "Full revolution stationary cycling; shallow supported mini-squats (0-45°); low step-downs; quad strengthening.",
+          contraVi: "CẤM ngồi xổm sâu hoặc quỳ gối tì đè lên xương bánh chè có chỉ thép.",
+          contraEn: "NO deep squatting past 90° or direct kneeling over wire implants."
+        },
+        p4: {
+          wbVi: "Tì đè hoàn toàn bình thường không giới hạn",
+          wbEn: "Full unrestricted loading and functional agility",
+          romVi: "Đầy đủ biên độ khớp như bên lành (0-135°)",
+          romEn: "Full symmetrical range of motion (0-135°)",
+          rxVi: "Tập squat sâu ATG có kê gót; rèn luyện sức mạnh eccentric cơ tứ đầu; chạy bộ thẳng trục; chuẩn bị rút chỉ thép nếu cộm da.",
+          rxEn: "Heel-elevated deep squats; eccentric quad bulletproofing; return to jogging; assess hardware for elective removal.",
+          contraVi: "CẤM va đập trực tiếp vùng bánh chè vào vật cứng khi chỉ thép còn dưới da.",
+          contraEn: "Avoid direct impact trauma over prominent subcutaneous cerclage wires."
+        }
+      }
+    },
+
+    acl_meniscus: {
+      id: "acl_meniscus",
+      nameVi: "Nội soi tái tạo ACL kèm khâu phục hồi sụn chêm",
+      nameEn: "Arthroscopic ACL Reconstruction with Meniscal Repair",
+      stabilityPrincipleVi: "Tái tạo dây chằng cơ sinh học & Bảo vệ đường khâu sụn chêm bằng nẹp khóa góc",
+      stabilityPrincipleEn: "Biological Ligamentous Graft & Suture Anchor Protection with Hinged Brace",
+      healingModeVi: "Tích hợp mô gân vào đường hầm xương (Ligamentization) & Liền mô sụn chêm xơ sụn",
+      healingModeEn: "Graft ligamentization in bone tunnels & fibrocartilaginous healing of meniscal suture line",
+      videoTargetId: "postop_acl_meniscus_repair_protocol",
+      phases: {
+        p1: {
+          wbVi: "TDWB (Chạm ngón 10-15kg) hoặc NWB có nẹp khóa gối thẳng 0°",
+          wbEn: "TDWB (10-15kg touch down) or NWB in hinged brace locked at 0°",
+          romVi: "ƯU TIÊN SỐ 1: Duỗi thẳng 0° hoàn toàn (chống sẹo Cyclops). Gấp gối giới hạn <= 90°",
+          romEn: "PRIORITY #1: Full passive extension 0° (prevents Cyclops syndrome). Flexion limited <= 90°",
+          rxVi: "Kê khăn dưới gót chân duỗi thẳng gối; gồng cơ tĩnh tứ đầu đùi (Quad sets); bơm cổ chân phòng DVT; di động bánh chè.",
+          rxEn: "Heel prop extension hangs; quad sets; ankle pumps; superior/inferior patellar mobilization.",
+          contraVi: "NGHIÊM CẤM kê gối dưới khoeo chân khi nằm ngủ (gây co rút gấp gối vĩnh viễn); cấm gấp gối > 90°.",
+          contraEn: "ABSOLUTELY NO pillow under knee in bed (causes permanent flexion contracture); do not exceed 90° flexion."
+        },
+        p2: {
+          wbVi: "PWB tăng dần sang FWB với nẹp gối mở khóa góc khi đi lại (Tuần 4-6)",
+          wbEn: "Progress PWB to FWB as tolerated; brace unlocked for ambulation by weeks 4-6",
+          romVi: "Gấp gối tăng dần 0-110° sau tuần thứ 4",
+          romEn: "Flexion progressed to 0-110° after week 4",
+          rxVi: "Trượt gót chân có kiểm soát; nâng chân thẳng 4 hướng; đạp xe tĩnh hạ yên vừa tầm; tập thăng bằng 2 chân.",
+          rxEn: "Heel slides; 4-way straight leg raises; stationary cycling with appropriate seat height; double-leg balance.",
+          contraVi: "CẤM ngồi xổm sâu hoặc xoay vặn trục cẳng chân (bảo vệ mối chỉ khâu sụn chêm sừng sau).",
+          contraEn: "NO deep squatting or twisting/pivoting through the knee joint."
+        },
+        p3: {
+          wbVi: "FWB không cần nẹp (sau tuần 6-8 khi kiểm soát cơ tứ đầu tốt)",
+          wbEn: "Full unassisted ambulation without brace once quad lag is eliminated",
+          romVi: "Gấp gối 0-130°",
+          romEn: "Knee flexion 0-130°",
+          rxVi: "Leg press chuỗi động đóng góc 0-60°; Step-ups; Romanian Deadlift rèn cơ gân kheo; đạp xe ngoài trời nhẹ nhàng.",
+          rxEn: "Closed-chain leg press (0-60°); step-ups; Romanian deadlifts for hamstring graft recovery; outdoor cycling.",
+          contraVi: "CẤM đá tạ chuỗi động mở (Leg extension máy) ở góc 45-0° (tạo lực trượt trước xé rách mảnh ghép ACL).",
+          contraEn: "STRICTLY FORBIDDEN open kinetic chain seated leg extensions from 45° to 0° (extreme anterior shear on graft)."
+        },
+        p4: {
+          wbVi: "FWB thể thao - Giai đoạn tái cấu trúc mảnh ghép (Ligamentization)",
+          wbEn: "Athletic loading - Graft maturation and remodeling window (Months 4-9+)",
+          romVi: "Biên độ khớp hoàn toàn bình thường 0-135°",
+          romEn: "Full anatomical symmetrical range of motion",
+          rxVi: "Chạy thẳng trục trên máy chạy (Tháng 3-4); bài tập bật nhảy tiếp đất Y-Balance; kiểm tra sức mạnh LSI >= 90%.",
+          rxEn: "Straight-line treadmill jogging (Months 3-4); deceleration landing mechanics; Y-Balance dynamic stability; LSI >= 90%.",
+          contraVi: "CẤM quay lại đá bóng đối kháng, xoay chuyển đổi hướng trước tháng thứ 9.",
+          contraEn: "NO return to competitive cutting/contact sports prior to month 9 and objective clearance testing."
+        }
+      }
+    },
+
+    rotator_cuff: {
+      id: "rotator_cuff",
+      nameVi: "Nội soi khâu rách chóp xoay vai (Rotator Cuff Repair - Suture Anchors)",
+      nameEn: "Arthroscopic Rotator Cuff Repair (Suture Bridge Anchors)",
+      stabilityPrincipleVi: "Bảo vệ lực căng cơ học trên vít neo gân (Suture Anchor purchase protection)",
+      stabilityPrincipleEn: "Mechanical Suture Anchor Purchase Protection without Active Tensile Loading",
+      healingModeVi: "Tích hợp mô xơ sụn điểm bám gân vào xương cánh tay (Enthesis Fibrocartilage Integration)",
+      healingModeEn: "Fibrocartilaginous tendon-to-bone insertion enthesis healing",
+      videoTargetId: "postop_rotator_cuff_codman_pendulum",
+      phases: {
+        p1: {
+          wbVi: "Đeo đai túi có gối dạng vai 24/7 (kể cả khi ngủ) - 0% chịu lực chi trên",
+          wbEn: "Abduction pillow sling worn 24/7 (including sleep) - Strict 0% upper limb loading",
+          romVi: "100% Vận động thụ động (PROM) - Bài tập con lắc Codman đung đưa thân mình",
+          romEn: "100% Passive ROM (PROM) - Codman pendulum oscillations driven by trunk sway",
+          rxVi: "Con lắc Codman 3 lần/ngày; tập chủ động bàn tay, cổ tay và cẳng tay chống phù nề; chườm lạnh ngắt quãng 20 phút.",
+          rxEn: "Codman pendulum 3x/day; active hand, wrist, and forearm pumping; intermittent cryotherapy 20 min.",
+          contraVi: "NGHIÊM CẤM tự nâng tay chủ động (Active Elevation); cấm chống tay xuống giường đứng dậy (nhổ vít neo ngay lập tức).",
+          contraEn: "ABSOLUTELY NO active arm elevation or pushing up from chair/bed (immediately pulls suture anchors out)."
+        },
+        p2: {
+          wbVi: "Vẫn mang đai vai khi ra ngoài; bắt đầu tháo đai tập trong nhà có kiểm soát (Tuần 4-6)",
+          wbEn: "Sling worn in public; wean from sling in controlled home environments (Weeks 4-6)",
+          romVi: "Chuyển sang vận động chủ động có trợ giúp (AAROM bằng gậy hoặc dây ròng rọc)",
+          romEn: "Transition to Active-Assisted ROM (AAROM) using wand or overhead pulley",
+          rxVi: "Tập gậy nằm ngửa nâng tay có trợ giúp; trượt tay trên mặt bàn có khăn; kéo giãn thụ động bao khớp nhẹ nhàng.",
+          rxEn: "Supine wand-assisted arm elevation; table towel slides; gentle passive posterior capsule stretching.",
+          contraVi: "CẤM xách túi xách, bê vật nặng; cấm xoay trong đưa tay quặt ra sau lưng.",
+          contraEn: "NO carrying groceries/weights; avoid aggressive internal rotation behind back."
+        },
+        p3: {
+          wbVi: "Bỏ đai treo hoàn toàn - Bắt đầu vận động chủ động hoàn toàn (AROM)",
+          wbEn: "Discontinue sling completely - Progress to full Active ROM (AROM)",
+          romVi: "Lấy lại toàn bộ biên độ giơ tay qua đầu và xoay ngoài",
+          romEn: "Restore full active overhead elevation and external rotation",
+          rxVi: "Gồng tĩnh xoay vai tựa tường; tập cơ bả vai thành ngực (Scapular retraction, Serratus punch); bài tập chóp xoay với dây chun nhẹ.",
+          rxEn: "Isometric wall external rotation; scapulothoracic strengthening (rows, serratus punches); light band rotator cuff work.",
+          contraVi: "CẤM đẩy tạ ngực nặng (Bench press), chống đẩy đất (Push-ups) hoặc kéo xà đơn.",
+          contraEn: "NO heavy bench pressing, floor push-ups, or pull-ups."
+        },
+        p4: {
+          wbVi: "Rèn luyện sức mạnh chức năng và tái hòa nhập thể thao",
+          wbEn: "Progressive functional strengthening and return to sports",
+          romVi: "Đầy đủ biên độ khớp không đau",
+          romEn: "Full painless range of motion in all planes",
+          rxVi: "Tăng tải kháng lực xoay ngoài/xoay trong chóp xoay; bài tập ném bóng tạ nhỏ; rèn sức mạnh góc Scaption 30°; kiểm tra cơ lực.",
+          rxEn: "Rotator cuff strengthening with dumbbells/cables; plyometric rebound ball throws; scaption strengthening; functional discharge testing.",
+          contraVi: "CẤM tập thể thao ném bóng hoặc bơi lội gắng sức nếu cơ lực xoay ngoài chưa đạt chuẩn.",
+          contraEn: "Avoid overhead throwing or vigorous swimming until symmetrical rotator cuff strength is restored."
+        }
+      }
+    }
+  },
+
+  evaluate(rawInputs) {
+    const surgeryKey = (rawInputs && rawInputs.surgery) ? String(rawInputs.surgery).toLowerCase().trim() : 'im_nail';
+    const timeKey = (rawInputs && rawInputs.time) ? String(rawInputs.time).toLowerCase().trim() : 'p1';
+    const vas = Number(rawInputs && rawInputs.vas !== undefined ? rawInputs.vas : 4);
+
+    const surgData = this.SURGERY_DATABASE[surgeryKey] || this.SURGERY_DATABASE.im_nail;
+    let phaseKey = 'p1';
+    if (['p1', 'p2', 'p3', 'p4'].includes(timeKey)) {
+      phaseKey = timeKey;
+    }
+
+    // Safety Override: Severe acute flare / extreme pain and swelling drops to phase p1 protective
+    let isSafetyDowngraded = false;
+    if (vas >= 7 && phaseKey !== 'p1') {
+      phaseKey = 'p1';
+      isSafetyDowngraded = true;
+    }
+
+    const currentPhaseData = surgData.phases[phaseKey] || surgData.phases.p1;
+
+    return {
+      surgeryKey: surgData.id,
+      surgeryNameVi: surgData.nameVi,
+      surgeryNameEn: surgData.nameEn,
+      stabilityPrincipleVi: surgData.stabilityPrincipleVi,
+      stabilityPrincipleEn: surgData.stabilityPrincipleEn,
+      healingModeVi: surgData.healingModeVi,
+      healingModeEn: surgData.healingModeEn,
+      videoTargetId: surgData.videoTargetId,
+      phaseKey: phaseKey,
+      isSafetyDowngraded: isSafetyDowngraded,
+      wbVi: currentPhaseData.wbVi,
+      wbEn: currentPhaseData.wbEn,
+      romVi: currentPhaseData.romVi,
+      romEn: currentPhaseData.romEn,
+      rxVi: currentPhaseData.rxVi,
+      rxEn: currentPhaseData.rxEn,
+      contraVi: currentPhaseData.contraVi,
+      contraEn: currentPhaseData.contraEn,
+      inputs: { surgery: surgeryKey, time: timeKey, vas }
+    };
+  }
+};
+
+function evaluateAOPostOp(rawInputs) {
+  return AO_POSTOP_ENGINE.evaluate(rawInputs);
+}
+
 // 22 Testimonial Image URLs from moveforever.info
 const TESTIMONIAL_IMAGES = [
   "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7RV9Hg6yzbZa9Xa7wzoN/media/6ac4c254c478ac5535fe680f.png",
@@ -11591,6 +11954,124 @@ function viewPostOpVideos() {
   }, 100);
 }
 
+// ==========================================
+// AO POST-OPERATIVE EVALUATOR INTERACTIVE UI
+// ==========================================
+let lastPostOpResult = null;
+
+function initPostOpEvaluator() {
+  if (!isBrowser) return;
+  const surgSelect = document.getElementById('postop-surgery-select');
+  const timeSelect = document.getElementById('postop-time-select');
+  const vasSlider = document.getElementById('postop-vas-slider');
+  const vasVal = document.getElementById('postop-vas-val');
+  const evalBtn = document.getElementById('postop-eval-btn');
+  const videoBtn = document.getElementById('postop-res-video-btn');
+
+  if (vasSlider && vasVal) {
+    const updateVas = () => {
+      const v = Number(vasSlider.value);
+      vasVal.textContent = v + ' / 10';
+      vasVal.className = 'vas-badge';
+      if (v <= 3) vasVal.classList.add('vas-mild');
+      else if (v <= 6) vasVal.classList.add('vas-mod');
+      else vasVal.classList.add('vas-sev');
+    };
+    vasSlider.addEventListener('input', () => {
+      updateVas();
+      runPostOpEvaluation();
+    });
+    updateVas();
+  }
+
+  if (surgSelect) {
+    surgSelect.addEventListener('change', runPostOpEvaluation);
+  }
+  if (timeSelect) {
+    timeSelect.addEventListener('change', runPostOpEvaluation);
+  }
+  if (evalBtn) {
+    evalBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      runPostOpEvaluation();
+    });
+  }
+
+  if (videoBtn) {
+    videoBtn.addEventListener('click', () => {
+      if (lastPostOpResult && lastPostOpResult.videoTargetId) {
+        if (typeof openVideoModal === 'function') {
+          openVideoModal(lastPostOpResult.videoTargetId);
+        }
+      }
+    });
+  }
+
+  // Initial evaluation
+  runPostOpEvaluation();
+}
+
+function runPostOpEvaluation() {
+  if (!isBrowser) return;
+  const surgSelect = document.getElementById('postop-surgery-select');
+  const timeSelect = document.getElementById('postop-time-select');
+  const vasSlider = document.getElementById('postop-vas-slider');
+
+  if (!surgSelect || !timeSelect || !vasSlider) return;
+
+  const rawInputs = {
+    surgery: surgSelect.value,
+    time: timeSelect.value,
+    vas: Number(vasSlider.value)
+  };
+
+  lastPostOpResult = AO_POSTOP_ENGINE.evaluate(rawInputs);
+  updatePostOpDisplay();
+}
+
+function updatePostOpDisplay() {
+  if (!isBrowser || !lastPostOpResult) return;
+  const res = lastPostOpResult;
+  const lang = currentLang;
+
+  const surgNameEl = document.getElementById('postop-out-surgery-name');
+  if (surgNameEl) surgNameEl.textContent = lang === 'en' ? res.surgeryNameEn : res.surgeryNameVi;
+
+  const stabEl = document.getElementById('postop-out-stability');
+  if (stabEl) stabEl.textContent = lang === 'en' ? res.stabilityPrincipleEn : res.stabilityPrincipleVi;
+
+  const healEl = document.getElementById('postop-out-healing');
+  if (healEl) healEl.textContent = lang === 'en' ? res.healingModeEn : res.healingModeVi;
+
+  const wbEl = document.getElementById('postop-out-wb');
+  if (wbEl) wbEl.textContent = lang === 'en' ? res.wbEn : res.wbVi;
+
+  const romEl = document.getElementById('postop-out-rom');
+  if (romEl) romEl.textContent = lang === 'en' ? res.romEn : res.romVi;
+
+  const rxEl = document.getElementById('postop-out-rx');
+  if (rxEl) rxEl.textContent = lang === 'en' ? res.rxEn : res.rxVi;
+
+  const contraEl = document.getElementById('postop-out-contra');
+  if (contraEl) contraEl.textContent = lang === 'en' ? res.contraEn : res.contraVi;
+
+  // Warning Banner for Safety Downgrade
+  const warnEl = document.getElementById('postop-safety-warning');
+  if (warnEl) {
+    if (res.isSafetyDowngraded) {
+      warnEl.style.display = 'flex';
+      const warnText = warnEl.querySelector('.warn-text');
+      if (warnText) {
+        warnText.textContent = lang === 'en'
+          ? "Safety Override: VAS Pain/Effusion >= 7/10 detected. Weight-bearing is temporarily restricted to Phase 1 (NWB/TDWB) to protect hardware fixation."
+          : "Cảnh Báo An Toàn: Điểm đau/phù nề VAS >= 7/10. Hệ thống tạm thời hạ tải về Giai Đoạn 1 (NWB/TDWB) để bảo vệ nẹp vít.";
+      }
+    } else {
+      warnEl.style.display = 'none';
+    }
+  }
+}
+
 // Global browser window assignment
 if (typeof window !== 'undefined') {
   window.viewPostOpVideos = viewPostOpVideos;
@@ -11598,6 +12079,8 @@ if (typeof window !== 'undefined') {
   window.triggerPWAInstall = triggerPWAInstall;
   window.initPWA = initPWA;
   window.initTabNavigation = initTabNavigation;
+  window.runPostOpEvaluation = runPostOpEvaluation;
+  window.initPostOpEvaluator = initPostOpEvaluator;
 }
 
 // Initialize on Load in Browser
@@ -11608,6 +12091,7 @@ if (isBrowser) {
     initMobileDrawer();
     initCalculator();
     initVideoLibrary();
+    initPostOpEvaluator();
     initTabNavigation();
     initPWA();
   });
@@ -11622,6 +12106,10 @@ if (typeof module !== 'undefined' && module.exports) {
     EXERCISE_DATA,
     CALCULATOR_ENGINE,
     calculateTendonLoad,
+    AO_POSTOP_ENGINE,
+    evaluateAOPostOp,
+    initPostOpEvaluator,
+    runPostOpEvaluation,
     VIDEO_LIBRARY_CATALOG,
     initCalculator,
     runCalculator,

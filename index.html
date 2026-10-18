@@ -835,6 +835,115 @@
         </div>
       </div>
 
+      <!-- AO Post-Op Interactive Evaluation Tool -->
+      <div class="postop-block postop-eval-tool-block">
+        <h3 class="postop-block-title"><i class="fa-solid fa-stethoscope"></i> <span data-i18n="postop_eval_heading">4. Bộ Đánh Giá Lâm Sàng & Phân Loại Phục Hồi Hậu Phẫu Theo Chuẩn AO</span></h3>
+        <p class="postop-eval-desc" data-i18n="postop_eval_sub">Đánh giá mức độ vững chắc kết hợp xương, phân loại liền xương trực tiếp hay gián tiếp, và kê đơn tải trọng tì đè cá nhân hóa theo từng mốc thời gian hậu phẫu.</p>
+
+        <div class="postop-eval-grid">
+          <!-- Input Form Card -->
+          <div class="postop-eval-form-card">
+            <form id="postop-evaluator-form" onsubmit="event.preventDefault();">
+              <!-- 1. Surgery Selection -->
+              <div class="calc-field">
+                <label for="postop-surgery-select" class="calc-label">
+                  <i class="fa-solid fa-syringe"></i> <span data-i18n="postop_lbl_surgery">1. Loại Phẫu Thuật Kết Xương Hoặc Tái Tạo Khớp:</span>
+                </label>
+                <select id="postop-surgery-select" class="calc-select" required>
+                  <option value="im_nail" data-i18n="postop_opt_im_nail" selected>Đinh nội tủy có chốt (IM Nail) xương đùi / cẳng chân</option>
+                  <option value="lcp_plate" data-i18n="postop_opt_lcp_plate">Nẹp khóa (LCP) / Nẹp nén (DCP) mâm chày, mắt cá, xương cẳng tay</option>
+                  <option value="tension_band" data-i18n="postop_opt_tension_band">Néo ép số 8 chỉ thép (Tension Band) gãy xương bánh chè / mỏm khuỷu</option>
+                  <option value="acl_meniscus" data-i18n="postop_opt_acl_meniscus">Nội soi tái tạo ACL kèm khâu phục hồi sụn chêm</option>
+                  <option value="rotator_cuff" data-i18n="postop_opt_rotator_cuff">Nội soi khâu rách chóp xoay vai (Rotator Cuff Anchor)</option>
+                </select>
+              </div>
+
+              <!-- 2. Post-op Timeframe -->
+              <div class="calc-field">
+                <label for="postop-time-select" class="calc-label">
+                  <i class="fa-solid fa-clock-rotate-left"></i> <span data-i18n="postop_lbl_postop_time">2. Thời Gian Tính Từ Ngày Phẫu Thuật:</span>
+                </label>
+                <select id="postop-time-select" class="calc-select" required>
+                  <option value="p1" data-i18n="postop_opt_time_p1">Giai đoạn sớm (Tuần 0 - 2): Vết mổ đang lành, bọc máu tụ quanh ổ gãy</option>
+                  <option value="p2" data-i18n="postop_opt_time_p2" selected>Giai đoạn bán cấp (Tuần 2 - 6): Hình thành can sụn mềm, bắt đầu tập ROM</option>
+                  <option value="p3" data-i18n="postop_opt_time_p3">Giai đoạn can xương cứng (Tuần 6 - 12): Cầu can xương bắc qua diện gãy trên X-quang</option>
+                  <option value="p4" data-i18n="postop_opt_time_p4">Giai đoạn tái cấu trúc (Tuần 12 - 24+): Tái tạo cấu trúc bè xương theo định luật Wolff</option>
+                </select>
+              </div>
+
+              <!-- 3. Incision Pain & Swelling Level -->
+              <div class="calc-field">
+                <div class="calc-slider-header">
+                  <label for="postop-vas-slider" class="calc-label">
+                    <i class="fa-solid fa-gauge-high"></i> <span data-i18n="postop_lbl_pain_swelling">3. Mức Độ Đau Nhức & Sưng Phù Vết Mổ (Thang Điểm VAS 0 - 10):</span>
+                  </label>
+                  <span class="vas-badge vas-mod" id="postop-vas-val">4 / 10</span>
+                </div>
+                <input type="range" id="postop-vas-slider" min="0" max="10" value="4" class="calc-slider">
+                <div class="vas-legend">
+                  <span data-i18n="calc_vas_mild">VAS 1-3: Dung nạp tốt</span>
+                  <span data-i18n="calc_vas_mod">VAS 4-6: Cảnh báo phù nề</span>
+                  <span data-i18n="calc_vas_sev">VAS 7-10: Cảnh báo hạ tải khẩn</span>
+                </div>
+              </div>
+
+              <div class="calc-actions">
+                <button type="button" id="postop-eval-btn" class="btn-primary calc-run-btn">
+                  <i class="fa-solid fa-bone"></i> <span data-i18n="postop_btn_evaluate">Phân Tích & Kê Đơn Tải Trọng Hậu Phẫu Chuẩn AO</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Evaluation Result Card -->
+          <div class="postop-eval-res-card">
+            <!-- Safety Warning Callout (hidden by default, shown if VAS >= 7) -->
+            <div class="postop-safety-warning" id="postop-safety-warning" style="display: none;">
+              <i class="fa-solid fa-shield-virus"></i>
+              <span class="warn-text">Cảnh Báo An Toàn: Điểm đau/phù nề VAS >= 7/10. Hệ thống tạm thời hạ tải về Giai Đoạn 1 (NWB/TDWB) để bảo vệ nẹp vít.</span>
+            </div>
+
+            <div class="postop-res-header">
+              <h4 id="postop-out-surgery-name">Đinh nội tủy có chốt (IM Nail) - Xương đùi &amp; Cẳng chân</h4>
+              <button type="button" class="btn-table-jump" id="postop-res-video-btn">
+                <i class="fa-solid fa-circle-play"></i> <span data-i18n="vid_btn_watch">Xem Video Hướng Dẫn</span>
+              </button>
+            </div>
+
+            <div class="postop-eval-table-wrap">
+              <table class="calc-table">
+                <tbody>
+                  <tr>
+                    <th><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="postop_res_stability_lbl">Nguyên Lý Vững Chắc Sinh Học AO:</span></th>
+                    <td id="postop-out-stability">Vững chắc tương đối (Relative Stability - Strain 2–10%)</td>
+                  </tr>
+                  <tr>
+                    <th><i class="fa-solid fa-dna"></i> <span data-i18n="postop_res_healing_mode_lbl">Cơ Chế Liền Xương Mục Tiêu:</span></th>
+                    <td id="postop-out-healing">Liền xương gián tiếp thứ cấp qua tạo can sụn và can xương cứng</td>
+                  </tr>
+                  <tr>
+                    <th><i class="fa-solid fa-person-walking"></i> <span data-i18n="postop_res_target_load_lbl">Chỉ Định Tải Trọng Tì Đè (Weight-Bearing Rx):</span></th>
+                    <td id="postop-out-wb" class="postop-highlight-wb">PWB (Tì đè từng phần 25% -> 50% trọng lượng cơ thể) với 2 nạng</td>
+                  </tr>
+                  <tr>
+                    <th><i class="fa-solid fa-compass-drafting"></i> <span data-i18n="postop_res_rom_target_lbl">Mục Tiêu Tầm Vận Động (Target ROM):</span></th>
+                    <td id="postop-out-rom">Gấp gối 0-90°, tập đạp xe tĩnh không kháng lực (vòng đạp tròn trơn tru)</td>
+                  </tr>
+                  <tr>
+                    <th><i class="fa-solid fa-notes-medical"></i> <span data-i18n="postop_res_clinical_actions_lbl">Y Lệnh Lâm Sàng &amp; Bài Tập Trọng Tâm:</span></th>
+                    <td id="postop-out-rx">Đứng trụ trên cân kiểm soát lực tì 30-50%; nâng chân thẳng (SLR); trượt gối có bóng tì tường; di động bánh chè.</td>
+                  </tr>
+                  <tr class="contra-row">
+                    <th><i class="fa-solid fa-ban"></i> <span data-i18n="postop_res_contra_lbl">Cấm Chỉ Định Nghiêm Ngặt Tránh Hỏng Nẹp Vít:</span></th>
+                    <td id="postop-out-contra">CẤM bỏ nạng đi khập khiễng; cấm nhảy hoặc tiếp đất giật cục.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Action CTA to Post-Op Video Library -->
       <div class="postop-cta-wrap text-center">
         <button type="button" class="btn-primary postop-cta-btn" onclick="viewPostOpVideos()">

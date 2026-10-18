@@ -109,11 +109,56 @@ runTest('style.css contains styles for postop elements', () => {
   assert(styleCss.includes('.postop-surg-grid'), 'style.css missing .postop-surg-grid');
   assert(styleCss.includes('.postop-redflags-box'), 'style.css missing .postop-redflags-box');
   assert(styleCss.includes('.video-badge.postop'), 'style.css missing .video-badge.postop');
+  assert(styleCss.includes('.postop-eval-tool-block'), 'style.css missing .postop-eval-tool-block');
+  assert(styleCss.includes('.postop-safety-warning'), 'style.css missing .postop-safety-warning');
+});
+
+// 5. AO Post-Op Interactive Evaluator Engine
+runTest('AO_POSTOP_ENGINE evaluates IM nail, LCP, tension band, ACL, and rotator cuff', () => {
+  assert(app.AO_POSTOP_ENGINE, 'AO_POSTOP_ENGINE must exist');
+  assert(typeof app.evaluateAOPostOp === 'function', 'evaluateAOPostOp must be a function');
+
+  // Test IM Nail Phase 2
+  const imRes = app.evaluateAOPostOp({ surgery: 'im_nail', time: 'p2', vas: 4 });
+  assert.strictEqual(imRes.surgeryKey, 'im_nail');
+  assert.strictEqual(imRes.phaseKey, 'p2');
+  assert(imRes.wbVi.includes('PWB'));
+  assert(imRes.romVi.includes('0-90°'));
+  assert.strictEqual(imRes.isSafetyDowngraded, false);
+
+  // Test LCP Plate Phase 1
+  const lcpRes = app.evaluateAOPostOp({ surgery: 'lcp_plate', time: 'p1', vas: 3 });
+  assert.strictEqual(lcpRes.surgeryKey, 'lcp_plate');
+  assert.strictEqual(lcpRes.phaseKey, 'p1');
+  assert(lcpRes.wbVi.includes('NWB') || lcpRes.wbVi.includes('KHÔNG tì đè'));
+
+  // Test Tension Band Wiring Phase 1
+  const tbwRes = app.evaluateAOPostOp({ surgery: 'tension_band', time: 'p1', vas: 4 });
+  assert(tbwRes.wbVi.includes('Khóa nẹp gối thẳng 0°'));
+
+  // Test Rotator cuff Phase 1
+  const rcRes = app.evaluateAOPostOp({ surgery: 'rotator_cuff', time: 'p1', vas: 4 });
+  assert(rcRes.wbVi.includes('Đeo đai túi'));
+  assert(rcRes.romVi.includes('Codman'));
+
+  // Test Safety Override: VAS >= 7 drops to P1
+  const safeRes = app.evaluateAOPostOp({ surgery: 'im_nail', time: 'p3', vas: 8 });
+  assert.strictEqual(safeRes.phaseKey, 'p1');
+  assert.strictEqual(safeRes.isSafetyDowngraded, true);
+  assert(safeRes.wbVi.includes('TDWB'));
+});
+
+runTest('index.html contains interactive post-op evaluator form and elements', () => {
+  assert(indexHtml.includes('id="postop-surgery-select"'), 'index.html missing postop-surgery-select');
+  assert(indexHtml.includes('id="postop-time-select"'), 'index.html missing postop-time-select');
+  assert(indexHtml.includes('id="postop-vas-slider"'), 'index.html missing postop-vas-slider');
+  assert(indexHtml.includes('id="postop-out-wb"'), 'index.html missing postop-out-wb');
+  assert(indexHtml.includes('id="postop-safety-warning"'), 'index.html missing postop-safety-warning');
 });
 
 console.log(`\nPost-Op Test Summary: ${passCount} passed, ${failCount} failed.`);
 if (failCount > 0) {
   process.exit(1);
 } else {
-  console.log('ALL POST-OP REHAB TESTS PASSED! 🚀\n');
+  console.log('ALL POST-OP REHAB & AO EVALUATOR TESTS PASSED! 🚀\n');
 }
